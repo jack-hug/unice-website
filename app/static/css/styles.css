@@ -1,0 +1,17 @@
+.navbar-style {
+    background-color: #57606F;
+    border: 0px;
+    border-radius:0px;
+    margin: 0px;
+}
+
+.top-bar {
+    max-width: 1020px;
+    margin:0 auto;
+}
+
+.ul-text-style li a {
+    color: white;
+    font-size: 16px;
+    width: 150px;
+}
