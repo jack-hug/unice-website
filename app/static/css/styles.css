@@ -5,13 +5,40 @@
     margin: 0px;
 }
 
-.top-bar {
-    max-width: 1020px;
-    margin:0 auto;
+.ul-text-style {
+    float: none;
+    text-align:center;
+}
+
+.ul-text-style li {
+    float:none;
+    display: inline-block;
+    margin: 0;
+
 }
 
 .ul-text-style li a {
     color: white;
     font-size: 16px;
-    width: 150px;
+    width: 148px;
+    
+}
+
+.divider {
+    border-right: 2px solid white;
+    height: 50px;
+}
+
+.navbar-nav > li > a {
+    color: #ecf0f1;
+}
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus {
+  color: #ffbbbc;
+}
+.navbar-nav > .active > a,
+.navbar-nav > .active > a:hover,
+.navbar-nav > .active > a:focus {
+  color: #ffbbbc;
+  background-color: #ff4757;
 }

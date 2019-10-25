@@ -12,12 +12,13 @@
 
 {% block navbar %}
 <img src="static/img/unice_logo.gif" alt="unice-banner" class="img-responsive center-block" alt="Responsive image">
-<div class="container navbar-style">
+<div class="container-fluid navbar-style">
     <div class="row">
-    <div class="col-md-3 col-md-offset-3">col-md-offset-3</div>
-    <div class="col-md-6">
-            <ul class="nav navbar-nav ul-text-style text-center">
-                <li><a href="/">主 页</a></li>
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+            <ul class="nav navbar-nav ul-text-style">
+                <li class="divider"></li>
+                <li><a href="/" class="active">主 页</a></li>
                 <li><a href="/">关于我们</a></li>
                 <li><a href="/">我们的产品</a></li>
                 <li><a href="/">我们的能力</a></li>
@@ -25,7 +26,7 @@
                 <li><a href="/">人才招聘</a></li>
             </ul>
     </div>
-    <div class="col-md-3 col-md-offset-3">col-md-offset-3</div>
+    <div class="col-md-2"></div>
     </div>
 </div>
 {% endblock %}
