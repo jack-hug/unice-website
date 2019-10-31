@@ -12,47 +12,49 @@
     position: relative;
 }
 
-.navbar-nav li {
+.navbar-nav > li {
     letter-spacing: normal;
     float:none;
     display: inline-block;
     margin: 0;
+    position: relative;
 
 }
 
-.navbar-nav li::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    border-bottom: 3px solid #008000;
-}
-
-.navbar-nav li:hover::before {
-    width: 100%;
-}
 
 .navbar-nav li a {
     color: white;
     font-size: 16px;
     width: 150px;
     border-left: 2px solid white;
+    position: relative;
 }
 
+.navbar-nav li a::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-bottom: 3px solid #008000;  
+    transition: 0.4s all linear;
+}
+
+.navbar-nav li a:hover::before {
+    top:0;
+    left: 0;
+    width: 100%;
+    transition-delay: 0.2s;
+}
 .last-navbar{
     border-right: 2px solid white;
 }
 
 
-.navbar-nav > li > a {
-    color: #ecf0f1;
-}
 
-.navbar-nav > li > a:hover,
-.navbar-nav > li > a:focus {
-  color: #ffbbbc;
+.navbar-nav > li > a:hover {
+  color: #ffefef;
   background-color: #57606F;
 }
 
