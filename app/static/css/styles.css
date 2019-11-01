@@ -1,10 +1,12 @@
+/* 导航框设置 */
 .navbar-style {
     background-color: #57606F;
     border: 0px;
     border-radius:0px;
     margin: 0px;
-}
+} 
 
+/* 导航条ul设置 */
 .navbar-nav {
     letter-spacing: -5px;
     float: none;
@@ -12,6 +14,7 @@
     position: relative;
 }
 
+/* 导航条li设置 */
 .navbar-nav > li {
     letter-spacing: normal;
     float:none;
@@ -21,15 +24,24 @@
 
 }
 
-
+/* 导航条链接a设置 */
 .navbar-nav li a {
     color: white;
-    font-size: 16px;
+    font-size: 15px;
     width: 150px;
     border-left: 2px solid white;
     position: relative;
 }
 
+/* 导航条三角图标设置 */
+.navbar-nav li a span {
+    border-top: 6px dashed;
+    border-top: 6px solid \9;
+    border-right: 6px solid transparent;
+    border-left: 5px solid transparent;
+}
+
+/* 导航条链接a伪元素 */
 .navbar-nav li a::before {
     position: absolute;
     content: "";
@@ -38,29 +50,58 @@
     width: 0;
     height: 100%;
     border-bottom: 3px solid #008000;  
-    transition: 0.4s all linear;
+    transition: 0.3s all linear;
 }
 
+/* 导航条鼠标滑过出现下划线 */
 .navbar-nav li a:hover::before {
     top:0;
     left: 0;
     width: 100%;
-    transition-delay: 0.2s;
+    transition-delay: 0.1s;
 }
+
+/* 导航条菜单最右侧白边设置 */
 .last-navbar{
     border-right: 2px solid white;
 }
 
-
-
-.navbar-nav > li > a:hover {
-  color: #ffefef;
-  background-color: #57606F;
+/* 产品下拉菜单 */
+.dropdown-menu {
+    min-width: 150px;
+    background-color: #57606F;
+    padding:0;
 }
 
-/* .navbar-nav > li > .active > a,
-.navbar-nav > li > .active > a:hover,
-.navbar-nav > li > .active > a:focus {
-  color: #fff;
-  background-color: #ff4757;
-} */
+/* 下拉菜单链接 */
+.dropdown-menu li a {
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+
+/* 下拉菜单背景色 */
+
+.dropdown-menu li a:hover {
+    color: #ffefef;
+    background-color: #2f3542; 
+}
+
+/* 点击时背景变色 */
+.dropdown-menu > li > a:focus,
+.navbar-nav > li > a:focus,
+.navbar-nav > li > .dropdown-toggle:focus  {
+    background-color: #FF4757;
+}
+
+/* 下拉菜单滑过时自动弹出 */
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; 
+    }
+
+/* 下拉菜单滑过时颜色 */
+.navbar-nav > li > a:hover {
+  color: #ffefef;
+  background-color: #2f3542; 
+}
