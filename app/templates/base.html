@@ -8,6 +8,8 @@
 {{ super() }}
 <meta charset="UTF-8">
 <link rel="stylesheet" href="{{ url_for('static',filename = 'css/styles.css') }}" type="text/css">
+<link rel="stylesheet" href="{{ url_for('static',filename = 'dist/css/bootstrap-submenu.min.css')}}" type="text/css">
+<script src="{{ url_for('static',filename = 'dist/js/bootstrap-submenu.min.js')}}"></script>
 {% endblock %}
 
 {% block navbar %}
@@ -18,8 +20,26 @@
                 <li><a href="#">关于我们</a></li>
                 <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="flase">我们的产品 <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                    <li><a href="#">塑胶模具制造</a></li>
-                    <li><a href="#">五金模具制造</a></li>
+                    <li class="dropdown dropdown-submenu"><a href="#">塑胶模具制造</a>
+                        <ul class="dropdown-menu">
+                                <li><a href="#">插件塑胶制品</a></li>
+                                <li><a href="#">电子塑胶制品</a></li>
+                                <li><a href="#">硅胶制品</a></li>
+                                <li><a href="#">汽车塑胶制品</a></li>
+                                <li><a href="#">双色塑胶制品</a></li>
+                                <li><a href="#">压铸制品</a></li>
+                            </ul>
+                    </li>
+                    <!-- <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"><a href="#">五金模具制造</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">插件塑胶制品</a></li>
+                            <li><a href="#">电子塑胶制品</a></li>
+                            <li><a href="#">硅胶制品</a></li>
+                            <li><a href="#">汽车塑胶制品</a></li>
+                            <li><a href="#">双色塑胶制品</a></li>
+                            <li><a href="#">压铸制品</a></li>
+                            </ul>
+                    </li> -->
                     <li><a href="#">注塑生产</a></li>
                 </ul>
                 </li>
