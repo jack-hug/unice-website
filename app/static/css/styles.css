@@ -100,10 +100,16 @@
 }
 
 /* 下拉菜单滑过时自动弹出 */
-/* .dropdown:hover .dropdown-menu {
+.dropdown:hover .dropdown-style {
     display: block;
     margin-top: 0; 
-    } */
+    }
+
+/* 下拉菜单样式 */
+.dropdown-style {
+    border-radius: 0;
+    left:-1px;
+}
 
 /* 下拉菜单滑过时颜色 */
 .navbar-nav > li > a:hover {
@@ -112,7 +118,6 @@
 }
 
 /* 二级菜单 */
-
 .dropdown-submenu {
     position: relative;
 }
@@ -125,9 +130,17 @@
     -moz-border-radius: 0;
     border-radius: 0;
 }
+
+/* 二级子菜单位置 */
+.dropdown-submenu > .dropdown-list-style {
+    margin-top: -1px;
+}
+
 .dropdown-submenu:hover > .dropdown-menu {
     display: block;
 }
+
+
 .dropdown-submenu > a:after {
     display: block;
     content: " ";
@@ -153,4 +166,16 @@
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
+}
+
+/* 页脚设置 */
+.footer {
+    background-color: #FF4757;
+    width: 265px;
+}
+
+
+/* 轮播图片 */
+#myCarousel {
+    width: 1020px;
 }
