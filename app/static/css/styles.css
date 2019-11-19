@@ -92,6 +92,12 @@
     background-color: #2f3542; 
 }
 
+/* 导航文字过长设置 */
+#longtext-style {
+    padding: 3px 0px;
+    font-size: 14px;
+}
+
 /* 点击时背景变色 */
 .dropdown-menu > li > a:focus,
 .navbar-nav > li > a:focus,
@@ -245,4 +251,10 @@
 /* 轮播图片 */
 #myCarousel {
     width: 1020px;
+}
+
+/* 主页分割线样式 */
+.divider {
+    border-bottom:1px solid #eee;
+    margin: 35px 0;
 }

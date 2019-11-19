@@ -34,7 +34,7 @@
                     <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true">五金模具制造</a>
                         <ul class="dropdown-menu dropdown-list-style">
                             <li><a href="#">弹片或屏蔽罩</a></li>
-                            <li><a href="#">拉伸或厚料五金产品</a></li>
+                            <li><a href="#" id="longtext-style">拉伸或厚料五金产品</a></li>
                             <li><a href="#">五金端子</a></li>
                             </ul>
                     </li>
@@ -51,7 +51,7 @@
                 <li><a href="#" class="last-navbar">人才招聘</a></li>
             </ul>
 </div>
-<div class="container-fluid" id="myCarousel">
+<div class="container" id="myCarousel">
 <div id="carousel-generic" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -92,6 +92,7 @@
 </div>
 {% endblock %}
 
+<!-- footer设置：需要在flask-bootstrap/base.html 基础文件里面添加 {% block footer %} -->
 {% block footer %}
   <div class="container footer" id="footer">
     <div class="row inner-text">
