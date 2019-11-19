@@ -111,6 +111,12 @@
     left:-1px;
 }
 
+/* 下拉菜单隔行换色 */
+/* 奇数行  */
+.dropdown li:nth-of-type(odd){ background:#2f3542;}
+/* 偶数行 */
+.dropdown li:nth-of-type(even){ background:#57606F;} 
+
 /* 下拉菜单滑过时颜色 */
 .navbar-nav > li > a:hover {
   color: #ffefef;
@@ -199,8 +205,8 @@
     padding-top: 60px;
 }
 .top-padding-2 {
-    padding-top: 45px;
-    padding-left: 35px;
+    padding-top: 25px;
+    padding-left: 20px;
     text-align: left;
 }
 .top-padding-3 {

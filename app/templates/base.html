@@ -18,9 +18,10 @@
             <ul class="nav navbar-nav">
                 <li><a href="#" class="active">主 页</a></li>
                 <li><a href="#">关于我们</a></li>
-                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="flase">我们的产品 <span class="caret"></span></a>
+                <li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="flase">我们的产品 <span class="caret"></span></a>
                 <ul class="dropdown-menu dropdown-style">
-                    <li class="dropdown dropdown-submenu"><a href="#">塑胶模具制造</a>
+                    <li class="dropdown dropdown-submenu">
+                      <a href="#">塑胶模具制造</a>
                         <ul class="dropdown-menu dropdown-list-style">
                                 <li><a href="#">插件塑胶制品</a></li>
                                 <li><a href="#">电子塑胶制品</a></li>
@@ -85,6 +86,12 @@
 </div>
 {% endblock %}
 
+{% block content %}
+<div class="container">
+  {% block page_content %}{% endblock %}
+</div>
+{% endblock %}
+
 {% block footer %}
   <div class="container footer" id="footer">
     <div class="row inner-text">
@@ -108,7 +115,7 @@
               </div>
           
               <div class="col-md-3 link-ohter  top-padding-2">
-                  <p>地址：xxxxxxxxxxxxxxx</p>
+                  <p>地址：深圳市南山区粤海街道麻岭社区科技中一路19号赛百诺CMP厂房B栋406-04C</p>
                   <p>电话：010-0000000</p>
                   <p>邮编：530000</p>
                   <p>邮箱：nice@163.com</p>
