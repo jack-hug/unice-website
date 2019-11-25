@@ -249,8 +249,11 @@
 
 
 /* 轮播图片 */
-#myCarousel {
-    width: 1020px;
+.carousel .carousel-inner .item img {
+    height: 400px;
+    display: block;
+    background-repeat: no-repeat;  
+    background-position: center;
 }
 
 /* 主页分割线样式 */
