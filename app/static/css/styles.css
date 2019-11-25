@@ -264,15 +264,35 @@
 
 /* 主页正文内容样式 */
 .media .index-text-style {
-    font-size: 15px;
+    font-size: 14px;
     text-align: left;
     line-height: 250%;
     padding: 0 50px;
-    text-indent: 32px;
+    /* text-indent: 32px; */
     font-family: "Times New Roman", Times, serif;
     /* font-weight: bold; */
 }
 
+/* 鼠标移到图片放大 */
+.media img {
+    transition: all 0.8s;
+}
+.media img {
+    transform: scale(1.05);
+}
+.media a img {
+    transition: all 0.8s;
+}
+.media a img:hover {
+    transform: scale(1.05);
+}
+
+/* H2标题样式 */
+.media .index-text-style h3 {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
 /* 解决方案文本过多，调整样式 */
 .media .solution-text-style {
     /* line-height: 200%; */
