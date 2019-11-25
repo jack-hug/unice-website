@@ -274,12 +274,6 @@
 }
 
 /* 鼠标移到图片放大 */
-.media img {
-    transition: all 0.8s;
-}
-.media img {
-    transform: scale(1.05);
-}
 .media a img {
     transition: all 0.8s;
 }
