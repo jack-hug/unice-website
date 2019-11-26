@@ -17,3 +17,9 @@ window.onscroll = function() {
         nav.style = ''
     }
 }
+
+// 点击时自动切换active
+$(document).ready(function() {
+    $('li.active').removeClass('active');
+    $('a[href="' + location.pathname + '"]').closest('li').addClass('active'); 
+  });
