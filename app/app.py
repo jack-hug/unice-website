@@ -7,7 +7,19 @@ bootstrap = Bootstrap(app)
 
 @app.route('/')
 def index():
-    return render_template('about-us.html')
+    return render_template('index.html')
+
+@app.route('/about_us')
+def about_us():
+    return render_template('about_us.html')
+
+@app.route('/contact_us')
+def contact_us():
+    return render_template('contact_us.html')
+
+@app.route('/recruitment')
+def recruitment():
+    return render_template('recruitment.html')
 
 if __name__ == "__main__":
     app.run(debug=True)
