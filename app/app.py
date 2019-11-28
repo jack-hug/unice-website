@@ -21,5 +21,15 @@ def contact_us():
 def recruitment():
     return render_template('recruitment.html')
 
+@app.route('/products')
+def products():
+    return render_template('products.html')
+
+@app.route('/ability')
+def ability():
+    return render_template('ability.html')
+
+
+
 if __name__ == "__main__":
     app.run(debug=True)
