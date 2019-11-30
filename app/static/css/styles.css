@@ -1,4 +1,4 @@
-/* 导航框设置 */
+/* 导航栏设置 */
 
 .container-fluid {
     padding-left: 0px;
@@ -31,6 +31,11 @@
     display: inline-block;
     margin: 0;
     position: relative;
+}
+
+/* active 样式 */
+.navbar-nav .active {
+    background-color: #FF4757;
 }
 
 
@@ -78,17 +83,6 @@
     transition-delay: 0.1s;
 }
 
-
-/* 点击后显示 */
-
-.navbar-nav .open>a,
-.navbar-nav .open>a:focus,
-.navbar-nav .open>a:hover {
-    border-color: white;
-    background-color: #FF4757;
-}
-
-
 /* 导航条菜单最右侧白边设置 */
 
 .last-navbar {
@@ -100,7 +94,6 @@
 
 .dropdown-menu {
     min-width: 150px;
-    background-color: #57606F;
     padding: 0;
 }
 
@@ -130,35 +123,19 @@
 }
 
 
-/* 点击时背景变色 */
-
-.dropdown-menu>li>a:focus,
-.navbar-nav>li>a:focus,
-.navbar-nav>li>.dropdown-toggle:focus {
-    background-color: #FF4757;
-}
-
-
 /* 下拉菜单滑过时自动弹出 */
 
 .dropdown:hover .dropdown-style {
+    border-left: 1px;
     display: block;
     margin-top: -1px;
-}
-
-
-/* 下拉菜单样式 */
-
-.dropdown-style {
     border-radius: 0;
-    left: -1px;
+
 }
 
 
-/* 下拉菜单隔行换色 */
 
-
-/* 奇数行  */
+/* 下拉菜单隔行换色 */ /* 奇数行  */
 
 .dropdown li:nth-of-type(odd) {
     background: #2f3542;
@@ -175,8 +152,8 @@
 /* 下拉菜单滑过时颜色 */
 
 .navbar-nav>li>a:hover {
-    color: #ffefef;
-    background-color: #2f3542;
+    color: #ced6e0;
+    background-color: #747d8c;
 }
 
 
@@ -190,7 +167,6 @@
     top: 0;
     left: 100%;
     margin-top: -6px;
-    margin-left: -1px;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
@@ -199,13 +175,15 @@
 
 /* 二级子菜单位置 */
 
-.dropdown-submenu>.dropdown-list-style {
-    margin-top: -1px;
-}
-
 .dropdown-submenu:hover>.dropdown-menu {
     display: block;
 }
+
+.dropdown-submenu>.dropdown-list-style {
+    margin-top: -1px;
+    border-left: 1px;
+}
+
 
 .dropdown-submenu>a:after {
     display: block;
@@ -237,6 +215,16 @@
     border-radius: 0;
 }
 
+/* 下拉菜单点击变色 */
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+    background-color: #57606F;
+    border-left: 2px solid white;
+}
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover, .nav>li>a:focus, .nav>li>a:hover {
+    color: white;
+    background-color: #57606F;
+}
 
 /* 页脚设置 */
 
@@ -375,7 +363,7 @@
 }
 
 
-/* H2标题样式 */
+/* H3标题样式 */
 
 .media .index-text-style h3 {
     text-align: center;
@@ -389,12 +377,115 @@
     /* line-height: 200%; */
 }
 
+/* 产品分类标题 */
+.product-title {
+    text-align: center;
+    font-size: 16px;
+    color: black;
+}
+
+/* 产品类别鼠标划过效果 */
+
+.hovereffect {
+    width: 100%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+  }
+  
+  .hovereffect .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+  }
+  
+  .hovereffect img {
+    display: block;
+    position: relative;
+    -webkit-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+  }
+  
+  .hovereffect:hover img {
+    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /><feGaussianBlur stdDeviation="3" /></filter></svg>#filter');
+    filter: grayscale(1) blur(3px);
+    -webkit-filter: grayscale(1) blur(3px);
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  
+  .hovereffect h2 {
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  
+  .hovereffect a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    border: 1px solid #fff;
+    margin: 50px 0 0 0;
+    background-color: transparent;
+  }
+  
+  .hovereffect a.info:hover {
+    box-shadow: 0 0 5px #fff;
+  }
+  
+  .hovereffect a.info, .hovereffect h2 {
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7);
+    -webkit-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    color: #fff;
+    text-transform: uppercase;
+  }
+  
+  .hovereffect:hover a.info, .hovereffect:hover h2 {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
+
+
+.row .col-md-4 .thumbnail a .products-style {
+    width: 85%;
+    height: 85%;
+    position: absolute;
+    left:0;
+    top:0;
+    color:black;
+    opacity: 0;
+}
+
+.row .col-md-4 .thumbnail a .products-style:hover {
+    background-color: #eccc68;
+    opacity: 0.8;
+    transition: opacity 0.8s;
+}
 
 /* 缩略图样式 */
 
-.row .col-md-4 .thumbnail .caption h4 {
+.row .col-md-4 .thumbnail .products-style h4 {
+    margin-top: 100px;
     text-align: center;
-    text-indent: 0px;
 }
 
 

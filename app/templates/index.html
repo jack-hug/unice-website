@@ -5,9 +5,48 @@
 {% block page_content %}
 {{ super() }}
 <div class="divider"></div>
+<div class="row index-text-style">
+    <div class="col-md-4">
+        <div class="product-title">
+            <h3>塑胶模具制造</h3>
+        </div>
+        <div class="hovereffect">
+            <img class="img-responsive center-block" src="static\img\1.png" alt="">
+            <div class="overlay">
+                <h2>塑胶模具制造</h2>
+                <a class="info" href="{{ url_for('products_Insert_Molding') }}">查看详情</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="product-title">
+            <h3>五金模具制造</h3>
+        </div>
+        <div class="hovereffect">
+            <img class="img-responsive center-block" src="static\img\6.png" alt="">
+            <div class="overlay">
+                <h2>五金模具制造</h2>
+                <a class="info" href="{{ url_for('Stamping_tool_1') }}">查看详情</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="product-title">
+            <h3>注塑生产</h3>
+        </div>
+        <div class="hovereffect">
+            <img class="img-responsive center-block" src="static\img\3-2 72px.jpg" alt="">
+            <div class="overlay">
+                <h2>注塑生产</h2>
+                <a class="info" href="{{ url_for('plastic') }}">查看详情</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="divider"></div>
 <div class="media">
     <div class="media-left media-middle">
-        <a href="#"><img src="static\img\about-us.jpg" alt="about us"></a>
+        <a href="{{ url_for('about_us') }}"><img src="static\img\about-us.png" alt="about us"></a>
     </div>
     <div class="media-body index-text-style">
         <h3>关于我们</h3>
@@ -15,7 +54,7 @@
         </p>
         <p>优耐思提供从简单到不可能的制造解决方案，并涉及广泛的行业，包括汽车行业、施工、电子产品、休闲娱乐、医疗类等。</p>
         <br />
-        <p><a class="btn btn-primary" href="#" role="button">了解更多</a></p>
+        <p><a class="btn btn-primary" href="{{ url_for('about_us') }}" role="button">了解更多</a></p>
     </div>
 </div>
 <div class="divider"></div>
@@ -26,16 +65,16 @@
         <p>与供应商的良好工作关系可确保指定最合适的材料，并始终提供技术支持。 YNC将制定旨在节省成本和简化成本的提案。优耐思拥有超过15年的塑料模具设计人员，在专业的模具设计和产品经验方面拥有丰富的模具开发和后期制作经验。
             为生产提供高质量的保障和服务。</p>
         <p>我们的设计工程师使用各种最新的3DCAD/CAM软件包，并且我们还进行了模流仿真，以帮助改善零件设计，工具布局和制造工艺。</p>
-        <p><a class="btn btn-primary" href="#" role="button">了解更多</a></p>
+        <p><a class="btn btn-primary" href="{{ url_for('ability_team') }}" role="button">了解更多</a></p>
     </div>
     <div class="media-right media-middle">
-        <a href="#"><img src="static\img\about-us.jpg" alt="solution"></a>
+        <a href="{{ url_for('ability_team') }}"><img src="static\img\design-Center.png" alt="solution"></a>
     </div>
 </div>
 <div class="divider"></div>
 <div class="media">
     <div class="media-left media-middle">
-        <a href="#"><img src="static\img\about-us.jpg" alt="team"></a>
+        <a href="{{ url_for('ability_quality') }}"><img src="static\img\solution.png" alt="team"></a>
     </div>
     <div class="media-body index-text-style solution-text-style">
         <h3>解决方案</h3>
@@ -45,84 +84,10 @@
         <p>这对我们和我们的大量工作一样重要。无论数量多少，我们都会为每个项目提供相同的高度关注和关注。</p>
         <p>2）中到大批量注塑成型：</p>
         <p>我们熟练的操作员使用各种尺寸的塑料注塑机来交付任何数量的高质量工程塑料部件。我们提供了许多工具增强功能和定制的自动化系统，以帮助加快刀片装载和零件提取的速度。</p>
-        <p><a class="btn btn-primary" href="#" role="button">了解更多</a></p>
+        <p><a class="btn btn-primary" href="{{ url_for('ability_quality') }}" role="button">了解更多</a></p>
 
     </div>
 </div>
 <div class="divider"></div>
-<div class="row index-text-style">
-    <div class="col-md-4">
-        <div class="thumbnail">
-            <img src="static\img\500x350.jpg" alt="">
-            <div class="caption">
-                <h4>插件塑胶制品</h4>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-4">
-        <div class="thumbnail">
-            <img src="static\img\500x350.jpg" alt="">
-            <div class="caption">
-                <h4>电子塑胶制品</h4>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-4">
-        <div class="thumbnail">
-            <img src="static\img\500x350.jpg" alt="">
-            <div class="caption">
-                <h4>硅胶制品</h4>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-4">
-        <div class="thumbnail">
-            <img src="static\img\500x350.jpg" alt="">
-            <div class="caption">
-                <h4>汽车塑胶制品</h4>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-4">
-        <div class="thumbnail">
-            <img src="static\img\500x350.jpg" alt="">
-            <div class="caption">
-                <h4>双色塑胶制品</h4>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-4">
-        <div class="thumbnail">
-            <img src="static\img\500x350.jpg" alt="">
-            <div class="caption">
-                <h4>压铸制品</h4>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-4">
-        <div class="thumbnail">
-            <img src="static\img\500x350.jpg" alt="">
-            <div class="caption">
-                <h4>弹片或屏蔽罩</h4>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-4">
-        <div class="thumbnail">
-            <img src="static\img\500x350.jpg" alt="">
-            <div class="caption">
-                <h4>拉伸或厚料五金产品</h4>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-4">
-        <div class="thumbnail">
-            <img src="static\img\500x350.jpg" alt="">
-            <div class="caption">
-                <h4>五金端子</h4>
-            </div>
-        </div>
-    </div>
-</div>
 
 {% endblock %}

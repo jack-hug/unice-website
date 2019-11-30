@@ -9,19 +9,16 @@
     <div class="row">
         <div class="col-md-3">
             <div class="list-group">
-                <!-- <a href="#" class="list-group-item active">
-                        产品大全
-                    </a> -->
-                <a href="#" class="list-group-item active">设计团队</a>
-                <a href="#" class="list-group-item">加工设备</a>
-                <a href="#" class="list-group-item">品质控制</a>
+                <a href="{{ url_for('ability_team') }}" class="list-group-item">设计团队</a>
+                <a href="{{ url_for('ability_equipment') }}" class="list-group-item">加工设备</a>
+                <a href="{{ url_for('ability_quality') }}" class="list-group-item active">品质控制</a>
             </div>
         </div>
         <div class="col-md-9">
             <ol class="breadcrumb">
                 <li><a href="#">首页</a></li>
                 <li><a href="#">我们的能力</a></li>
-                <li class="active">设计团队</li>
+                <li class="active">品质控制</li>
             </ol>
             <div class="row">
                 <div class="col-xs-6 col-md-8 col-md-offset-2">

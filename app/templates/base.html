@@ -10,34 +10,34 @@
     <ul class="nav navbar-nav navbar-style">
         <li class="active"><a href="/">主 页</a></li>
         <li><a href="{{ url_for('about_us') }}">关于我们</a></li>
-        <li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="flase">我们的产品 <span class="caret"></span></a>
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="flase">我们的产品 <span class="caret"></span></a>
             <ul class="dropdown-menu dropdown-style">
                 <li class="dropdown dropdown-submenu">
-                    <a href="#">塑胶模具制造</a>
+                    <a href="#" class="">塑胶模具制造</a>
                     <ul class="dropdown-menu dropdown-list-style">
-                        <li><a href="#">插件塑胶制品</a></li>
-                        <li><a href="#">电子塑胶制品</a></li>
-                        <li><a href="#">硅胶制品</a></li>
-                        <li><a href="#">汽车塑胶制品</a></li>
-                        <li><a href="#">双色塑胶制品</a></li>
-                        <li><a href="#">压铸制品</a></li>
+                        <li><a href="{{ url_for('products_Insert_Molding') }}">插件塑胶制品</a></li>
+                        <li><a href="{{ url_for('products_Electrical_Plastics_Molding') }}">电子塑胶制品</a></li>
+                        <li><a href="{{ url_for('products_Rubber') }}">硅胶制品</a></li>
+                        <li><a href="{{ url_for('products_Auto_Plastics_Part') }}">汽车塑胶制品</a></li>
+                        <li><a href="{{ url_for('products_2k_Molding') }}">双色塑胶制品</a></li>
+                        <li><a href="{{ url_for('products_Casting') }}">压铸制品</a></li>
                     </ul>
                 </li>
                 <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true">五金模具制造</a>
                     <ul class="dropdown-menu dropdown-list-style">
-                        <li><a href="#">弹片或屏蔽罩</a></li>
-                        <li><a href="#" id="longtext-style">拉伸或厚料五金产品</a></li>
-                        <li><a href="#">五金端子</a></li>
+                        <li><a href="{{ url_for('Stamping_tool_1') }}">弹片或屏蔽罩</a></li>
+                        <li><a href="{{ url_for('Stamping_tool_2') }}" id="longtext-style">拉伸或厚料五金产品</a></li>
+                        <li><a href="{{ url_for('Stamping_tool_3') }}">五金端子</a></li>
                     </ul>
                 </li>
-                <li><a href="#">注塑生产</a></li>
+                <li><a href="{{ url_for('plastic') }}">注塑生产</a></li>
             </ul>
         </li>
         <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="flase">我们的能力 <span class="caret"></span></a>
             <ul class="dropdown-menu dropdown-style">
-                <li><a href="#">设计团队</a></li>
-                <li><a href="#">五金加工设备</a></li>
-                <li><a href="#">品质控制</a></li>
+                <li><a href="{{ url_for('ability_team') }}">设计团队</a></li>
+                <li><a href="{{ url_for('ability_equipment') }}">五金加工设备</a></li>
+                <li><a href="{{ url_for('ability_quality') }}">品质控制</a></li>
             </ul>
             <li><a href="{{ url_for('contact_us')}}">联系我们</a></li>
             <li><a href="{{ url_for('recruitment')}}" class="last-navbar">人才招聘</a></li>
