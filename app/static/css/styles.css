@@ -33,11 +33,6 @@
     position: relative;
 }
 
-/* active 样式 */
-.navbar-nav .active {
-    background-color: #FF4757;
-}
-
 
 /* 导航条链接a设置 */
 
@@ -215,17 +210,26 @@
     border-radius: 0;
 }
 
+/* active 样式 */
+/* .nav .active {
+    background-color: #FF4757;
+} */
+
 /* 下拉菜单点击变色 */
 
 .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
-    background-color: #57606F;
+    background-color: #FF4757;
     border-left: 2px solid white;
 }
 .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover, .nav>li>a:focus, .nav>li>a:hover {
     color: white;
-    background-color: #57606F;
+    background-color: #FF4757;
 }
 
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {
+    color: white;
+    background-color: #FF4757;
+}
 /* 页脚设置 */
 
 .footer {
