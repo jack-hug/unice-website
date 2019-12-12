@@ -1,83 +1,32 @@
 {% extends "bootstrap/base.html" %}
- {% block title %}优耐思官网{% endblock %} {% block head %} {{ super() }}
+ {% block title %}unice-base Index{% endblock %} 
+ {% block head %} 
+ {{ super() }}
 <meta charset="UTF-8">
 <link rel="stylesheet" href="{{ url_for('static',filename = 'css/styles.css') }}" type="text/css">
-<link rel="stylesheet" href="{{ url_for('static',filename = 'css/bootstrap-submenu.min.css')}}" type="text/css">
-<script src="{{ url_for('static',filename = 'js/bootstrap-submenu.js')}}"></script>
 <script src="{{ url_for('static',filename = 'js/unice.js')}}"></script>
-{% endblock %} {% block navbar %}
-<img src="static/img/unice_logo.gif" alt="unice-banner" class="img-responsive center-block" alt="Responsive image">
+{% endblock %} 
+{% block navbar %}
 <div class="container-fluid" id="mynavbar">
-    <ul class="nav navbar-nav navbar-style">
-        <li class="active"><a href="{{ url_for('index') }}">主 页</a></li>
-        <li class=""><a href="{{ url_for('about_us') }}">关于我们</a></li>
-        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="flase">我们的产品 <span class="caret"></span></a>
-            <ul class="dropdown-menu dropdown-style">
-                <li class="dropdown dropdown-submenu">
-                    <a href="#" class="">塑胶模具制造</a>
-                    <ul class="dropdown-menu dropdown-list-style">
-                        <li><a href="{{ url_for('products_Insert_Molding') }}">插件塑胶制品</a></li>
-                        <li><a href="{{ url_for('products_Electrical_Plastics_Molding') }}">电子塑胶制品</a></li>
-                        <li><a href="{{ url_for('products_Rubber') }}">硅胶制品</a></li>
-                        <li><a href="{{ url_for('products_Auto_Plastics_Part') }}">汽车塑胶制品</a></li>
-                        <li><a href="{{ url_for('products_2k_Molding') }}">双色塑胶制品</a></li>
-                        <li><a href="{{ url_for('products_Casting') }}">压铸制品</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true">五金模具制造</a>
-                    <ul class="dropdown-menu dropdown-list-style">
-                        <li><a href="{{ url_for('Stamping_tool_1') }}">弹片或屏蔽罩</a></li>
-                        <li><a href="{{ url_for('Stamping_tool_2') }}" id="longtext-style">拉伸或厚料五金产品</a></li>
-                        <li><a href="{{ url_for('Stamping_tool_3') }}">五金端子</a></li>
-                    </ul>
-                </li>
-                <li><a href="{{ url_for('plastic') }}">注塑生产</a></li>
-            </ul>
-        </li>
-        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="flase">我们的能力 <span class="caret"></span></a>
-            <ul class="dropdown-menu dropdown-style">
-                <li><a href="{{ url_for('ability_team') }}">设计团队</a></li>
-                <li><a href="{{ url_for('ability_equipment') }}">五金加工设备</a></li>
-                <li><a href="{{ url_for('ability_quality') }}">品质控制</a></li>
-            </ul>
-            <li><a href="{{ url_for('contact_us')}}">联系我们</a></li>
-            <li><a href="{{ url_for('recruitment')}}" class="last-navbar">人才招聘</a></li>
-    </ul>
-</div>
-
-<!-- 导航banner -->
-<div class="" id="myCarousel">
-    <div id="carousel-generic" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#carousel-generic" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-generic" data-slide-to="1"></li>
-            <li data-target="#carousel-generic" data-slide-to="2"></li>
-        </ol>
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                <img src="#" alt="" style="background-image: url('/static/img/testimg05.jpg');">
-            </div>
-            <div class="item">
-                <img src="#" alt="" style="background-image: url('/static/img/testimg02.jpg');">
-            </div>
-            <div class="item">
-                <img src="#" alt="" style="background-image: url('/static/img/testimg03.jpg');">
-            </div>
+    <div class="row row-height">
+        <div class="col-md-3 col-md-offset-2 header-logo">
+            <img src="{{ url_for('static',filename = 'img/unice-logo.png') }}" alt="">
         </div>
-
-        <!-- Controls -->
-        <a class="left carousel-control" href="#carousel-generic" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#carousel-generic" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
+        <div class="col-md-7 right-navbar">
+            <ul class="nav navbar-nav navbar-style">
+                <li class="active"><a href="{{ url_for('index') }}">主 页</a></li>
+                <li class=""><a href="">我们的服务</a></li>
+                <li class=""><a href="">品质控制</a></li>
+                <li class=""><a href="">关于我们</a></li>
+                <li class=""><a href="">我们的产品</a></li>
+                <li class=""><a href="">联系我们</a></li>
+                <li><a href="" class="language-switch">CN</a></li>
+                <li class="navbar-line-style">|</li>
+                <li><a href="" class="language-switch">EN</a></li>
+            </ul>
+        </div>
     </div>
+    <div class="navbar-bottom-color"></div>
 </div>
 {% endblock %} {% block content %}
 <div class="container">
@@ -87,45 +36,7 @@
 
 <!-- footer设置：需要在flask-bootstrap/base.html 基础文件里面添加  block footer  -->
 {% block footer %}
-<div class="container footer" id="footer">
-    <div class="row inner-text footer-row-style">
-        <div class="col-md-6 col-md-offset-3">
-            <div class="row footer-row-style">
-                <div class="col-md-3 link-ohter">
-                    <p class="text-margin"><a href="#" class="product-link">插件塑胶制品</a></p>
-                    <p class="text-margin"><a href="" class="product-link">电子塑胶制品</a></p>
-                    <p class="text-margin"><a href="" class="product-link">硅胶制品</a></p>
-                    <p class="text-margin"><a href="" class="product-link">汽车塑胶制品</a></p>
-                    <p class="text-margin"><a href="" class="product-link">双色塑胶制品</a></p>
-                    <p class="text-margin"><a href="" class="product-link">压铸制品</a></p>
-                    <p class="text-margin"><a href="" class="product-link">弹片或屏蔽罩</a></p>
-                    <p class="text-margin"><a href="" class="product-link">拉伸或厚料五金产品</a></p>
-                    <p class="text-margin"><a href="" class="product-link">五金端子</a></p>
-                </div>
-                <div class="col-md-3 link-ohter top-padding-1">
-                    <p><a href="">我们的能力</a></p>
-                    <p><a href="">关于我们</a></p>
-                    <p><a href="">人才招聘</a></p>
-                </div>
 
-                <div class="col-md-3 link-ohter  top-padding-2">
-                    <p>地址：深圳市南山区粤海街道麻岭社区科技中一路19号赛百诺CMP厂房B栋406-04C</p>
-                    <p>电话：010-0000000</p>
-                    <p>邮编：530000</p>
-                    <p>邮箱：nice@163.com</p>
-                </div>
-                <div class="col-md-3 link-ohter last-line top-padding-3">
-                    <p><img src="static\img\icon\wechat.gif" alt="wechat"></p>
-                    <a href=""> <img src="static\img\icon\skype.png" alt="skype" style="width: 40px;height:40px"></a>
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="bottom-footer">
-        <span class="bottom-text">Copyright 2019-2025 优耐思实业（深圳）有限公司 版权所有</span>
-    </div>
-</div>
 {% block scripts %}
 {{ super() }}
     <script>
