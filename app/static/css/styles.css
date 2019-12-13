@@ -45,3 +45,51 @@
     height: 3px;
     background-color: #82CCDD;
 }
+
+/* 页脚样式 */
+.footer-links {
+    background-color: #3C6382;
+    border-bottom: 1px solid #797979;
+}
+.footer-sitemap {
+    width: 160px;
+    padding-top: 30px;
+    height: 300px;
+    color: #fff;
+    text-align: center;
+}
+.footer-sitemap .title {
+    color: #fff;
+    font-size: 15px;
+}
+.line-right {
+    border-right: 1px solid #d4d4d4;
+}
+.footer-sitemap a {
+    display:block;
+    line-height: 14px;
+    color: #d4d4d4;
+    text-decoration:none!important;
+}
+.footer-sitemap a:hover {
+    color: #fff;
+}
+.mb15 {
+    margin-bottom: 15px;
+}
+.mb10 {
+    margin-bottom: 10px;
+}
+.footer-bottom {
+    background-color: #0A3D62;
+    padding: 15px 30px 0;
+    height: 50px;
+}
+.bottom-text {
+    color: gray;
+}
+.clearfix {
+    display:block;
+    clear: both;
+}
+

@@ -1,18 +1,18 @@
 {% extends "bootstrap/base.html" %}
- {% block title %}unice-base Index{% endblock %} 
- {% block head %} 
- {{ super() }}
+{% block title %}unice-base Index{% endblock %}
+{% block head %}
+{{ super() }}
 <meta charset="UTF-8">
 <link rel="stylesheet" href="{{ url_for('static',filename = 'css/styles.css') }}" type="text/css">
 <script src="{{ url_for('static',filename = 'js/unice.js')}}"></script>
-{% endblock %} 
+{% endblock %}
 {% block navbar %}
-<div class="container-fluid" id="mynavbar">
+<div class="container-fluid navbar-fixed-top" id="mynavbar">
     <div class="row row-height">
         <div class="col-md-3 col-md-offset-2 header-logo">
             <img src="{{ url_for('static',filename = 'img/unice-logo.png') }}" alt="">
         </div>
-        <div class="col-md-7 right-navbar">
+        <div class="col-md-7 navbar-right">
             <ul class="nav navbar-nav navbar-style">
                 <li class="active"><a href="{{ url_for('index') }}">主 页</a></li>
                 <li class=""><a href="">我们的服务</a></li>
@@ -28,27 +28,103 @@
     </div>
     <div class="navbar-bottom-color"></div>
 </div>
-{% endblock %} {% block content %}
+{% endblock %} 
+{% block content %}
 <div class="container">
-    {% block page_content %}{% endblock %}
+    {% block page_content %}
+    <div>DDDDDDDD</div>
+    <div>DDDDDDDD</div>
+    <div>DDDDDDDD</div>
+    <div>DDDDDDDD</div>
+    <div>DDDDDDDD</div>
+    <div>DDDDDDDD</div>
+    <div>DDDDDDDD</div>
+    <div>DDDDDDDD</div>
+    <div>DDDDDDDD</div>
+    <div>DDDDDDDD</div>
+    {% endblock %}
 </div>
 {% endblock %}
 
 <!-- footer设置：需要在flask-bootstrap/base.html 基础文件里面添加  block footer  -->
 {% block footer %}
+<div class="footer">
+    <div class="footer-links">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="line-right text-center footer-sitemap b first">
+                        <div class="text-left">
+                            <a href="" class="title mb15">我们的产品</a>
+                            <a href="" class="mb10">插件塑胶制品</a>
+                            <a href="" class="mb10">电子塑胶制品</a>
+                            <a href="" class="mb10">硅胶制品</a>
+                            <a href="" class="mb10">汽车塑胶制品</a>
+                            <a href="" class="mb10">双色塑胶制品</a>
+                            <a href="" class="mb10">压铸制品</a>
+                            <a href="" class="mb10">弹片或屏蔽罩</a>
+                            <a href="" class="mb10">拉伸或厚料五金产品</a>
+                            <a href="" class="mb10">五金端子</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="line-right text-center footer-sitemap b first">
+                        <div class="text-left">
+                            <a href="" class="title mb15">我们的产品</a>
+                            <a href="" class="mb10">插件塑胶制品</a>
+                            <a href="" class="mb10">电子塑胶制品</a>
+                            <a href="" class="mb10">硅胶制品</a>
+                            <a href="" class="mb10">汽车塑胶制品</a>
+                            <a href="" class="mb10">双色塑胶制品</a>
+                            <a href="" class="mb10">压铸制品</a>
+                            <a href="" class="mb10">弹片或屏蔽罩</a>
+                            <a href="" class="mb10">拉伸或厚料五金产品</a>
+                            <a href="" class="mb10">五金端子</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="line-right text-center footer-sitemap b first">
+                        <div class="text-left">
+                            <a href="" class="title mb15">我们的产品</a>
+                            <a href="" class="mb10">插件塑胶制品</a>
+                            <a href="" class="mb10">电子塑胶制品</a>
+                            <a href="" class="mb10">硅胶制品</a>
+                            <a href="" class="mb10">汽车塑胶制品</a>
+                            <a href="" class="mb10">双色塑胶制品</a>
+                            <a href="" class="mb10">压铸制品</a>
+                            <a href="" class="mb10">弹片或屏蔽罩</a>
+                            <a href="" class="mb10">拉伸或厚料五金产品</a>
+                            <a href="" class="mb10">五金端子</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="footer-bottom">
+            <div class="clearfix">
+                <p class="bottom-text text-center">
+                    Copyright©2014-2019 unice.com All rights reserved.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+</footer>
+<!-- Footer -->
 {% block scripts %}
 {{ super() }}
-    <script>
-        $(document).ready(function () {
-            $(".nav a").on("click", function () {
-                $(".nav").find(".active").removeClass("active");
-                $(this).parent().addClass("active");
-            });
-        });    
-    </script>
+<script>
+    $(document).ready(function () {
+        $(".nav a").on("click", function () {
+            $(".nav").find(".active").removeClass("active");
+            $(this).parent().addClass("active");
+        });
+    });    
+</script>
 {% endblock scripts %}
 {% endblock %}
-
-
- 
