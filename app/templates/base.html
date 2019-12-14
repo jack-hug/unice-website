@@ -1,4 +1,5 @@
 {% extends "bootstrap/base.html" %}
+
 {% block title %}unice-base Index{% endblock %}
 {% block head %}
 {{ super() }}
@@ -6,6 +7,8 @@
 <link rel="stylesheet" href="{{ url_for('static',filename = 'css/styles.css') }}" type="text/css">
 <script src="{{ url_for('static',filename = 'js/unice.js')}}"></script>
 {% endblock %}
+
+
 {% block navbar %}
 <div class="container-fluid navbar-fixed-top" id="mynavbar">
     <div class="row row-height">
@@ -30,15 +33,11 @@
 </div>
 {% endblock %}
 {% block content %}
-<div class="container">
-    {% block page_content %}
-    {% endblock %}
-</div>
 {% endblock %}
 
 <!-- footer设置：需要在flask-bootstrap/base.html 基础文件里面添加  block footer  -->
 {% block footer %}
-<footer id="footer" class="footer-1">
+<footer id="footer" class="footer-1 index_padding">
     <div class="main-footer widgets-dark typo-light">
         <div class="container">
             <div class="row">
