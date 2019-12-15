@@ -1,3 +1,7 @@
+/* body字体 */
+body {  font-family: Arial, Verdana, "Helvetica Neue", Helvetica, sans-serif;
+}
+
 /* 导航条背景色 */
 #mynavbar {
   background-color: #3c6382;
@@ -17,7 +21,7 @@
   background-color: white;
 }
 /* 导航栏文字垂直居中 */
-.navbar-nav > li > a {
+.row-height .navbar-nav > li > a {
   line-height: 100px;
   padding-top: 0;
   padding-bottom: 0;
@@ -26,16 +30,16 @@
   font-weight: bold;
 }
 /* 鼠标划过导航字体颜色 */
-.navbar-nav > li > a:hover {
+.row-height .navbar-nav > li > a:hover {
   color: #6a89cc;
   background-color: white;
 }
 /* 语言切换样式 */
-.navbar-nav > li > .language-switch {
+.row-height .navbar-nav > li > .language-switch {
   color: #3c6382;
   font-weight: normal;
 }
-.navbar-nav > li > .language-switch:hover {
+.row-height .navbar-nav > li > .language-switch:hover {
   color: #6a89cc;
 }
 
@@ -57,6 +61,7 @@
   max-width: 100%;
   line-height: 1;
   width: 100%;
+  min-height: 400px;
 }
 /* 页脚样式 */
 /*==================== 
@@ -83,6 +88,15 @@ footer ul {
 }
 .pd-left {
   margin-left: 15px;
+}
+.pr20 {
+    padding-right: 20px;
+}
+.pl20 {
+    padding-left: 20px;
+}
+.pt20 {
+    padding-top: 20px;
 }
 /* Copy Right Footer */
 .footer-copyright {
@@ -278,7 +292,12 @@ ul.social-footer2 li a {
 }
 /* 上下container之间的填充 */
 .index_padding {
-  padding-top: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.first-padding {
+    padding-top: 50px;
 }
 
 /* 首页标题样式 */
@@ -292,6 +311,12 @@ ul.social-footer2 li a {
   line-height: 28px;
   color: #3c6382;
 }
+
+/* h3title颜色 */
+.title-color {
+    color: #3c6382;
+}
+
 /* 首页文本样式 */
 .text-style {
   margin: 0;
@@ -315,7 +340,7 @@ ul.social-footer2 li a {
   height: 36px;
   line-height: 36px;
   display: block;
-  border: 2px solid #3c6382;
+  border: 2px solid #4a69bd;
   color: #3c6382;
   text-align: center;
   transition: all 0.6s;
@@ -338,7 +363,7 @@ ul.social-footer2 li a {
   height: 36px;
   line-height: 36px;
   display: block;
-  border: 2px solid #3c6382;
+  border: 2px solid #4a69bd;
   text-align: center;
   outline: 0;
   text-decoration: none;
@@ -355,11 +380,11 @@ ul.social-footer2 li a {
 .hovereffect {
   width: 100%;
   height: 100%;
-  float: left;
   overflow: hidden;
   position: relative;
   text-align: center;
   cursor: default;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
 }
 
 .hovereffect .overlay {
@@ -430,8 +455,70 @@ ul.social-footer2 li a {
   -ms-transform: scale(1);
   transform: scale(1);
 }
-.product-title {
+
+/* 主页正文内容样式 */
+.media .index-text-style {
+    font-size: 14px;
+    text-align: left;
+    line-height: 250%;
+    padding: 0 50px;
+    font-family: Arial, Verdana, "Helvetica Neue", Helvetica, sans-serif;
+}
+/* 鼠标移到图片放大 */
+.media a img {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.8s;
+    margin-bottom: 15px;
+}
+
+.media a img:hover {
+    transform: scale(1.05);
+}
+
+/* 图文按钮位置 */
+.btn-margin {
+    margin-left: initial;
+}
+.btn-margin:hover {
+    margin-left: initial;
+}
+/* 栏目之间的距离 */
+.container-margin {
+    margin-bottom: 50px;
+}
+
+/* 次级导航栏样式 */
+.second-navbar-style {
+    margin-top: 108px;
+    background-color: #3c6382;
+}
+.bg-color-style {
+    background-color: #fff;
+}
+.second-navbar-style .bg-style {
+    background-color: #82ccdd15;
+}
+.second-navbar-style .container .row  {
+    height: 85px;
+    color: #fff;
+    padding: 0px 45px 0px 50px;
+}
+.second-navbar-style .navbar-nav > li {
+    height: 85px;
+    width: 120px;
+}
+.second-navbar-style .navbar-nav > li > a {
+    color: #fff;
     text-align: center;
-    font-size: 16px;
-    color: black;
+    height: 85px;
+    line-height: 55px;
+}
+.second-navbar-style .navbar-nav > li > a:hover {
+    background-color: #60a3bc;
+}
+.second-navbar-style .navbar-nav > .active {
+    background-color: #60a3bc;
+}
+.second-navbar-text-style {
+    padding-top: 16px;
 }

@@ -18,7 +18,7 @@
         <div class="col-md-7 navbar-right">
             <ul class="nav navbar-nav navbar-style">
                 <li class="active"><a href="{{ url_for('index') }}">主 页</a></li>
-                <li class=""><a href="">我们的服务</a></li>
+                <li class=""><a href="{{ url_for('mold_making') }}">我们的服务</a></li>
                 <li class=""><a href="">品质控制</a></li>
                 <li class=""><a href="">关于我们</a></li>
                 <li class=""><a href="">我们的产品</a></li>
@@ -37,7 +37,7 @@
 
 <!-- footer设置：需要在flask-bootstrap/base.html 基础文件里面添加  block footer  -->
 {% block footer %}
-<footer id="footer" class="footer-1 index_padding">
+<footer id="footer" class="footer-1">
     <div class="main-footer widgets-dark typo-light">
         <div class="container">
             <div class="row">

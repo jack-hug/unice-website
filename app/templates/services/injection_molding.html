@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}unice-模具制造{% endblock %}
+{% block content %}
+<div class="container-fluid navbar-fixed-top second-navbar-style" id="second-navbar">
+    <div class="row">
+        <div class="col-md-3 col-md-offset-2 header-logo">
+            <img src="{{ url_for('static',filename = 'img/unice-logo.png') }}" alt="">
+        </div>
+        <div class="col-md-7 navbar-right">
+            <ul class="nav navbar-nav navbar-style">
+                <li class="active"><a href="{{ url_for('index') }}">主 页</a></li>
+                <li class=""><a href="">我们的服务</a></li>
+                <li class=""><a href="">品质控制</a></li>
+                <li class=""><a href="">关于我们</a></li>
+                <li class=""><a href="">我们的产品</a></li>
+                <li class=""><a href="">联系我们</a></li>
+                <li><a href="" class="language-switch">CN</a></li>
+                <li class="navbar-line-style">|</li>
+                <li><a href="" class="language-switch">EN</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="navbar-bottom-color"></div>
+</div>
+{% endblock %}

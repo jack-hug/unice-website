@@ -10,6 +10,10 @@ bootstrap = Bootstrap(app)
 def index():
     return render_template('index.html')
 
+@app.route('/mold_making')
+def mold_making():
+    return render_template('services/mold_making.html')
+
 @app.route('/about_us')
 def about_us():
     return render_template('about_us.html')
