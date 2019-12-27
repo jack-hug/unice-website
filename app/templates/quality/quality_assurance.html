@@ -7,17 +7,14 @@
         <div class="row center-block">
             <div class="col-md-3">
                 <div class="second-navbar-text-style">
-                    <p><i class="mega-menu-title_icon glyphicon glyphicon-menu-left"></i>模具制造</p>
+                    <p><i class="mega-menu-title_icon glyphicon glyphicon-menu-left"></i>质量保证</p>
                     <p>热情服务，追求卓越</p>
                 </div>
             </div>
             <div class="col-md-9">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="">模具制造</a></li>
-                    <li class=""><a href="">我们的优势</a></li>
-                    <li class=""><a href="">项目管理</a></li>
-                    <li class=""><a href="">工程设计</a></li>
-                    <li class=""><a href="">注塑生产</a></li>
+                    <li class="active"><a href="{{ url_for('process_flowchart') }}">流程处理</a></li>
+                    <li class=""><a href="{{ url_for('quality_assurance') }}">质量保证</a></li>
                 </ul>
             </div>
         </div>
@@ -25,62 +22,10 @@
     <div class="container-fluid bg-color-style">
         <div class="bg-style clear index-third container-margin">
             <div class="container index_padding clear">
-                <div class="media">
-                    <div class="media-left media-middle pl20 pt20">
-                        <a href="{{ url_for('about_us') }}"><img src="static\img\1.png" alt="about us"
-                                class="img-rounded"></a>
-                    </div>
-                    <div class="media-body index-text-style">
-                        <h3 class="title-color">＋塑胶模具制造</h3>
-                        <ul>
-                            <li class="title-color text-bold">插件塑胶制品</li>
-                            <li class="title-color text-bold">电子塑胶制品</li>
-                            <li class="title-color text-bold">硅胶制品</li>
-                            <li class="title-color text-bold">汽车塑胶制品</li>
-                            <li class="title-color text-bold">双色塑胶制品</li>
-                            <li class="title-color text-bold">压铸制品</li>
-                        </ul>
-                        <p><a href="" class="btn-style btn-margin">&gt; 了解更多</a></p>
-                    </div>
-                </div>
+                <div><h3>质量保证</h3></div>
             </div>
         </div>
-        <div class="bg-style clear index-third container-margin">
-            <div class="container index_padding clear">
-                <div class="media index_padding">
-                    <div class="media-body index-text-style">
-                        <h3 class="title-color">＋五金模具制造</h3>
-                        <ul>
-                            <li class="title-color text-bold">弹片或屏蔽罩</li>
-                            <li class="title-color text-bold">拉伸或厚料五金产品</li>
-                            <li class="title-color text-bold">五金端子</li>
-                        </ul>
-                        <p><a href="" class="btn-style btn-margin">&gt; 了解更多</a></p>
-                    </div>
-                    <div class="media-right media-middle pr20">
-                        <a href="{{ url_for('about_us') }}"><img src="static\img\6.png" alt="about us"
-                                class="img-rounded"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="bg-style clear index-third container-margin">
-            <div class="container index_padding clear">
-                <div class="media index_padding">
-                    <div class="media-left media-middle pl20">
-                        <a href="{{ url_for('about_us') }}"><img src="static\img\2.jpg" alt="about us"
-                                class="img-rounded"></a>
-                    </div>
-                    <div class="media-body index-text-style">
-                        <h3 class="title-color">＋注塑生产</h3>
-                        <ul>
-                            <p class="title-color text-bold">内容简介</p>
-                        </ul>
-                        <p><a href="" class="btn-style btn-margin">&gt; 了解更多</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
+
     </div>
 </div>
 {% endblock %}

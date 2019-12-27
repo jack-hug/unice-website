@@ -2,25 +2,32 @@
 
 {% block title %}unice-模具制造{% endblock %}
 {% block content %}
-<div class="container-fluid navbar-fixed-top second-navbar-style" id="second-navbar">
-    <div class="row">
-        <div class="col-md-3 col-md-offset-2 header-logo">
-            <img src="{{ url_for('static',filename = 'img/unice-logo.png') }}" alt="">
-        </div>
-        <div class="col-md-7 navbar-right">
-            <ul class="nav navbar-nav navbar-style">
-                <li class="active"><a href="{{ url_for('index') }}">主 页</a></li>
-                <li class=""><a href="">我们的服务</a></li>
-                <li class=""><a href="">品质控制</a></li>
-                <li class=""><a href="">关于我们</a></li>
-                <li class=""><a href="">我们的产品</a></li>
-                <li class=""><a href="">联系我们</a></li>
-                <li><a href="" class="language-switch">CN</a></li>
-                <li class="navbar-line-style">|</li>
-                <li><a href="" class="language-switch">EN</a></li>
-            </ul>
+<div class="container-fluid second-navbar-style" id="second-navbar">
+    <div class="container">
+        <div class="row center-block">
+            <div class="col-md-3">
+                <div class="second-navbar-text-style">
+                    <p><i class="mega-menu-title_icon glyphicon glyphicon-menu-left"></i>工程设计</p>
+                    <p>热情服务，追求卓越</p>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class=""><a href="{{ url_for('mold_making') }}">模具制造</a></li>
+                    <li class=""><a href="{{ url_for('advantages') }}">我们的优势</a></li>
+                    <li class=""><a href="{{ url_for('Project_management') }}">项目管理</a></li>
+                    <li class="active"><a href="{{ url_for('design_engineering') }}">工程设计</a></li>
+                    <li class=""><a href="{{ url_for('injection_molding') }}">注塑生产</a></li>
+                </ul>
+            </div>
         </div>
     </div>
-    <div class="navbar-bottom-color"></div>
+    <div class="container-fluid bg-color-style">
+        <div class="bg-style clear index-third container-margin">
+            <div class="container index_padding clear">
+                <div><h3>工程设计</h3></div>
+            </div>
+        </div>
+    </div>
 </div>
 {% endblock %}
