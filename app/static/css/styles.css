@@ -527,3 +527,8 @@ ul.social-footer2 li a {
 .contact-text-style {
   color: black;
 }
+/* 图片尺寸 */
+.media img {
+  width: 535px;
+  height: 330px;
+}
