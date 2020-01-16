@@ -28,3 +28,8 @@ def logout():
     logout_user()
     flash('你已经退出登录...')
     return redirect(url_for('main.index'))
+
+@auth.route('/index')
+@login_required
+def index():
+    return render_template('auth/index.html')

@@ -1,5 +1,6 @@
 {% extends "bootstrap/base.html" %}
 
+
 {% block title %}unice-base Index{% endblock %}
 {% block head %}
 {{ super() }}
@@ -10,6 +11,13 @@
 
 
 {% block navbar %}
+
+{% for message in get_flashed_messages() %}
+<div class="alert alert-warning" style="z-index: 99;">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    {{ message }}
+</div>
+{% endfor %}
 <div class="container-fluid navbar-fixed-top" id="mynavbar">
     <div class="row row-height">
         <div class="col-md-3 col-md-offset-2 header-logo">
@@ -58,19 +66,23 @@
                                 <div class="thumb-content mb15"><a href="{{ url_for('main.index') }}">主 页</a></div>
                             </li>
                             <li>
-                                <div class="thumb-content mb15"><a href="{{ url_for('main.mold_making') }}">我们的服务</a></div>
+                                <div class="thumb-content mb15"><a href="{{ url_for('main.mold_making') }}">我们的服务</a>
+                                </div>
                             </li>
                             <li>
-                                <div class="thumb-content mb15"><a href="{{ url_for('main.quality_assurance') }}">品质控制</a></div>
+                                <div class="thumb-content mb15"><a
+                                        href="{{ url_for('main.quality_assurance') }}">品质控制</a></div>
                             </li>
                             <li>
                                 <div class="thumb-content mb15"><a href="{{ url_for('main.about_us') }}">关于我们</a></div>
                             </li>
                             <li>
-                                <div class="thumb-content mb15"><a href="{{ url_for('main.Insert_Molding') }}">我们的产品</a></div>
+                                <div class="thumb-content mb15"><a href="{{ url_for('main.Insert_Molding') }}">我们的产品</a>
+                                </div>
                             </li>
                             <li>
-                                <div class="thumb-content mb15"><a href="{{ url_for('main.contact_us') }}">联系我们</a></div>
+                                <div class="thumb-content mb15"><a href="{{ url_for('main.contact_us') }}">联系我们</a>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -81,31 +93,38 @@
                         <h5 class="widget-title">产品大全<span></span></h5>
                         <ul class="thumbnail-widget">
                             <li>
-                                <div class="thumb-content mb10"><a href="{{ url_for('main.Insert_Molding') }}">插件塑胶制品</a></div>
+                                <div class="thumb-content mb10"><a
+                                        href="{{ url_for('main.Insert_Molding') }}">插件塑胶制品</a></div>
                             </li>
                             <li>
-                                <div class="thumb-content mb10"><a href="{{ url_for('main.Electrical_Plastics_Molding') }}">电子塑胶制品</a></div>
+                                <div class="thumb-content mb10"><a
+                                        href="{{ url_for('main.Electrical_Plastics_Molding') }}">电子塑胶制品</a></div>
                             </li>
                             <li>
                                 <div class="thumb-content mb10"><a href="{{ url_for('main.Rubber') }}">硅胶制品</a></div>
                             </li>
                             <li>
-                                <div class="thumb-content mb10"><a href="{{ url_for('main.Auto_Plastics_Part') }}">汽车塑胶制品</a></div>
+                                <div class="thumb-content mb10"><a
+                                        href="{{ url_for('main.Auto_Plastics_Part') }}">汽车塑胶制品</a></div>
                             </li>
                             <li>
-                                <div class="thumb-content mb10"><a href="{{ url_for('main.twok_Molding') }}">双色塑胶制品</a></div>
+                                <div class="thumb-content mb10"><a href="{{ url_for('main.twok_Molding') }}">双色塑胶制品</a>
+                                </div>
                             </li>
                             <li>
                                 <div class="thumb-content mb10"><a href="{{ url_for('main.Casting') }}">压铸制品</a></div>
                             </li>
                             <li>
-                                <div class="thumb-content mb10"><a href="{{ url_for('main.Stamping_tool_1') }}">弹片或屏蔽罩</a></div>
+                                <div class="thumb-content mb10"><a
+                                        href="{{ url_for('main.Stamping_tool_1') }}">弹片或屏蔽罩</a></div>
                             </li>
                             <li>
-                                <div class="thumb-content mb10"><a href="{{ url_for('main.Stamping_tool_2') }}">拉伸或厚料五金产品</a></div>
+                                <div class="thumb-content mb10"><a
+                                        href="{{ url_for('main.Stamping_tool_2') }}">拉伸或厚料五金产品</a></div>
                             </li>
                             <li>
-                                <div class="thumb-content mb10"><a href="{{ url_for('main.Stamping_tool_3') }}">五金端子</a></div>
+                                <div class="thumb-content mb10"><a href="{{ url_for('main.Stamping_tool_3') }}">五金端子</a>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -118,32 +137,38 @@
                         <p class="footer-text-color">地址：深圳市南山区粤海街道麻岭社区科技中一路19号赛百诺CMP厂房B栋406-04C</p>
                         <p class="footer-text-color">电话：010-1111111</p>
                         <p class="footer-text-color">邮编：530000</p>
-                        <p class="footer-text-color"><span>邮箱：</span><a href="mailto:info@domain.com" title="glorythemes">info@domain.com</a></p>
+                        <p class="footer-text-color"><span>邮箱：</span><a href="mailto:info@domain.com"
+                                title="glorythemes">info@domain.com</a></p>
                         <ul class="social-footer2">
                             <li class="">
                                 <a title="youtube" target="_blank" href="#">
-                                    <img alt="youtube" width="30" height="30" src="{{ url_for('static',filename = 'img/icon/youtube.png') }}">
+                                    <img alt="youtube" width="30" height="30"
+                                        src="{{ url_for('static',filename = 'img/icon/youtube.png') }}">
                                 </a>
                             </li>
                             <li class="">
                                 <a href="#" target="_blank" title="Facebook">
-                                    <img alt="Facebook" width="30" height="30" src="{{ url_for('static',filename = 'img/icon/facebook.png') }}">
+                                    <img alt="Facebook" width="30" height="30"
+                                        src="{{ url_for('static',filename = 'img/icon/facebook.png') }}">
                                 </a>
                             </li>
                             <li class="">
                                 <a href="#" target="_blank" title="Twitter">
-                                    <img alt="Twitter" width="30" height="30" src="{{ url_for('static',filename = 'img/icon/twitter.png') }}">
+                                    <img alt="Twitter" width="30" height="30"
+                                        src="{{ url_for('static',filename = 'img/icon/twitter.png') }}">
                                 </a>
                             </li>
                             <li class="">
-                                    <a href="#" target="_blank" title="skype">
-                                        <img alt="skype" width="20" height="20" src="{{ url_for('static',filename = 'img/icon/skype3.png') }}">
-                                    </a>
-                                </li>
+                                <a href="#" target="_blank" title="skype">
+                                    <img alt="skype" width="20" height="20"
+                                        src="{{ url_for('static',filename = 'img/icon/skype3.png') }}">
+                                </a>
+                            </li>
                         </ul>
                         <p class="mt15 pd-left">
                             <a title="wechat" target="_blank">
-                                <img alt="instagram" width="85" height="85" src="{{ url_for('static',filename = 'img/icon/wechat.gif') }}">
+                                <img alt="instagram" width="85" height="85"
+                                    src="{{ url_for('static',filename = 'img/icon/wechat.gif') }}">
                             </a>
                         </p>
                     </div>
