@@ -532,3 +532,9 @@ ul.social-footer2 li a {
   width: 535px;
   height: 330px;
 }
+
+/* 错误页面 */
+
+.error-text-style {
+  margin:130px auto;
+}

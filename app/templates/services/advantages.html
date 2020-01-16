@@ -13,11 +13,11 @@
             </div>
             <div class="col-md-9">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class=""><a href="{{ url_for('mold_making') }}">模具制造</a></li>
-                    <li class="active"><a href="{{ url_for('advantages') }}">我们的优势</a></li>
-                    <li class=""><a href="{{ url_for('Project_management') }}">项目管理</a></li>
-                    <li class=""><a href="{{ url_for('design_engineering') }}">工程设计</a></li>
-                    <li class=""><a href="{{ url_for('injection_molding') }}">注塑生产</a></li>
+                    <li class=""><a href="{{ url_for('main.mold_making') }}">模具制造</a></li>
+                    <li class="active"><a href="{{ url_for('main.advantages') }}">我们的优势</a></li>
+                    <li class=""><a href="{{ url_for('main.Project_management') }}">项目管理</a></li>
+                    <li class=""><a href="{{ url_for('main.design_engineering') }}">工程设计</a></li>
+                    <li class=""><a href="{{ url_for('main.injection_molding') }}">注塑生产</a></li>
                 </ul>
             </div>
         </div>
@@ -27,7 +27,7 @@
             <div class="container index_padding clear">
                 <div class="media">
                     <div class="media-left media-middle pl20 pt20">
-                        <a href="{{ url_for('Insert_Molding') }}"><img src="static\img\advant_01.jpg" alt="about us"
+                        <a href="{{ url_for('main.Insert_Molding') }}"><img src="static\img\advant_01.jpg" alt="about us"
                                 class="img-rounded"></a>
                     </div>
                     <div class="media-body index-text-style">
@@ -56,7 +56,7 @@
                         </ul>
                     </div>
                     <div class="media-right media-middle pr20">
-                        <a href="{{ url_for('Stamping_tool_1') }}"><img src="static\img\advant_02.png" alt="about us"
+                        <a href="{{ url_for('main.Stamping_tool_1') }}"><img src="static\img\advant_02.png" alt="about us"
                                 class="img-rounded"></a>
                     </div>
                 </div>
