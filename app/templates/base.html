@@ -12,13 +12,10 @@
 
 {% block navbar %}
 
-{% for message in get_flashed_messages() %}
-<div class="alert alert-warning" style="z-index: 99;">
-    <button type="button" class="close" data-dismiss="alert">&times;</button>
-    {{ message }}
-</div>
-{% endfor %}
-<div class="container-fluid navbar-fixed-top" id="mynavbar">
+<div class="container-fluid navbar-fixed-top">
+    <div class="container-fluid top-style">
+        &nbsp
+    </div>
     <div class="row row-height">
         <div class="col-md-3 col-md-offset-2 header-logo">
             <img src="{{ url_for('static',filename = 'img/unice-logo.png') }}" alt="">
@@ -38,6 +35,14 @@
         </div>
     </div>
     <div class="navbar-bottom-color"></div>
+    <div class="col-md-2 col-md-offset-5">
+        {% for message in get_flashed_messages() %}
+        <div class="alert alert-warning" style="z-index: 99;">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            {{ message }}
+        </div>
+        {% endfor %}
+    </div>
 </div>
 {% endblock %}
 {% block content %}

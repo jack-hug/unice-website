@@ -16,7 +16,7 @@ def login():
             flash('登录成功')
             next = request.args.get('next')
             if next is None or not next.startswith('/'):
-                next = url_for('main.index')
+                next = url_for('auth.index')
             return redirect(next)
         flash('无效的用户名或密码')
     return render_template('auth/login.html',form = form)

@@ -3,8 +3,9 @@ body {  font-family: Arial, Verdana, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 /* 导航条背景色 */
-#mynavbar {
+.container-fluid .top-style {
   background-color: #3c6382;
+  height: 5px;
 }
 
 /* 导航全屏 */
@@ -15,7 +16,6 @@ body {  font-family: Arial, Verdana, "Helvetica Neue", Helvetica, sans-serif;
 
 /* 导航栏中部 */
 .row-height {
-  margin-top: 5px;
   height: 100px;
   line-height: 100px;
   background-color: white;
