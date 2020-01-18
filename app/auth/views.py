@@ -13,7 +13,6 @@ def login():
         user = User.query.filter_by(email = form.email.data.lower()).first()
         if user is not None and user.verify_password(form.password.data):
             login_user(user)
-            flash('登录成功')
             next = request.args.get('next')
             if next is None or not next.startswith('/'):
                 next = url_for('auth.index')

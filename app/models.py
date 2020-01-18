@@ -3,6 +3,7 @@ from flask import current_app
 from datetime import datetime
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import UserMixin
+from flask_security import Security
 
 
 # 定义模型
@@ -49,6 +50,13 @@ class User(UserMixin, db.Model):
     email = db.Column(db.String(64), unique=True, index=True)
     username = db.Column(db.String(64), unique=True, index=True)
     password_hash = db.Column(db.String(128))
+
+    # flask-security记录登录信息
+    last_login_at = db.Column(db.DateTime) #记录上次登录时间
+    current_login_at = db.Column(db.DateTime) #记录本次登录时间
+    last_login_ip = db.Column(db.String(100)) #记录上次登录IP
+    current_login_ip = db.Column(db.String(100)) #记录本次登录IP
+    login_count = db.Column(db.Integer) #记录登录次数
 
     @property
     def password(self):
