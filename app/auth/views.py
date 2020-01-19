@@ -32,3 +32,18 @@ def logout():
 @login_required
 def index():
     return render_template('auth/index.html')
+
+@auth.route('/product_category')
+@login_required
+def product_category():
+    return render_template('auth/product-category.html')
+
+@auth.route('/product_list')
+@login_required
+def product_list():
+    return render_template('auth/product-list.html')
+
+@auth.route('/product_category_add')
+@login_required
+def product_category_add():
+    return render_template('auth/product-category-add.html')

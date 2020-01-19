@@ -3,7 +3,6 @@ from flask import current_app
 from datetime import datetime
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import UserMixin
-from flask_security import Security
 
 
 # 定义模型
@@ -18,6 +17,13 @@ class Information(db.Model):
 
     def __repr__(self):
         return '<Role %r>' % self.title
+
+class Product_category(db.Model):
+    __tablename__ = 'product_category'
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(64), unique=True)
+    is_enable = db.Column(db.Integer)
+    add_time = db.Column(db.DateTime(),default = datetime.utcnow)
 
 class Product_class(db.Model):
     __tablename__ = 'product_class'
