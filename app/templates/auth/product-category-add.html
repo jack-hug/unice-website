@@ -27,10 +27,13 @@
   <div class="pd-20">
     <form action="" method="post" class="form form-horizontal" id="form-user-add">
       <div class="row cl">
-        <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>分类名称：</label>
+        <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>添加分类名称：</label>
         <div class="formControls col-5">
-          <input type="text" class="input-text" value="" placeholder="" id="user-name" name="product-category-name">
+          <input type="text" class="input-text" value="" placeholder="" id="user-name" name="product-category-name" style="width:300px">
         </div>
+        <br>
+        <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>所属大类：</label>
+        <select name="product-class-list" aria-controls="DataTables_Table_0" class=""><option value="25">五金模具制造</option><option value="50">塑胶模具制造</option><option value="100">注塑生产</option></select>
         <div class="col-5"> </div>
       </div>
       <div class="row cl">

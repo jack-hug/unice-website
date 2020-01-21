@@ -18,20 +18,27 @@ class Information(db.Model):
     def __repr__(self):
         return '<Role %r>' % self.title
 
+# 产品大分类
 class Product_category(db.Model):
     __tablename__ = 'product_category'
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(64), unique=True)
     is_enable = db.Column(db.Integer)
     add_time = db.Column(db.DateTime(),default = datetime.utcnow)
+    product_class = db.relationship('Product_class',backref = 'pro_category')
+    
+    def __repr__(self):
+        return '<Role %r>' % self.name
 
+# 产品小分类
 class Product_class(db.Model):
     __tablename__ = 'product_class'
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(64), unique=True)
     is_enable = db.Column(db.Integer)
     add_time = db.Column(db.DateTime(),default = datetime.utcnow)
-    product = db.relationship('Product',backref = 'product_class')
+    product = db.relationship('Product',backref = 'pro_class')
+    product_category = db.Column(db.Integer,db.ForeignKey('product_category.id'))
 
     def __repr__(self):
         return '<Role %r>' % self.name

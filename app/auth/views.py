@@ -28,21 +28,25 @@ def logout():
     flash('你已经退出登录...')
     return redirect(url_for('main.index'))
 
+# 后台主页
 @auth.route('/index')
 @login_required
 def index():
     return render_template('auth/index.html')
 
+# 分类管理
 @auth.route('/product_category')
 @login_required
 def product_category():
     return render_template('auth/product-category.html')
 
+# 产品管理
 @auth.route('/product_list')
 @login_required
 def product_list():
     return render_template('auth/product-list.html')
 
+# 添加分类
 @auth.route('/product_category_add')
 @login_required
 def product_category_add():
