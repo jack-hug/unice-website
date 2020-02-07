@@ -71,7 +71,7 @@
 				</dt>
 				<dd>
 					<ul>
-						<li><a href="picture-list.html" title="图片管理">图片管理</a></li>
+						<li><a href="{{ url_for('auth.index') }}" title="图片管理">图片管理</a></li>
 					</ul>
 				</dd>
 			</dl>
@@ -80,7 +80,7 @@
 				</dt>
 				<dd>
 					<ul>
-						<li><a href="picture-list.html" title="图片管理">图片管理</a></li>
+						<li><a href="{{ url_for('auth.picture_list') }}" title="图片管理">图片管理</a></li>
 					</ul>
 				</dd>
 			</dl>
@@ -119,6 +119,9 @@
 						<li><a href="system-log.html" title="系统日志">系统日志</a></li>
 					</ul>
 				</dd>
+				<dt>
+					<i class="Hui-iconfont">&#xe625;</i> <a href="{{ url_for('main.index') }}" target="_blank">网站首页</a>
+				</dt>
 			</dl>
 		</div>
 	</aside>

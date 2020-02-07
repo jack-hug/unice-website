@@ -51,3 +51,17 @@ def product_list():
 @login_required
 def product_category_add():
     return render_template('auth/product-category-add.html')
+
+# 图片管理
+@auth.route('/picture_list')
+@login_required
+def picture_list():
+    return render_template('auth/picture-list.html')
+
+# 添加图片
+@auth.route('/picture_add',methods = ['GET','POST'])
+@login_required
+def picture_add():
+    if request == 'POST':
+        pass
+    return render_template('auth/picture-add.html')
