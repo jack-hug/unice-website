@@ -47,6 +47,8 @@ class Product(db.Model):
     __tablename__ = 'product'
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(64), unique=True)
+    url = db.Column(db.String(64))  # 原图url
+    url_s = db.Column(db.String(64))  # 展示图url
     code = db.Column(db.Text())
     product_class_id = db.Column(db.Integer,db.ForeignKey('product_class.id'))
     product_img = db.Column(db.Text())
