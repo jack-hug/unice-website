@@ -1,9 +1,10 @@
-import os,mysql.connector
+import os,mysql.connector,datetime
 
 class Config():
     SECRET_KEY = 'Wen hai yan and Unice' or os.environ.get('SECRET_KEY') 
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     UNICE_ADMIN = os.environ.get('UNICE_ADMIN') or '15078843336@163.com'
+    REMEMBER_COOKIE_DURATION = datetime.timedelta(minutes=5)
 
 
     @staticmethod

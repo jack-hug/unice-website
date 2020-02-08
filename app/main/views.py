@@ -2,7 +2,7 @@ from flask import Flask,render_template,redirect,url_for,session
 from datetime import datetime
 from . import main
 from .. import db
-from ..models import User
+from ..models import User,Product
 
 @main.route('/')
 def index():
@@ -38,7 +38,8 @@ def contact_us():
 
 @main.route('/Insert_Molding')
 def Insert_Molding():
-    return render_template('products/Insert_Molding.html')
+    products =Product.query.all()
+    return render_template('products/Insert_Molding.html',products = products)
 
 @main.route('/Electrical_Plastics_Molding')
 def Electrical_Plastics_Molding():

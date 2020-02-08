@@ -36,7 +36,7 @@
 
 <body>
     <div class="page-container">
-        <form class="form form-horizontal" id="form-article-add" method="POST">
+        <form class="form form-horizontal" id="form-picture-add" method="POST">
             <div class="row cl">
                 <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>图片分类</label>
                 <div class="formControls col-xs-8 col-sm-9">
@@ -66,7 +66,7 @@
             <div class="row cl">
                 <label class="form-label col-xs-4 col-sm-2">是否启用:</label>
                 <div class="formControls col-xs-8 col-sm-9 skin-minimal">
-                    <div class="check-box">
+                    <div class="check-box check-box-padding">
                         <input type="checkbox" id="checkbox-1" checked = "checked">
                         <label for="checkbox-1">&nbsp;</label>
                     </div>
@@ -117,19 +117,18 @@
     </div>
 
     <!--_footer 作为公共模版分离出去-->
-    <script type="text/javascript" src="lib/jquery/1.9.1/jquery.min.js"></script>
-    <script type="text/javascript" src="lib/layer/2.4/layer.js"></script>
-
-    <script type="text/javascript" src="lib/jquery.validation/1.14.0/jquery.validate.js"></script>
-    <script type="text/javascript" src="lib/jquery.validation/1.14.0/validate-methods.js"></script>
-    <script type="text/javascript" src="lib/jquery.validation/1.14.0/messages_zh.js"></script>
-    <script type="text/javascript" src="static/h-ui/js/H-ui.js"></script>
-    <script type="text/javascript" src="static/h-ui.admin/js/H-ui.admin.page.js"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename = 'lib/jquery/1.9.1/jquery.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename = 'lib/layer/2.4/layer.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename = 'lib/jquery.validation/1.14.0/jquery.validate.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename = 'lib/jquery.validation/1.14.0/validate-methods.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename = 'lib/jquery.validation/1.14.0/messages_zh.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename = 'h-ui/js/H-ui.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename = 'h-ui.admin/js/H-ui.admin.page.js') }}"></script>
 
     <!--/_footer /作为公共模版分离出去-->
 
     <!--请在下方写此页面业务相关的脚本-->
-    <script type="text/javascript" src="lib/webuploader/0.1.5/webuploader.min.js"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename = 'lib/webuploader/0.1.5/webuploader.min.js') }}"></script>
     <script type="text/javascript">
         $(function () {
             $('.skin-minimal input').iCheck({
@@ -145,7 +144,7 @@
 
             var uploader = WebUploader.create({
                 auto: true,
-                swf: 'lib/webuploader/0.1.5/Uploader.swf',
+                swf: '{{ url_for('static',filename = 'lib/webuploader/0.1.5/Uploader.swf') }}',
 
                 // 文件接收服务端。
                 server: 'http://lib.h-ui.net/webuploader/0.1.5/server/fileupload.php',
@@ -389,7 +388,7 @@
                     },
                     dnd: '#dndArea',
                     paste: '#uploader',
-                    swf: 'lib/webuploader/0.1.5/Uploader.swf',
+                    swf: '{{ url_for('static',filename = 'lib/webuploader/0.1.5/Uploader.swf') }}',
                     chunked: false,
                     chunkSize: 512 * 1024,
                     server: 'http://lib.h-ui.net/webuploader/0.1.5/server/fileupload.php',
