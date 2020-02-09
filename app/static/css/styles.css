@@ -538,3 +538,26 @@ ul.social-footer2 li a {
 .error-text-style {
   margin:130px auto;
 }
+
+/* 鼠标移到产品图片放大 */
+.product-img a img {
+  transition: all 0.8s;
+}
+
+.product-img a img:hover {
+  transform: scale(1.1);
+  border: 1px solid #337ab7;
+  border-radius: 4px;
+}
+.plastic-img {
+  height: 255px;
+}
+.plastic-img a img {
+  transition: all 0.8s;
+}
+
+.plastic-img a img:hover {
+  transform: scale(1.1);
+  border: 1px solid #337ab7;
+  border-radius: 4px;
+}

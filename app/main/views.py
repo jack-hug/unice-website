@@ -61,7 +61,7 @@ def twok_Molding():
 def Casting():
     return render_template('products/Casting.html')
 
-@main.route('/Stamping tool_1')
+@main.route('/Stamping_tool_1')
 def Stamping_tool_1():
     return render_template('products/Stamping_tool_1.html')
 
