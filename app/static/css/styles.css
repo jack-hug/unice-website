@@ -477,10 +477,10 @@ ul.social-footer2 li a {
 
 /* 图文按钮位置 */
 .btn-margin {
-    margin-left: initial;
+    margin-left: 30px;
 }
 .btn-margin:hover {
-    margin-left: initial;
+    margin-left: 35px;
 }
 /* 栏目之间的距离 */
 .container-margin {
