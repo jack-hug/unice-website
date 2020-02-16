@@ -24,22 +24,13 @@
             <div class="container index_padding clear">
                 <div class="media">
                     <div class="media-left media-middle pl20 pt20">
-                        <a href="#"><img src="static\img\quality_assurance_01.png" alt="about us"
+                        <a href="#"><img src="{{ url_for('static',filename='img/quality_assurance_01.png') }}" alt="about us"
                                 class="img-rounded"></a>
                     </div>
                     <div class="media-body index-text-style">
                         <h3 class="title-color">＋品质保证</h3>
-                        <ul>
-                            <p>产品质量是我们最高宗旨，绝不会因为任何妥协。Unice每个部门拥有质量理念。 我们的管理系统一直在更新，对质量问题从始至终都有纠正和预防措施。</p>
-                            <li class="title-color text-bold">ISO9001认证</li>
-                            <li class="title-color text-bold">CMM + OGP验证组件</li>
-                            <li class="title-color text-bold">过程控制和检查</li>
-                            <li class="title-color text-bold">通过ISO9001认证，正在申请认证IATF16949标准</li>
-                            <li class="title-color text-bold">钢/电极/零件的100％尺寸检查</li>
-                            <li class="title-color text-bold">原材料/钢/硬度证明</li>
-                            <li class="title-color text-bold">2〜3小时试运行以验证模具稳定性</li>
-                            <li class="title-color text-bold">发货前进行质量检查</li>
-                        </ul>
+                        <p>产品质量是我们最高宗旨，绝不会因为任何妥协。Unice每个部门拥有质量理念。 我们的管理系统一直在更新，对质量问题从始至终都有纠正和预防措施。</p>
+                        <img src="{{ url_for('static',filename='img/quality_assurance_02.png') }}" alt="">
                     </div>
                 </div>
             </div>
@@ -50,13 +41,16 @@
                     <div class="media-body index-text-style">
                         <h3 class="title-color">＋过程控制</h3>
                         <ul>
-                            <li class="title-color text-bold">内容</li>
-                            <li class="title-color text-bold">内容</li>
-                            <li class="title-color text-bold">内容</li>
+                            <li class="title-color text-bold">* ISO 9001认证</li>
+                            <li class="title-color text-bold">* CMM + OGP验证组件</li>
+                            <li class="title-color text-bold">*过程控制和检查</li>
+                            <li class="title-color text-bold">*原材料/钢/硬度证明</li>
+                            <li class="title-color text-bold">* 2〜3小时试运行以验证模具稳定性</li>
+                            <li class="title-color text-bold">*发货前进行质量检查</li>
                         </ul>
                     </div>
                     <div class="media-right media-middle pr20">
-                        <a href="#"><img src="static\img\quality_assurance_02.png" alt="about us"
+                        <a href="#"><img src="{{ url_for('static',filename='img/quality_assurance_03.png') }}" alt="about us"
                                 class="img-rounded"></a>
                     </div>
                 </div>

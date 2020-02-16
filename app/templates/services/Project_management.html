@@ -23,40 +23,41 @@
         </div>
     </div>
     <div class="container-fluid bg-color-style">
-        <!-- <div class="bg-style clear index-third container-margin">
+        <div class="bg-style clear index-third container-margin">
             <div class="container index_padding clear">
                 <div class="media">
                     <div class="media-left media-middle pl20 pt20">
-                        <a href="{{ url_for('.Insert_Molding') }}"><img src="static\img\management_1.png" alt="about us"
+                        <a><img src="{{ url_for('static',filename = 'img/management_2.png') }}" alt=""
                                 class="img-rounded"></a>
                     </div>
                     <div class="media-body index-text-style">
-                        <h3 class="title-color">＋项目跟进</h3>
+                        <h3 class="title-color">＋强大的项目管理能力</h3>
                         <ul>
-                            <li class="title-color text-bold">明确项目进度，随时应对风险管理</li>
+                            <p>UNice管理着工具流程，在客户的设计师和工具制造商之间提供了经验丰富且知识渊博的联系，以确保工具的设计能够最大程度地提高生产效率并满足客户的质量和商业需求。</p>
+                            <li class="title-color text-bold">预算范围内按时制造工具，并生产出完全满足您要求的成型部件。</li>
+                            <li class="title-color text-bold">我们同意您的时间计划，并随着项目的进展使您保持最新状态。</li>
+                            <li class="title-color text-bold">随时随地提供技术支持，并能根据实际情况给出解决方案</li>
+                            <li class="title-color text-bold">利用我们在工具设计方面的精深技术，我们以快速的交货时间和具有竞争力的价格提供了工具。</li>
                         </ul>
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
         <div class="bg-style clear index-third container-margin">
             <div class="container index_padding clear">
                 <div class="media index_padding">
                     <div class="media-body index-text-style">
-                        <h3 class="title-color">＋强大的项目管理能力</h3>
+                        <h3 class="title-color"></h3>
                         <ul>
-                            <p>unice的技术人员都具有工程设计能力和英语技能，确保能和您顺利沟通。您的项目将由始至终得到跟进。</p>
-                            <li class="title-color text-bold">每周都会出具项目进度报告</li>
-                            <li class="title-color text-bold">出具检验报告，并会在出厂前再次检查</li>
-                            <li class="title-color text-bold">随时随地提供技术支持，并能根据实际情况给出解决方案</li>
                         </ul>
                     </div>
-                    <div class="media-right media-middle pr20">
-                        <a href="{{ url_for('.Stamping_tool_1') }}"><img src="static\img\management_2.png" alt="about us"
+                    <div class="media-right media-middle pr40">
+                        <a><img src="{{ url_for('static',filename = 'img/management_1.png') }}" alt="about us"
                                 class="img-rounded"></a>
                     </div>
                 </div>
             </div>
         </div>
+        
 </div>
 {% endblock %}

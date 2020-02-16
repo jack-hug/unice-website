@@ -92,6 +92,9 @@ footer ul {
 .pr20 {
     padding-right: 20px;
 }
+.pr40 {
+  padding-right: 40px;
+}
 .pl20 {
     padding-left: 20px;
 }
@@ -501,7 +504,7 @@ ul.social-footer2 li a {
 .second-navbar-style .container .row  {
     height: 85px;
     color: #fff;
-    padding: 0px 45px 0px 50px;
+    padding: 0px 0px 0px 50px;
 }
 .second-navbar-style .navbar-nav > li {
     height: 85px;
@@ -540,24 +543,28 @@ ul.social-footer2 li a {
 }
 
 /* 鼠标移到产品图片放大 */
-.product-img a img {
+.product-img a {
   transition: all 0.8s;
 }
 
-.product-img a img:hover {
+/* 产品鼠标划过效果 */
+.product-img a:hover {
   transform: scale(1.1);
   border: 1px solid #337ab7;
   border-radius: 4px;
 }
+
+/* 产品固定高度 */
 .plastic-img {
   height: 255px;
 }
-.plastic-img a img {
+
+/* 注塑生产产品放大效果 */
+.plastic-img a {
   transition: all 0.8s;
 }
-
-.plastic-img a img:hover {
+.plastic-img a:hover {
+  border-color: gray;
   transform: scale(1.1);
-  border: 1px solid #337ab7;
   border-radius: 4px;
 }
