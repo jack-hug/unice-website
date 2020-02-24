@@ -41,7 +41,7 @@
     <div class="container index_padding first-padding">
         <div class="title">优耐斯专业模具制造——您的最佳选择</div>
         <div class="text-style">
-            <p>优耐斯工厂位于中国著名的模具重镇 — 东莞市长安镇,是一家集精密模具制造（塑胶模具和五金模具),注塑的实体制造商。总投资为人民币 800 多万元，现共有员工 60 多人 ,工厂拥有精密模具部,无尘注塑车间及装配车间,为客户提供全方位的服务。</p>
+            <p>优耐斯模具是一家集精密模具制造（塑胶模具和五金模具),注塑的实体制造商。现共有员工 50 多人 ,工厂拥有精密模具部,无尘注塑车间及装配车间,为客户提供全方位的服务。</p>
             <br/>
             <p>我司重视人才培养，经多年技术沉淀，汇聚了一批高素质，高效率，重质量的管理团队和技术服务队伍。遵循公司做精、做强、做大的发展思路，以帮助客户优化产品结构、制定最优的成型方案和最经济的生产成本方式为宗旨,我们逐步打造成行业的领先者,得到了国内外知名品牌客户的认可并建立了良好的配套合作关系。</p>
                 
@@ -142,9 +142,20 @@
     <div class="container index_padding clear">
         <div class="media index_padding">
             <div class="media-left media-middle pl20">
-                <a href="{{ url_for('.plastic') }}"><img src="static\img\plastic.png" alt=""
+                <a href="{{ url_for('.components') }}"><img src="static\img\components.png" alt=""
                         class="img-rounded"></a>
             </div>
+            <div class="media-body index-text-style">
+                <h3 class="title-color">＋精密零件</h3>
+                <br><br><br>
+                <p><a href="{{ url_for('main.injection_molding') }}" class="btn-style btn-margin">&gt; 了解更多</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bg-style clear index-third container-margin">
+    <div class="container index_padding clear">
+        <div class="media index_padding">
             <div class="media-body index-text-style">
                 <h3 class="title-color">＋注塑生产</h3>
                 <ul>
@@ -156,7 +167,10 @@
                         <li class="title-color">高效的机器/人员利用率，保持价格竞争力</li>
                         <li class="title-color">优耐思在新工厂和设备上的持续投资使我们始终处于现代制造技术的最前沿，并确保我们可以加工最广泛的工程聚合物。</li>
                 </ul>
-                <p><a href="{{ url_for('.plastic') }}" class="btn-style btn-margin">&gt; 了解更多</a></p>
+                <p><a href="{{ url_for('main.injection_molding') }}" class="btn-style btn-margin">&gt; 了解更多</a></p>
+            </div>
+            <div class="media-right media-middle pr20">
+                <a href="{{ url_for('main.injection_molding') }}"><img src="static\img\stamptool.png" alt="" class="img-rounded"></a>
             </div>
         </div>
     </div>
