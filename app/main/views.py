@@ -73,9 +73,9 @@ def Stamping_tool_2():
 def Stamping_tool_3():
     return render_template('products/Stamping_tool_3.html')
 
-@main.route('/plastic')
-def plastic():
-    return render_template('products/plastic.html')
+@main.route('/Components')
+def components():
+    return render_template('products/Components.html')
 
 @main.route('/quality_assurance')
 def quality_assurance():
