@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+
+{% block title %}unice-插件塑胶制品{% endblock %}
+{% block content %}
+<div class="container-fluid second-navbar-style" id="second-navbar">
+    <div class="container">
+        <div class="row center-block">
+            <div class="col-md-3">
+                <div class="second-navbar-text-style">
+                    <p><i class="mega-menu-title_icon glyphicon glyphicon-menu-left"></i>塑胶模具制造>>插件塑胶制品</p>
+                    <p>热情服务，追求卓越</p>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="{{ url_for('main.Auto_Plastics_Part') }}">塑胶模具制造</a></li>
+                    <li class=""><a href="{{ url_for('main.Stamping_tool_3') }}">五金模具制造</a></li>
+                    <li class=""><a href="{{ url_for('main.components') }}">精密零件</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-color-style">
+        <div class="bg-style clear index-third container-margin">
+            <div class="container index_padding clear">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="panel-group" role="tablist">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="collapseListGroupHeading1">
+                                    <h4 class="panel-title">
+                                        <a class="" role="button" data-toggle="collapse" href=""
+                                            aria-expanded="true" aria-controls="collapseListGroup1">
+                                            塑胶模具制造
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseListGroup1" class="panel-collapse collapse in" role="tabpanel"
+                                    aria-labelledby="collapseListGroupHeading1" aria-expanded="true">
+                                    <ul class="list-group">
+                                        <a href="{{ url_for('main.Auto_Plastics_Part') }}"
+                                            class="list-group-item">汽车塑胶制品</a>
+                                        <a href="{{ url_for('main.twok_Molding') }}"
+                                            class="list-group-item">双色塑胶制品</a>
+                                        <a href="{{ url_for('main.Electrical_Plastics_Molding') }}"
+                                            class="list-group-item">电子塑胶制品</a>
+                                        <a href="{{ url_for('main.Insert_Molding') }}"
+                                            class="list-group-item active">插件塑胶制品</a>
+                                        <a href="{{ url_for('main.Rubber') }}" class="list-group-item">硅胶制品</a>
+                                        <a href="{{ url_for('main.Casting') }}" class="list-group-item">压铸制品</a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="row">
+                            {% for product in products %}
+                            <div class="col-xs-6 col-md-4">
+                                <a href="#" class="thumbnail">
+                                    <img src="{{ product.product_img }}">
+                                </a>
+                            </div>
+                            {% endfor %}
+                            <div class="col-xs-6 col-md-4 product-img">
+                                <a class="thumbnail">
+                                    <img src="static\uploads\Insert\1.png">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-md-4 product-img">
+                                <a class="thumbnail">
+                                    <img src="static\uploads\Insert\2.png">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-md-4 product-img">
+                                <a class="thumbnail">
+                                    <img src="static\uploads\Insert\3.png">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-md-4 product-img">
+                                <a class="thumbnail">
+                                    <img src="static\uploads\Insert\4.png">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-md-4 product-img">
+                                <a class="thumbnail">
+                                    <img src="static\uploads\Insert\5.png">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-md-4 product-img">
+                                <a class="thumbnail">
+                                    <img src="static\uploads\Insert\6.png">
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- <nav aria-label="Page navigation" class="text-center">
+                            <ul class="pagination" class="center-block">
+                              <li>
+                                <a href="#" aria-label="Previous">
+                                  <span aria-hidden="true">&laquo;</span>
+                                </a>
+                              </li>
+                              <li><a href="#">1</a></li>
+                              <li>
+                                <a href="#" aria-label="Next">
+                                  <span aria-hidden="true">&raquo;</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </nav> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endblock %}

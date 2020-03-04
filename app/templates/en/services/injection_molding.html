@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+
+{% block title %}unice-注塑生产{% endblock %}
+{% block content %}
+<div class="container-fluid second-navbar-style" id="second-navbar">
+    <div class="container">
+        <div class="row center-block">
+            <div class="col-md-3">
+                <div class="second-navbar-text-style">
+                    <p><i class="mega-menu-title_icon glyphicon glyphicon-menu-left"></i>注塑生产</p>
+                    <p>热情服务，追求卓越</p>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class=""><a href="{{ url_for('.mold_making') }}">模具制造</a></li>
+                    <li class=""><a href="{{ url_for('.advantages') }}">我们的优势</a></li>
+                    <li class=""><a href="{{ url_for('.Project_management') }}">项目管理</a></li>
+                    <li class=""><a href="{{ url_for('.design_engineering') }}">工程设计</a></li>
+                    <li class="active"><a href="{{ url_for('.injection_molding') }}">注塑生产</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-color-style">
+        <div class="bg-style clear index-third container-margin">
+            <div class="container index_padding clear">
+                <div class="media">
+                    <div class="media-left media-middle pl20 pt20">
+                        <a><img src="{{ url_for('static',filename = 'img/plastic01.png') }}"
+                                class="img-rounded"></a>
+                    </div>
+                    <div class="media-body index-text-style">
+                        <h3 class="title-color">＋注塑生产</h3>
+                        <ul>
+                            <li class="title-color text-bold">90吨至400吨机器的选择</li>
+                            <li class="title-color text-bold">能够将您的项目要求与一系列机器相匹配，以确保最高效率和降低成本</li>
+                            <li class="title-color text-bold">能够为大型工程部件制造精密零件</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-style clear index-third container-margin">
+            <div class="container index_padding clear">
+                <div class="media index_padding">
+                    <div class="media-body index-text-style">
+                        <h3 class="title-color">＋注塑生产</h3>
+                        <ul>
+                            <li class="title-color text-bold">优耐思可以每周7天,每天24小时运转快速设置时间可降低成本,产生最大效率的生产计划</li>
+                            <li class="title-color text-bold">高效的机器/人员利用率，保持价格竞争力</li>
+                        </ul>
+                    </div>
+                    <div class="media-right media-middle pr40">
+                        <a><img src="{{ url_for('static',filename = 'img/plastic02.png') }}"
+                                class="img-rounded"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-style clear index-third container-margin">
+            <div class="container index_padding clear">
+                <div class="media">
+                    <div class="media-left media-middle pl20 pt20">
+                        <a><img src="{{ url_for('static',filename = 'img/plastic03.png') }}"
+                                class="img-rounded"></a>
+                    </div>
+                    <div class="media-body index-text-style">
+                        <h3 class="title-color">＋注塑生产</h3>
+                        <ul>
+                            <li class="title-color text-bold">优耐思在新工厂和设备上的持续投资使我们始终处于现代制造技术的最前沿，并确保我们可以加工最广泛的工程聚合物。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

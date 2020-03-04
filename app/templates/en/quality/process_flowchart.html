@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block title %}unice-工艺流程{% endblock %}
+{% block content %}
+<div class="container-fluid second-navbar-style" id="second-navbar">
+    <div class="container">
+        <div class="row center-block">
+            <div class="col-md-3">
+                <div class="second-navbar-text-style">
+                    <p><i class="mega-menu-title_icon glyphicon glyphicon-menu-left"></i>工艺流程</p>
+                    <p>热情服务，追求卓越</p>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class=""><a href="{{ url_for('.quality_assurance') }}">质量保证</a></li>
+                    <li class="active"><a href="{{ url_for('.process_flowchart') }}">工艺流程</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-color-style">
+        <div class="bg-style clear index-third container-margin">
+            <div class="container index_padding clear">
+                <div class="media">
+                    <div class="media-left media-middle pl20 pt20">
+                        <a><img src="static\img\process_flowchart_01.png" alt="about us"
+                                class="img-rounded"></a>
+                    </div>
+                    <div class="media-body index-text-style">
+                        <h3 class="title-color">＋工艺流程</h3>
+                        <ul>
+                            <p>整个过程已整合到Unice的持续改进质量体系中。</p>
+                            <li class="title-color text-bold">关键尺寸和特征</li>
+                            <li class="title-color text-bold">关键控制计划APQP，PPAP</li>
+                            <li class="title-color text-bold">制程中的控制和检查</li>
+                            <li class="title-color text-bold">测验报告</li>
+                            <li class="title-color text-bold">出货前进行质量检查</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-style clear index-third container-margin">
+            <div class="container index_padding clear">
+                    <div class="media-right media-middle pr40">
+                        <a><img src="{{ url_for('static',filename = 'img/process_flowchart.png') }}"
+                                class="img-rounded"></a>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
