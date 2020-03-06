@@ -568,3 +568,8 @@ ul.social-footer2 li a {
   transform: scale(1.1);
   border-radius: 4px;
 }
+
+/* 字体加粗 */
+.text-bold {
+  font-weight: bold;
+}

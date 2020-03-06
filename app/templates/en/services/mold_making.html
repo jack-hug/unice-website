@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "en/base.html" %}
 
 {% block title %}unice-模具制造{% endblock %}
 {% block content %}
@@ -7,17 +7,17 @@
         <div class="row center-block">
             <div class="col-md-3">
                 <div class="second-navbar-text-style">
-                    <p><i class="mega-menu-title_icon glyphicon glyphicon-menu-left"></i>模具制造</p>
-                    <p>热情服务，追求卓越</p>
+                    <p class="text-bold"><i class="mega-menu-title_icon glyphicon glyphicon-menu-left"></i>Mold Manufacturing</p>
+                    <p class="text-bold">Serve Passionately, Pursue Excellence</p>
                 </div>
             </div>
             <div class="col-md-9">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="{{ url_for('.mold_making') }}">模具制造</a></li>
-                    <li class=""><a href="{{ url_for('.advantages') }}">我们的优势</a></li>
-                    <li class=""><a href="{{ url_for('.Project_management') }}">项目管理</a></li>
-                    <li class=""><a href="{{ url_for('.design_engineering') }}">工程设计</a></li>
-                    <li class=""><a href="{{ url_for('.injection_molding') }}">注塑生产</a></li>
+                    <li class=""><a href="{{ url_for('en.mold_making') }}">Mold Manufacturing</a></li>
+                    <li class="active"><a href="{{ url_for('en.advantages') }}">Advantages</a></li>
+                    <li class=""><a href="{{ url_for('en.Project_management') }}">Project Management</a></li>
+                    <li class=""><a href="{{ url_for('en.design_engineering') }}">Design Engineering</a></li>
+                    <li class=""><a href="{{ url_for('en.injection_molding') }}">Injection Molding</a></li>
                 </ul>
             </div>
         </div>
