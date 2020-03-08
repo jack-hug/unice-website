@@ -1,0 +1,99 @@
+{% extends "en/base.html" %}
+
+{% block title %}unice-design engineering{% endblock %}
+{% block content %}
+<div class="container-fluid second-navbar-style" id="second-navbar">
+
+    <div class="container">
+        <div class="row center-block">
+            <div class="en-left">
+                <div class="second-navbar-text-style">
+                    <p class="text-bold"><i class="mega-menu-title_icon glyphicon glyphicon-menu-left"></i>Design Engineering</p>
+                    <p class="text-bold">Serve Passionately, Pursue Excellence</p>
+                </div>
+            </div>
+            <div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="" style="width: 165px;"><a href="{{ url_for('en.mold_making') }}">Mold Manufacturing</a></li>
+                    <li class="" style="width: 120px;"><a href="{{ url_for('en.advantages') }}">Advantages</a></li>
+                    <li class="" style="width: 165px;"><a href="{{ url_for('en.Project_management') }}">Project Management</a></li>
+                    <li class="active" style="width: 165px;"><a href="{{ url_for('en.design_engineering') }}">Design Engineering</a></li>
+                    <li class="" style="width: 165px;"><a href="{{ url_for('en.injection_molding') }}">Injection Molding</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-color-style">
+        <div class="bg-style clear index-third container-margin">
+            <div class="container index_padding clear">
+                <div class="media">
+                    <div class="media-left media-middle pl20 pt20">
+                        <a><img src="{{ url_for('static',filename = 'img/design_01.png') }}" alt=""
+                                class="img-rounded"></a>
+                    </div>
+                    <div class="media-body index-text-style">
+                        <h3 class="title-color">＋DESIGN ENGINEERING</h3>
+                        <ul>
+                            <p class="text-bold">CAD/CAE/CAM for complex design.</p>
+                            <li class="title-color text-bold">Crossed technical discussions for best solutions.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-style clear index-third container-margin">
+            <div class="container index_padding clear">
+                <div class="media index_padding">
+                    <div class="media-body index-text-style">
+                        <h3 class="title-color">＋Born for customer</h3>
+                        <ul>
+                            <p class="text-bold">After receiving the customer's concept or request, Unice will use many years of manufacturing expertise and the latest software to provide our customers with high-quality, cost-effective solutions.</p>
+                        </ul>
+                    </div>
+                    <div class="media-right media-middle pr40">
+                        <a><img src="{{ url_for('static',filename = 'img/design_02.png') }}" alt="about us"
+                                class="img-rounded"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-style clear index-third container-margin">
+            <div class="container index_padding clear">
+                <div class="media">
+                    <div class="media-left media-middle pl20 pt20">
+                        <a><img src="{{ url_for('static',filename = 'img/design_04.png') }}" alt=""
+                                class="img-rounded"></a>
+                    </div>
+                    <div class="media-body index-text-style">
+                        <h3 class="title-color">＋Professional staff</h3>
+                        <ul>
+                            <p class="text-bold">Unice knows the importance of engineering and Innovation as good design is the key element for Excellent products.</p>
+                            <li class="title-color text-bold">UNICE develops proposals for customers to save and simplify costs</li>
+                            <li class="title-color text-bold">UNICE has more than 15 years of plastic mold design staff, and has extensive mold development and post-production experience in professional mold design and product experience.</li>
+                            <li class="title-color text-bold">UNICE provides high-quality guarantees and services for production.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-style clear index-third container-margin">
+            <div class="container index_padding clear">
+                <div class="media index_padding">
+                    <div class="media-body index-text-style">
+                        <h3 class="title-color">＋DFM and Moldflow Analysis</h3>
+                        <ul>
+                            <p class="text-bold">Well Experienced and professional engineers  work on DFM and Mold Flow using Autodesk Mold Flow Simulation.</p>
+                            <li class="title-color text-bold">Moldflow for Filling/Cooling/Deflection/Venting</li>
+                            <li class="title-color text-bold">Crossed technical discussions for best solutions.</li>
+                        </ul>
+                    </div>
+                    <div class="media-right media-middle pr40">
+                        <a><img src="{{ url_for('static',filename = 'img/design_03.png') }}" alt="about us"
+                                class="img-rounded"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

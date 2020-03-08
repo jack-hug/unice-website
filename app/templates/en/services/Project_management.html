@@ -1,0 +1,69 @@
+{% extends "en/base.html" %}
+
+{% block title %}unice-Project Management{% endblock %}
+{% block content %}
+<div class="container-fluid second-navbar-style" id="second-navbar">
+    <div class="container">
+        <div class="row center-block">
+            <div class="en-left">
+                <div class="second-navbar-text-style">
+                    <p class="text-bold"><i class="mega-menu-title_icon glyphicon glyphicon-menu-left"></i>Project Management</p>
+                    <p class="text-bold">Serve Passionately, Pursue Excellence</p>
+                </div>
+            </div>
+            <div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="" style="width: 165px;"><a href="{{ url_for('en.mold_making') }}">Mold Manufacturing</a></li>
+                    <li class="" style="width: 120px;"><a href="{{ url_for('en.advantages') }}">Advantages</a></li>
+                    <li class="active" style="width: 165px;"><a href="{{ url_for('en.Project_management') }}">Project Management</a></li>
+                    <li class="" style="width: 165px;"><a href="{{ url_for('en.design_engineering') }}">Design Engineering</a></li>
+                    <li class="" style="width: 165px;"><a href="{{ url_for('en.injection_molding') }}">Injection Molding</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-color-style">
+        <div class="bg-style clear index-third container-margin">
+            <div class="container index_padding clear">
+                <div class="media">
+                    <div class="media-left media-middle pl20 pt20">
+                        <a><img src="{{ url_for('static',filename = 'img/management_2.png') }}" alt=""
+                                class="img-rounded"></a>
+                    </div>
+                    <div class="media-body index-text-style">
+                        <h3 class="title-color">＋Powerful project management</h3>
+                        <ul>
+                            <p class="text-bold">Project Manager Engineer will follow up your project from concept to completion, Use fully integrated computerized management system to follow up your project, Quality is assured from part concept to mold finish with attention to every detail.</p>
+                            <li class="title-color text-bold">3 English speaking project Managers with more than 5 years of experiences</li>
+                            <li class="title-color text-bold">Provide technical support anytime and give best solutions according to the actual situation</li>
+                            <li class="title-color text-bold">Utilizing our professional technology in tool design,  and  complete tools  at best lead-time. </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-style clear index-third container-margin">
+            <div class="container index_padding clear">
+                <div class="media index_padding">
+                    <div class="media-body index-text-style">
+                        <h3 class="title-color">＋Powerful project management</h3>
+                        <ul>
+                            <li class="title-color text-bold">Kick-off meeting to review requirements</li>
+                            <li class="title-color text-bold">Crossed communication&Specification collecting</li>
+                            <li class="title-color text-bold">Project timing-FOT&weekly report sharing</li>
+                            <li class="title-color text-bold">Key control plan as APQP&PPAP</li>
+                            <li class="title-color text-bold">Improvements and knowledge sharing</li>
+                            <li class="title-color text-bold">Technical support and solutions</li>
+                            <li class="title-color text-bold">技术支持和解决方案</li>
+                        </ul>
+                    </div>
+                    <div class="media-right media-middle pr40">
+                        <a><img src="{{ url_for('static',filename = 'img/management_1.png') }}" alt=""
+                                class="img-rounded"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+</div>
+{% endblock %}

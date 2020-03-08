@@ -1,0 +1,67 @@
+{% extends "en/base.html" %}
+
+{% block title %}unice-Contact us{% endblock %}
+{% block content %}
+<div class="container-fluid second-navbar-style" id="second-navbar">
+    <div class="container">
+        <div class="row center-block">
+            <div class="col-md-4">
+                <div class="second-navbar-text-style">
+                    <p><i class="mega-menu-title_icon glyphicon glyphicon-menu-left"></i>Contact us</p>
+                    <p>Serve Passionately, Pursue Excellence</p>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="{{ url_for('en.contact_us') }}">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-color-style">
+        <div class="bg-style clear index-third container-margin">
+            <div class="container index_padding clear">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="contact-text-style">
+                            <h3>UNICE Mold Industrial Co., Ltd.</h3>
+                            <p>Add:Building A35,Western Industrial Park,Tantou Village,Songgang Town,Baoan District,Shenzhen,China</p>
+                            <p>Tel:+86-18176080868</p>
+                            <p>Email:kayle@unicemold.com</p>
+                            <p>Web: http://www.unicemold.com/</p>
+                        </div>
+                        <h3 class="contact-text-style">If you have any questions, please send us message.</h3>
+                        <form>
+                            <div class="form-group contact-text-style">
+                                <div class="form-group">
+                                    <label for="yourname">Your name：</label>
+                                    <input type="text" class="form-control" id="yourname" placeholder="your name">
+                                </div>
+                                <div>
+                                    <label for="youremail">Your email：</label>
+                                    <input type="email" class="form-control" id="youremail" placeholder="your Email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="yourcompany">Your company：</label>
+                                    <input type="text" class="form-control" id="yourcompany" placeholder="your company">
+                                </div>
+                                <div class="form-group">
+                                    <label for="yourphone">your phone number：</label>
+                                    <input type="text" class="form-control" id="yourphone"
+                                        placeholder="your phone number">
+                                </div>
+                                <div class="form-group">
+                                    <label for="query-text">What you want to consult：</label>
+                                    <textarea class="form-control" id="query-text" rows="8"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-default">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

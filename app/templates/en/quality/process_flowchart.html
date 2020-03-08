@@ -1,0 +1,53 @@
+{% extends "en/base.html" %}
+
+{% block title %}unice-process flowchart{% endblock %}
+{% block content %}
+<div class="container-fluid second-navbar-style" id="second-navbar">
+    <div class="container">
+        <div class="row center-block">
+            <div class="col-md-4">
+                <div class="second-navbar-text-style">
+                    <p><i class="mega-menu-title_icon glyphicon glyphicon-menu-left"></i>process flowchart</p>
+                    <p>Serve Passionately, Pursue Excellence</p>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="" style="width: 180px;"><a href="{{ url_for('en.quality_assurance') }}">quality assurance</a></li>
+                    <li class="active" style="width: 180px;"><a href="{{ url_for('en.process_flowchart') }}">process flowchart</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-color-style">
+        <div class="bg-style clear index-third container-margin">
+            <div class="container index_padding clear">
+                <div class="media">
+                    <div class="media-left media-middle pl20 pt20">
+                        <a><img src="{{ url_for('static',filename='img/process_flowchart_01.png') }}" alt="about us"
+                                class="img-rounded"></a>
+                    </div>
+                    <div class="media-body index-text-style">
+                        <h3 class="title-color">＋Process flowchart</h3>
+                        <ul>
+                            <li class="title-color text-bold">Critical Dimensions and Characteristics</li>
+                            <li class="title-color text-bold">Key Control Plan APQP&PPAP</li>
+                            <li class="title-color text-bold">In-process Control and inspection</li>
+                            <li class="title-color text-bold">Trial Reports&EMPB</li>
+                            <li class="title-color text-bold">QA Inspection before shipment</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-style clear index-third container-margin">
+            <div class="container index_padding clear">
+                    <div class="media-right media-middle pr40">
+                        <a><img src="{{ url_for('static',filename = 'img/process_flowchart.png') }}"
+                                class="img-rounded"></a>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

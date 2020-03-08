@@ -1,0 +1,72 @@
+{% extends "en/base.html" %}
+
+{% block title %}unice-Advantages{% endblock %}
+{% block content %}
+<div class="container-fluid second-navbar-style" id="second-navbar">
+    <div class="container">
+        <div class="row center-block">
+            <div class="en-left">
+                <div class="second-navbar-text-style">
+                    <p class="text-bold"><i class="mega-menu-title_icon glyphicon glyphicon-menu-left"></i>Advantages</p>
+                    <p class="text-bold">Serve Passionately, Pursue Excellence</p>
+                </div>
+            </div>
+            <div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="" style="width: 165px;"><a href="{{ url_for('en.mold_making') }}">Mold Manufacturing</a></li>
+                    <li class="active" style="width: 120px;"><a href="{{ url_for('en.advantages') }}">Advantages</a></li>
+                    <li class="" style="width: 165px;"><a href="{{ url_for('en.Project_management') }}">Project Management</a></li>
+                    <li class="" style="width: 165px;"><a href="{{ url_for('en.design_engineering') }}">Design Engineering</a></li>
+                    <li class="" style="width: 165px;"><a href="{{ url_for('en.injection_molding') }}">Injection Molding</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-color-style">
+        <div class="bg-style clear index-third container-margin">
+            <div class="container index_padding clear">
+                <div class="media">
+                    <div class="media-left media-middle pl20 pt20">
+                        <a href="{{ url_for('en.Insert_Molding') }}"><img src="{{ url_for('static',filename='img/advant_01.jpg') }}" alt=""
+                                class="img-rounded"></a>
+                    </div>
+                    <div class="media-body index-text-style">
+                        <h3 class="title-color">＋Advantages</h3>
+                        <ul>
+                            <p class="text-bold">Work closely with customers from the initial product development up to the final product.</p>
+                            <li class="title-color text-bold">Excellent quality as European Standard</li>
+                            <li class="title-color text-bold">Continuously Improvements and Innovation</li>
+                            <li class="title-color text-bold">Powerful project Management and Engineering</li>
+                            <li class="title-color text-bold">High Precision Machines</li>
+                            <li class="title-color text-bold">Reasonable Pricing & On-time Delivery</li>
+                            <li class="title-color text-bold">Comprehensive After-Sales Service</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-style clear index-third container-margin">
+            <div class="container index_padding clear">
+                <div class="media index_padding">
+                    <div class="media-body index-text-style">
+                        <h3 class="title-color">＋Excellent project management</h3>
+                        <ul>
+                            <li class="title-color text-bold">Innovative ideas</li>
+                            <li class="title-color text-bold">The latest software UG, 3D CAD / CAM</li>
+                            <li class="title-color text-bold">Technical support +more than 10 years experience</li>
+                            <li class="title-color text-bold">DFM Report</li>
+                            <li class="title-color text-bold">CAE analysis</li>
+                            <li class="title-color text-bold">Product optimization</li>
+                            <li class="title-color text-bold">Full 2D&3D Mold design</li>
+                        </ul>
+                    </div>
+                    <div class="media-right media-middle pr20">
+                        <a href="{{ url_for('en.Stamping_tool_1') }}"><img src="{{ url_for('static',filename='img/advant_02.png') }}" alt=""
+                                class="img-rounded"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

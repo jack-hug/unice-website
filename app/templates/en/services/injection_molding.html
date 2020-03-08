@@ -1,0 +1,80 @@
+{% extends "en/base.html" %}
+
+{% block title %}unice-Injection Molding{% endblock %}
+{% block content %}
+<div class="container-fluid second-navbar-style" id="second-navbar">
+    <div class="container">
+        <div class="row center-block">
+            <div class="en-left">
+                <div class="second-navbar-text-style">
+                    <p class="text-bold"><i class="mega-menu-title_icon glyphicon glyphicon-menu-left"></i>Injection Molding</p>
+                    <p class="text-bold">Serve Passionately, Pursue Excellence</p>
+                </div>
+            </div>
+            <div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="" style="width: 165px;"><a href="{{ url_for('en.mold_making') }}">Mold Manufacturing</a></li>
+                    <li class="" style="width: 120px;"><a href="{{ url_for('en.advantages') }}">Advantages</a></li>
+                    <li class="" style="width: 165px;"><a href="{{ url_for('en.Project_management') }}">Project Management</a></li>
+                    <li class="" style="width: 165px;"><a href="{{ url_for('en.design_engineering') }}">Design Engineering</a></li>
+                    <li class="active" style="width: 165px;"><a href="{{ url_for('en.injection_molding') }}">Injection Molding</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-color-style">
+        <div class="bg-style clear index-third container-margin">
+            <div class="container index_padding clear">
+                <div class="media">
+                    <div class="media-left media-middle pl20 pt20">
+                        <a><img src="{{ url_for('static',filename = 'img/plastic01.png') }}"
+                                class="img-rounded"></a>
+                    </div>
+                    <div class="media-body index-text-style">
+                        <h3 class="title-color">＋Injection Molding</h3>
+                        <ul>
+                            <li class="title-color text-bold">Have 10 sets of  injection molding machines from 90 ton up to 400 ton</li>
+                            <li class="title-color text-bold">To match your project requirements with a range of machines to ensure maximum efficiency and reduce costs</li>
+                            <li class="title-color text-bold">To manufacture precision parts for large engineering components</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-style clear index-third container-margin">
+            <div class="container index_padding clear">
+                <div class="media index_padding">
+                    <div class="media-body index-text-style">
+                        <h3 class="title-color">＋Injection Molding</h3>
+                        <ul>
+                            <li class="title-color text-bold">Unice can operate 24 hours a day and 7 days a week. Capability to  manufacture precision parts to larger engineered components</li>
+                            <li class="title-color text-bold">Quick set up times allow for reduced costs</li>
+                            <li class="title-color text-bold">Efficient machine / people utilization which keeps prices competitive</li>
+                        </ul>
+                    </div>
+                    <div class="media-right media-middle pr40">
+                        <a><img src="{{ url_for('static',filename = 'img/plastic02.png') }}"
+                                class="img-rounded"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-style clear index-third container-margin">
+            <div class="container index_padding clear">
+                <div class="media">
+                    <div class="media-left media-middle pl20 pt20">
+                        <a><img src="{{ url_for('static',filename = 'img/plastic03.png') }}"
+                                class="img-rounded"></a>
+                    </div>
+                    <div class="media-body index-text-style">
+                        <h3 class="title-color">＋Injection Molding</h3>
+                        <ul>
+                            <p class="title-color text-bold">Unice’s continuous investment in new plant and equipment keeps us at the forefront of modern manufacturing technologies, and ensures we can process the widest range of engineering polymers.</p>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

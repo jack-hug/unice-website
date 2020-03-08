@@ -1,0 +1,23 @@
+﻿{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block title %}
+Unice 登录页面
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid second-navbar-style" id="second-navbar">
+	<div class="container-fluid bg-color-style">
+		<div class="bg-style clear index-third container-margin">
+			<div class="container index_padding clear">
+				<div class="row">
+					<div class="col-md-4 col-md-offset-4 contact-text-style">
+						<h1>后台登录</h1>
+						{{ wtf.quick_form(form) }}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

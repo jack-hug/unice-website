@@ -1,21 +1,21 @@
-{% extends "base.html" %}
+{% extends "en/base.html" %}
 
-{% block title %}unice-精密零件{% endblock %}
+{% block title %}unice-Precision Parts {% endblock %}
 {% block content %}
 <div class="container-fluid second-navbar-style" id="second-navbar">
     <div class="container">
         <div class="row center-block">
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <div class="second-navbar-text-style">
-                    <p><i class="mega-menu-title_icon glyphicon glyphicon-menu-left"></i>精密零件</p>
-                    <p>热情服务，追求卓越</p>
+                    <p><i class="mega-menu-title_icon glyphicon glyphicon-menu-left"></i>Precision Parts </p>
+                    <p>Serve Passionately, Pursue Excellence</p>
                 </div>
             </div>
-            <div class="col-md-9">
+            <div class="col-md-8">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class=""><a href="{{ url_for('main.Auto_Plastics_Part') }}">塑胶模具制造</a></li>
-                    <li class=""><a href="{{ url_for('main.Stamping_tool_3') }}">五金模具制造</a></li>
-                    <li class="active"><a href="{{ url_for('main.components') }}">精密零件</a></li>
+                    <li class="" style="width: 220px;"><a href="{{ url_for('en.Auto_Plastics_Part') }}">Injection mould manufacturing </a></li>
+                    <li class=""><a href="{{ url_for('en.Stamping_tool_3') }}">Stamping Tool</a></li>
+                    <li class="active"><a href="{{ url_for('en.components') }}">Precision Parts </a></li>
                 </ul>
             </div>
         </div>
@@ -28,112 +28,112 @@
                         <div class="row">
                             <div class="col-xs-6 col-md-4 plastic-img">
                                 <a class="thumbnail">
-                                    <img src="static\uploads\Components\1.png">
+                                    <img src="{{ url_for('static',filename='uploads/Components/1.png') }}">
                                 </a>
                             </div>
                             <div class="col-xs-6 col-md-4 plastic-img">
                                 <a class="thumbnail">
-                                    <img src="static\uploads\Components\2.png">
+                                    <img src="{{ url_for('static',filename='uploads/Components/2.png') }}">
                                 </a>
                             </div>
                             <div class="col-xs-6 col-md-4 plastic-img">
                                 <a class="thumbnail">
-                                    <img src="static\uploads\Components\3.png">
+                                    <img src="{{ url_for('static',filename='uploads/Components/3.png') }}">
                                 </a>
                             </div>
                             <div class="col-xs-6 col-md-4 plastic-img">
                                 <a class="thumbnail">
-                                    <img src="static\uploads\Components\4.png">
+                                    <img src="{{ url_for('static',filename='uploads/Components/4.png') }}">
                                 </a>
                             </div>
                             <div class="col-xs-6 col-md-4 plastic-img">
                                 <a class="thumbnail">
-                                    <img src="static\uploads\Components\5.png">
+                                    <img src="{{ url_for('static',filename='uploads/Components/5.png') }}">
                                 </a>
                             </div>
                             <div class="col-xs-6 col-md-4 plastic-img">
                                 <a class="thumbnail">
-                                    <img src="static\uploads\Components\6.png">
+                                    <img src="{{ url_for('static',filename='uploads/Components/6.png') }}">
                                 </a>
                             </div>
                             <div class="col-xs-6 col-md-4 plastic-img">
                                 <a class="thumbnail">
-                                    <img src="static\uploads\Components\7.png">
+                                    <img src="{{ url_for('static',filename='uploads/Components/7.png') }}">
                                 </a>
                             </div>
                             <div class="col-xs-6 col-md-4 plastic-img">
                                 <a class="thumbnail">
-                                    <img src="static\uploads\Components\8.png">
+                                    <img src="{{ url_for('static',filename='uploads/Components/8.png') }}">
                                 </a>
                             </div>
                             <div class="col-xs-6 col-md-4 plastic-img">
                                 <a class="thumbnail">
-                                    <img src="static\uploads\Components\9.png">
+                                    <img src="{{ url_for('static',filename='uploads/Components/9.png') }}">
                                 </a>
                             </div>
                             <div class="col-xs-6 col-md-4 plastic-img">
                                 <a class="thumbnail">
-                                    <img src="static\uploads\Components\10.png">
+                                    <img src="{{ url_for('static',filename='uploads/Components/10.png') }}">
                                 </a>
                             </div>
                             <div class="col-xs-6 col-md-4 plastic-img">
                                 <a class="thumbnail">
-                                    <img src="static\uploads\Components\11.png">
+                                    <img src="{{ url_for('static',filename='uploads/Components/11.png') }}">
                                 </a>
                             </div>
                             <div class="col-xs-6 col-md-4 plastic-img">
                                 <a class="thumbnail">
-                                    <img src="static\uploads\Components\12.png">
+                                    <img src="{{ url_for('static',filename='uploads/Components/12.png') }}">
                                 </a>
                             </div>
                             <div class="col-xs-6 col-md-4 plastic-img">
                                 <a class="thumbnail">
-                                    <img src="static\uploads\Components\13.png">
+                                    <img src="{{ url_for('static',filename='uploads/Components/13.png') }}">
                                 </a>
                             </div>
                             <div class="col-xs-6 col-md-4 plastic-img">
                                 <a class="thumbnail">
-                                    <img src="static\uploads\Components\14.png">
+                                    <img src="{{ url_for('static',filename='uploads/Components/14.png') }}">
                                 </a>
                             </div>
                             <div class="col-xs-6 col-md-4 plastic-img">
                                 <a class="thumbnail">
-                                    <img src="static\uploads\Components\15.png">
+                                    <img src="{{ url_for('static',filename='uploads/Components/15.png') }}">
                                 </a>
                             </div>
                             <div class="col-xs-6 col-md-4 plastic-img">
                                 <a class="thumbnail">
-                                    <img src="static\uploads\Components\16.png">
+                                    <img src="{{ url_for('static',filename='uploads/Components/16.png') }}">
                                 </a>
                             </div>
                             <div class="col-xs-6 col-md-4 plastic-img">
                                 <a class="thumbnail">
-                                    <img src="static\uploads\Components\17.png">
+                                    <img src="{{ url_for('static',filename='uploads/Components/17.png') }}">
                                 </a>
                             </div>
                             <div class="col-xs-6 col-md-4 plastic-img">
                                 <a class="thumbnail">
-                                    <img src="static\uploads\Components\18.png">
+                                    <img src="{{ url_for('static',filename='uploads/Components/18.png') }}">
                                 </a>
                             </div>
                             <div class="col-xs-6 col-md-4 plastic-img">
                                 <a class="thumbnail">
-                                    <img src="static\uploads\Components\19.png">
+                                    <img src="{{ url_for('static',filename='uploads/Components/19.png') }}">
                                 </a>
                             </div>
                             <div class="col-xs-6 col-md-4 plastic-img">
                                 <a class="thumbnail">
-                                    <img src="static\uploads\Components\20.png">
+                                    <img src="{{ url_for('static',filename='uploads/Components/20.png') }}">
                                 </a>
                             </div>
                             <div class="col-xs-6 col-md-4 plastic-img">
                                 <a class="thumbnail">
-                                    <img src="static\uploads\Components\21.png">
+                                    <img src="{{ url_for('static',filename='uploads/Components/21.png') }}">
                                 </a>
                             </div>
                             <div class="col-xs-6 col-md-4 plastic-img">
                                 <a class="thumbnail">
-                                    <img src="static\uploads\Components\22.png">
+                                    <img src="{{ url_for('static',filename='uploads/Components/22.png') }}">
                                 </a>
                             </div>
                         </div>
