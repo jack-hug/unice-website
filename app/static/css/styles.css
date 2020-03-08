@@ -582,3 +582,8 @@ ul.social-footer2 li a {
 .en-right {
   width: 160px;
 }
+
+ .table tr .th-center {
+   text-align: center;
+   vertical-align: middle;
+ }
