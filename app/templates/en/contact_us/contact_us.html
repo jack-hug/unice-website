@@ -1,10 +1,17 @@
+<<<<<<< HEAD
 {% extends "base.html" %}
 
 {% block title %}unice-联系我们{% endblock %}
+=======
+{% extends "en/base.html" %}
+
+{% block title %}unice-Contact us{% endblock %}
+>>>>>>> 79cf03d207100cf23ceca964fd12e4ea29dfdded
 {% block content %}
 <div class="container-fluid second-navbar-style" id="second-navbar">
     <div class="container">
         <div class="row center-block">
+<<<<<<< HEAD
             <div class="col-md-3">
                 <div class="second-navbar-text-style">
                     <p><i class="mega-menu-title_icon glyphicon glyphicon-menu-left"></i>联系我们</p>
@@ -14,6 +21,17 @@
             <div class="col-md-9">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="active"><a href="{{ url_for('main.contact_us') }}">联系我们</a></li>
+=======
+            <div class="col-md-4">
+                <div class="second-navbar-text-style">
+                    <p><i class="mega-menu-title_icon glyphicon glyphicon-menu-left"></i>Contact us</p>
+                    <p>Serve Passionately, Pursue Excellence</p>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="{{ url_for('en.contact_us') }}">Contact us</a></li>
+>>>>>>> 79cf03d207100cf23ceca964fd12e4ea29dfdded
                 </ul>
             </div>
         </div>
@@ -24,6 +42,7 @@
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
                         <div class="contact-text-style">
+<<<<<<< HEAD
                             <h3>我们的联系方式</h3>
                             <p>公司：优耐思实业（深圳）有限公司</p>
                             <p>地址：深圳市南山区粤海街道麻岭社区科技中一路19号赛百诺CMP厂房B栋406-04C</p>
@@ -48,14 +67,46 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="yourphone">您的电话：</label>
+=======
+                            <h3>UNICE Mold Industrial Co., Ltd.</h3>
+                            <p>Add:Building A35,Western Industrial Park,Tantou Village,Songgang Town,Baoan District,Shenzhen,China</p>
+                            <p>Tel:+86-18176080868</p>
+                            <p>Email:kayle@unicemold.com</p>
+                            <p>Web: http://www.unicemold.com/</p>
+                        </div>
+                        <h3 class="contact-text-style">If you have any questions, please send us message.</h3>
+                        <form>
+                            <div class="form-group contact-text-style">
+                                <div class="form-group">
+                                    <label for="yourname">Your name：</label>
+                                    <input type="text" class="form-control" id="yourname" placeholder="your name">
+                                </div>
+                                <div>
+                                    <label for="youremail">Your email：</label>
+                                    <input type="email" class="form-control" id="youremail" placeholder="your Email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="yourcompany">Your company：</label>
+                                    <input type="text" class="form-control" id="yourcompany" placeholder="your company">
+                                </div>
+                                <div class="form-group">
+                                    <label for="yourphone">your phone number：</label>
+>>>>>>> 79cf03d207100cf23ceca964fd12e4ea29dfdded
                                     <input type="text" class="form-control" id="yourphone"
                                         placeholder="your phone number">
                                 </div>
                                 <div class="form-group">
+<<<<<<< HEAD
                                     <label for="query-text">您要咨询的内容：</label>
                                     <textarea class="form-control" id="query-text" rows="8"></textarea>
                                 </div>
                                 <button type="submit" class="btn btn-default">提 交</button>
+=======
+                                    <label for="query-text">What you want to consult：</label>
+                                    <textarea class="form-control" id="query-text" rows="8"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-default">Submit</button>
+>>>>>>> 79cf03d207100cf23ceca964fd12e4ea29dfdded
                             </div>
                         </form>
                     </div>

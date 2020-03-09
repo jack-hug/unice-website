@@ -506,7 +506,8 @@ ul.social-footer2 li a {
     color: #fff;
     padding: 0px 0px 0px 50px;
 }
-.second-navbar-style .navbar-nav > li {
+
+.second-navbar-style .navbar-nav li {
     height: 85px;
     width: 120px;
 }
@@ -572,4 +573,21 @@ ul.social-footer2 li a {
 /* 字体加粗 */
 .text-bold {
   font-weight: bold;
+<<<<<<< HEAD
 }
+=======
+}
+
+.en-left {
+  float: left;
+}
+
+.en-right {
+  width: 160px;
+}
+
+ .table tr .th-center {
+   text-align: center;
+   vertical-align: middle;
+ }
+>>>>>>> 79cf03d207100cf23ceca964fd12e4ea29dfdded
