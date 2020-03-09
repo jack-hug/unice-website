@@ -1,32 +1,11 @@
-<<<<<<< HEAD
-{% extends "base.html" %}
-
-{% block title %}unice-工程设计{% endblock %}
-=======
 {% extends "en/base.html" %}
 
 {% block title %}unice-design engineering{% endblock %}
->>>>>>> 79cf03d207100cf23ceca964fd12e4ea29dfdded
 {% block content %}
 <div class="container-fluid second-navbar-style" id="second-navbar">
 
     <div class="container">
         <div class="row center-block">
-<<<<<<< HEAD
-            <div class="col-md-3">
-                <div class="second-navbar-text-style">
-                    <p><i class="mega-menu-title_icon glyphicon glyphicon-menu-left"></i>工程设计</p>
-                    <p>热情服务，追求卓越</p>
-                </div>
-            </div>
-            <div class="col-md-9">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class=""><a href="{{ url_for('.mold_making') }}">模具制造</a></li>
-                    <li class=""><a href="{{ url_for('.advantages') }}">我们的优势</a></li>
-                    <li class=""><a href="{{ url_for('.Project_management') }}">项目管理</a></li>
-                    <li class="active"><a href="{{ url_for('.design_engineering') }}">工程设计</a></li>
-                    <li class=""><a href="{{ url_for('.injection_molding') }}">注塑生产</a></li>
-=======
             <div class="en-left">
                 <div class="second-navbar-text-style">
                     <p class="text-bold"><i class="mega-menu-title_icon glyphicon glyphicon-menu-left"></i>Design Engineering</p>
@@ -40,12 +19,29 @@
                     <li class="" style="width: 165px;"><a href="{{ url_for('en.Project_management') }}">Project Management</a></li>
                     <li class="active" style="width: 165px;"><a href="{{ url_for('en.design_engineering') }}">Design Engineering</a></li>
                     <li class="" style="width: 165px;"><a href="{{ url_for('en.injection_molding') }}">Injection Molding</a></li>
->>>>>>> 79cf03d207100cf23ceca964fd12e4ea29dfdded
                 </ul>
             </div>
         </div>
     </div>
     <div class="container-fluid bg-color-style">
+        <div class="bg-style clear index-third container-margin">
+            <div class="container index_padding clear">
+                <div class="media index_padding">
+                    <div class="media-body index-text-style">
+                        <h3 class="title-color">＋DFM and Moldflow Analysis</h3>
+                        <ul>
+                            <p class="text-bold">Well Experienced and professional engineers  work on DFM and Mold Flow using Autodesk Mold Flow Simulation.</p>
+                            <li class="title-color text-bold">Moldflow for Filling/Cooling/Deflection/Venting</li>
+                            <li class="title-color text-bold">Crossed technical discussions for best solutions.</li>
+                        </ul>
+                    </div>
+                    <div class="media-right media-middle pr40">
+                        <a><img src="{{ url_for('static',filename = 'img/design_03.png') }}" alt="about us"
+                                class="img-rounded"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="bg-style clear index-third container-margin">
             <div class="container index_padding clear">
                 <div class="media">
@@ -54,19 +50,17 @@
                                 class="img-rounded"></a>
                     </div>
                     <div class="media-body index-text-style">
-<<<<<<< HEAD
-                        <h3 class="title-color">＋工程设计</h3>
+                        <h3 class="title-color">＋Design Engineering</h3>
                         <ul>
-                            <p>工程技术和良好的设计规范是实现创新的关键要素，unice一直都将工程技术视为重中之中。</p>
-                            <li class="title-color text-bold">使用CAD/CAE/CAM完成复杂的设计</li>
-                            <li class="title-color text-bold">使用3D技术对工程进行分析</li>
-                            <li class="title-color text-bold">使用模流仿真改善灌装/冷却/变形/排气</li>
-=======
-                        <h3 class="title-color">＋DESIGN ENGINEERING</h3>
-                        <ul>
-                            <p class="text-bold">CAD/CAE/CAM for complex design.</p>
-                            <li class="title-color text-bold">Crossed technical discussions for best solutions.</li>
->>>>>>> 79cf03d207100cf23ceca964fd12e4ea29dfdded
+                            <li class="title-color text-bold">
+                                Development and design, Our tool designers have long-standing experiences with the development and design of single and multicavity moulds with hot systems and cold inlets, moulds for setting of metal inserts (overmoulding), moulds with hydraulic and pneumatic systems, stack moulds and moulds for thin-walled parts. In addition to moulds for plastic parts, we also design and produce stamping tools for metal forming .
+                            </li>
+                            <li class="title-color text-bold">
+                                We use CAD/CAM system Unigraphics NX8.5. This software allows us to create 3D models and subsequently 2D details of individual components. 
+                            </li>
+                            <li class="title-color text-bold">
+                                As we are committed to working closely with our customers to provide them with exactly what they want, when they need it!
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -76,17 +70,9 @@
             <div class="container index_padding clear">
                 <div class="media index_padding">
                     <div class="media-body index-text-style">
-<<<<<<< HEAD
-                        <h3 class="title-color">＋为客户理念而生</h3>
-                        <ul>
-                            <li class="title-color text-bold">
-                                <p>收到客户的概念或要求后，优耐思将利用多年的制造专业知识和最新的软件为我们的客户提供高质量，高性价比的解决方案。</p>
-                            </li>
-=======
                         <h3 class="title-color">＋Born for customer</h3>
                         <ul>
-                            <p class="text-bold">After receiving the customer's concept or request, Unice will use many years of manufacturing expertise and the latest software to provide our customers with high-quality, cost-effective solutions.</p>
->>>>>>> 79cf03d207100cf23ceca964fd12e4ea29dfdded
+                            <p class="text-bold title-color">After receiving the customer's concept or request, Unice will use many years of manufacturing expertise and the latest software to provide our customers with high-quality, cost-effective solutions.</p>
                         </ul>
                     </div>
                     <div class="media-right media-middle pr40">
@@ -104,48 +90,13 @@
                                 class="img-rounded"></a>
                     </div>
                     <div class="media-body index-text-style">
-<<<<<<< HEAD
-                        <h3 class="title-color">＋专业的工程人员</h3>
-                        <ul>
-                            <p>与供应商的良好工作关系可确保指定最合适的材料，并始终提供技术支持。 </p>
-                            <li class="title-color text-bold">优耐思为客户制定节省成本和简化成本的提案</li>
-                            <li class="title-color text-bold">优耐思拥有超过15年的塑料模具设计人员，在专业的模具设计和产品经验方面拥有丰富的模具开发和后期制作经验。</li>
-                            <li class="title-color text-bold">随时为生产提供高质量的保障和服务。</li>
-=======
                         <h3 class="title-color">＋Professional staff</h3>
                         <ul>
                             <p class="text-bold">Unice knows the importance of engineering and Innovation as good design is the key element for Excellent products.</p>
                             <li class="title-color text-bold">UNICE develops proposals for customers to save and simplify costs</li>
                             <li class="title-color text-bold">UNICE has more than 15 years of plastic mold design staff, and has extensive mold development and post-production experience in professional mold design and product experience.</li>
                             <li class="title-color text-bold">UNICE provides high-quality guarantees and services for production.</li>
->>>>>>> 79cf03d207100cf23ceca964fd12e4ea29dfdded
                         </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="bg-style clear index-third container-margin">
-            <div class="container index_padding clear">
-                <div class="media index_padding">
-                    <div class="media-body index-text-style">
-<<<<<<< HEAD
-                        <h3 class="title-color">＋为客户理念而生</h3>
-                        <ul>
-                            <li class="title-color text-bold">
-                                <p>我们的设计工程师使用各种最新的3D CAD/CAM软件包，并且我们还进行了模流仿真,以帮助改善零件设计,工具布局和制造工艺</p>
-                            </li>
-=======
-                        <h3 class="title-color">＋DFM and Moldflow Analysis</h3>
-                        <ul>
-                            <p class="text-bold">Well Experienced and professional engineers  work on DFM and Mold Flow using Autodesk Mold Flow Simulation.</p>
-                            <li class="title-color text-bold">Moldflow for Filling/Cooling/Deflection/Venting</li>
-                            <li class="title-color text-bold">Crossed technical discussions for best solutions.</li>
->>>>>>> 79cf03d207100cf23ceca964fd12e4ea29dfdded
-                        </ul>
-                    </div>
-                    <div class="media-right media-middle pr40">
-                        <a><img src="{{ url_for('static',filename = 'img/design_03.png') }}" alt="about us"
-                                class="img-rounded"></a>
                     </div>
                 </div>
             </div>

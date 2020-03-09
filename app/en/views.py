@@ -1,11 +1,7 @@
 from flask import render_template,redirect,url_for,flash,request
 from . import en
 from flask_login import login_required,logout_user,login_user
-<<<<<<< HEAD
-from ..models import User
-=======
 from ..models import User,Product
->>>>>>> 79cf03d207100cf23ceca964fd12e4ea29dfdded
 
 
 
@@ -82,10 +78,10 @@ def Stamping_tool_3():
 def components():
     return render_template('en/products/Components.html')
 
-@en.route('/quality_assurance')
-def quality_assurance():
-    return render_template('en/quality/quality_assurance.html')
+@en.route('/quality_control')
+def quality_control():
+    return render_template('en/quality/quality_control.html')
 
-@en.route('/process_flowchart')
-def process_flowchart():
-    return render_template('en/quality/process_flowchart.html')
+@en.route('/quality_process')
+def quality_process():
+    return render_template('en/quality/quality_process.html')

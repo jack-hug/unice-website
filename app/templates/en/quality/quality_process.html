@@ -1,39 +1,20 @@
-<<<<<<< HEAD
-{% extends "base.html" %}
-
-{% block title %}unice-工艺流程{% endblock %}
-=======
 {% extends "en/base.html" %}
 
-{% block title %}unice-process flowchart{% endblock %}
->>>>>>> 79cf03d207100cf23ceca964fd12e4ea29dfdded
+{% block title %}unice-Quality Process{% endblock %}
 {% block content %}
 <div class="container-fluid second-navbar-style" id="second-navbar">
     <div class="container">
         <div class="row center-block">
-<<<<<<< HEAD
-            <div class="col-md-3">
-                <div class="second-navbar-text-style">
-                    <p><i class="mega-menu-title_icon glyphicon glyphicon-menu-left"></i>工艺流程</p>
-                    <p>热情服务，追求卓越</p>
-                </div>
-            </div>
-            <div class="col-md-9">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class=""><a href="{{ url_for('.quality_assurance') }}">质量保证</a></li>
-                    <li class="active"><a href="{{ url_for('.process_flowchart') }}">工艺流程</a></li>
-=======
             <div class="col-md-4">
                 <div class="second-navbar-text-style">
-                    <p><i class="mega-menu-title_icon glyphicon glyphicon-menu-left"></i>process flowchart</p>
+                    <p><i class="mega-menu-title_icon glyphicon glyphicon-menu-left"></i>Quality Process</p>
                     <p>Serve Passionately, Pursue Excellence</p>
                 </div>
             </div>
             <div class="col-md-8">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="" style="width: 180px;"><a href="{{ url_for('en.quality_assurance') }}">quality assurance</a></li>
-                    <li class="active" style="width: 180px;"><a href="{{ url_for('en.process_flowchart') }}">process flowchart</a></li>
->>>>>>> 79cf03d207100cf23ceca964fd12e4ea29dfdded
+                    <li class="" style="width: 180px;"><a href="{{ url_for('en.quality_control') }}">Quality Control</a></li>
+                    <li class="active" style="width: 180px;"><a href="{{ url_for('en.quality_process') }}">Quality Process</a></li>
                 </ul>
             </div>
         </div>
@@ -43,20 +24,6 @@
             <div class="container index_padding clear">
                 <div class="media">
                     <div class="media-left media-middle pl20 pt20">
-<<<<<<< HEAD
-                        <a><img src="static\img\process_flowchart_01.png" alt="about us"
-                                class="img-rounded"></a>
-                    </div>
-                    <div class="media-body index-text-style">
-                        <h3 class="title-color">＋工艺流程</h3>
-                        <ul>
-                            <p>整个过程已整合到Unice的持续改进质量体系中。</p>
-                            <li class="title-color text-bold">关键尺寸和特征</li>
-                            <li class="title-color text-bold">关键控制计划APQP，PPAP</li>
-                            <li class="title-color text-bold">制程中的控制和检查</li>
-                            <li class="title-color text-bold">测验报告</li>
-                            <li class="title-color text-bold">出货前进行质量检查</li>
-=======
                         <a><img src="{{ url_for('static',filename='img/process_flowchart_01.png') }}" alt="about us"
                                 class="img-rounded"></a>
                     </div>
@@ -68,7 +35,6 @@
                             <li class="title-color text-bold">In-process Control and inspection</li>
                             <li class="title-color text-bold">Trial Reports&EMPB</li>
                             <li class="title-color text-bold">QA Inspection before shipment</li>
->>>>>>> 79cf03d207100cf23ceca964fd12e4ea29dfdded
                         </ul>
                     </div>
                 </div>
