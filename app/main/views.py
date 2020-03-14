@@ -77,6 +77,10 @@ def Stamping_tool_3():
 def components():
     return render_template('products/Components.html')
 
+@main.route('/prototype')
+def prototype():
+    return render_template('products/Prototype.html')
+
 @main.route('/quality_assurance')
 def quality_assurance():
     return render_template('quality/quality_assurance.html')
