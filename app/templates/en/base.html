@@ -24,8 +24,8 @@
             <ul class="nav navbar-nav navbar-style">
                 <li class="active"><a href="{{ url_for('en.index') }}">HOME</a></li>
                 <li class=""><a href="{{ url_for('en.mold_making') }}">SERVICES</a></li>
-                <li class=""><a href="{{ url_for('en.quality_assurance') }}">QUALITY</a></li>
-                <li class=""><a href="{{ url_for('en.Auto_Plastics_Part') }}">PRODUCT</a></li>
+                <li class=""><a href="{{ url_for('en.quality_control') }}">QUALITY</a></li>
+                <li class=""><a href="{{ url_for('en.Auto_Plastics_Part') }}">PRODUCTS</a></li>
                 <li class=""><a href="{{ url_for('en.contact_us') }}">CONTACT</a></li>
                 <li><a href="{{ url_for('main.index') }}" class="language-switch">CN</a></li>
                 <li class="navbar-line-style">|</li>
@@ -57,7 +57,7 @@
                     <div class="widget subscribe no-box">
                         <h5 class="widget-title"> Unice Mold Industrial Co.,Ltd <span></span></h5>
                         <p>
-                            Unice is  a manufacturer of injection mold manufacturing, custom plastic injection molding, stamping molds and precision machined parts etc.
+                            Unice is  a manufacturer of injection mold manufacturing, custom plastic injection molding, stamping molds,  precision machined parts and prototype parts etc.
                         </p>
                         <p>
                             We provide manufacturing solutions from simple to impossible, and covers a wide range of industries including automotive, construction, electronics,medical,industry etc.
@@ -78,7 +78,7 @@
                             </li>
                             <li>
                                 <div class="thumb-content mb15"><a
-                                        href="{{ url_for('en.quality_assurance') }}">QUALITY</a></div>
+                                        href="{{ url_for('en.quality_control') }}">QUALITY</a></div>
                             </li>
                             <li>
                                 <div class="thumb-content mb15"><a href="{{ url_for('en.Auto_Plastics_Part') }}">PRODUCTS</a>
@@ -98,14 +98,14 @@
                         <ul class="thumbnail-widget">
                             <li>
                                 <div class="thumb-content mb10"><a
-                                        href="{{ url_for('en.Auto_Plastics_Part') }}">Auto Plastic parts</a></div>
+                                        href="{{ url_for('en.Auto_Plastics_Part') }}">Auto Plastic Parts</a></div>
                             </li>
                             <li>
                                 <div class="thumb-content mb10"><a href="{{ url_for('en.twok_Molding') }}">2K Molding Parts</a>
                                 </div>
                             </li>
                             <li>
-                                <div class="thumb-content mb10"><a href="{{ url_for('en.Electrical_Plastics_Molding') }}">Electrical Plastic parts</a></div>
+                                <div class="thumb-content mb10"><a href="{{ url_for('en.Electrical_Plastics_Molding') }}">Electrical Plastic Parts</a></div>
                             </li>
                             <li>
                                 <div class="thumb-content mb10"><a href="{{ url_for('en.Insert_Molding') }}">Insert Molding Parts</a></div>
@@ -127,7 +127,11 @@
                                 <div class="thumb-content mb10"><a href="{{ url_for('en.Stamping_tool_2') }}">Metal Shrapnel Parts</a></div>
                             </li>
                             <li>
-                                <div class="thumb-content mb10"><a href="{{ url_for('en.components') }}">Precision machined parts</a>
+                                <div class="thumb-content mb10"><a href="{{ url_for('en.components') }}">Precision machined Parts</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="thumb-content mb10"><a href="{{ url_for('en.prototype') }}">Prototype Parts</a>
                                 </div>
                             </li>
                         </ul>
@@ -168,12 +172,6 @@
                                 </a>
                             </li>
                         </ul>
-                        <p class="mt15 pd-left">
-                            <a title="wechat" target="_blank">
-                                <img alt="instagram" width="85" height="85"
-                                    src="{{ url_for('static',filename = 'img/icon/wechat.gif') }}">
-                            </a>
-                        </p>
                     </div>
                 </div>
 

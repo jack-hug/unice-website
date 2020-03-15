@@ -78,10 +78,14 @@ def Stamping_tool_3():
 def components():
     return render_template('en/products/Components.html')
 
-@en.route('/quality_assurance')
-def quality_assurance():
-    return render_template('en/quality/quality_assurance.html')
+@en.route('/prototype')
+def prototype():
+    return render_template('en/products/Prototype.html')
 
-@en.route('/process_flowchart')
-def process_flowchart():
-    return render_template('en/quality/process_flowchart.html')
+@en.route('/quality_control')
+def quality_control():
+    return render_template('en/quality/quality_control.html')
+
+@en.route('/quality_process')
+def quality_process():
+    return render_template('en/quality/quality_process.html')

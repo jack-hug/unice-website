@@ -1,20 +1,20 @@
 {% extends "en/base.html" %}
 
-{% block title %}unice-Quality assurance{% endblock %}
+{% block title %}unice-Quality Control{% endblock %}
 {% block content %}
 <div class="container-fluid second-navbar-style" id="second-navbar">
     <div class="container">
         <div class="row center-block">
             <div class="col-md-4">
                 <div class="second-navbar-text-style">
-                    <p><i class="mega-menu-title_icon glyphicon glyphicon-menu-left"></i>Quality assurance</p>
+                    <p><i class="mega-menu-title_icon glyphicon glyphicon-menu-left"></i>Quality Control</p>
                     <p>Serve Passionately, Pursue Excellence</p>
                 </div>
             </div>
             <div class="col-md-8">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active" style="width: 180px;"><a href="{{ url_for('en.quality_assurance') }}">quality assurance</a></li>
-                    <li class="" style="width: 180px;"><a href="{{ url_for('en.process_flowchart') }}">process flowchart</a></li>
+                    <li class="active" style="width: 180px;"><a href="{{ url_for('en.quality_control') }}">Quality Control</a></li>
+                    <li class="" style="width: 180px;"><a href="{{ url_for('en.quality_process') }}">Quality Process</a></li>
                 </ul>
             </div>
         </div>
@@ -28,8 +28,11 @@
                                 class="img-rounded"></a>
                     </div>
                     <div class="media-body index-text-style">
-                        <h3 class="title-color">＋Quality assurance</h3>
-                        <p class="text-bold">Quality is our top mission without compromise . UNice continuously improves toolmakers’ skills, Every department has quality  concept. All  critical dimensions and characteristics will be controlled throughout the whole process. High precision machines help to insure steel dimensions and quality.</p>
+                        <h3 class="title-color">＋Quality Control</h3>
+                        <p class="text-bold title-color">
+                            Quality is the foundation of the company. We use high precision measurement tools and advanced devices to check strictly and carefully all parts and processes.<br>
+                            All critical dimensions and characteristics will be controlled throughout the whole process.                            
+                        </p>
                         <img src="{{ url_for('static',filename='img/quality_assurance_02.png') }}" alt="">
                     </div>
                 </div>
@@ -39,14 +42,14 @@
             <div class="container index_padding clear">
                 <div class="media index_padding">
                     <div class="media-body index-text-style">
-                        <h3 class="title-color">＋Process control</h3>
+                        <h3 class="title-color">＋Quality Control</h3>
                         <ul>
-                            <li class="title-color text-bold">ISO 9001 Certified</li>
-                            <li class="title-color text-bold">In-process control and inspection</li>
-                            <li class="title-color text-bold">100% dimensions checking of steel /electrodes /part</li>
-                            <li class="title-color text-bold">Certificates of raw material / steel / hardness</li>
-                            <li class="title-color text-bold">2~3 hours pilot-run to verify mold stability</li>
-                            <li class="title-color text-bold">QA checking before shipment</li>
+                            <li class="title-color text-bold">
+                                For inspection of manufactured parts for injection moulds, stamping tools and electrodes but also for the measurement of the first samples of plastic or metal parts we are using Hexagon Metrology CMM and Seven Ocean Camera Mass-produced plastic or metal parts are regularly visually inspected and measured according to the control documentation.
+                            </li>
+                            <li class="title-color text-bold">
+                                On customer request, the SPC process control of important characteristics is done by Hexagon Metrology CMM and Seven Ocean Camera.
+                            </li>
                         </ul>
                     </div>
                     <div class="media-right media-middle pr20">

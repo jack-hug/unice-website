@@ -157,6 +157,31 @@
     <div class="container index_padding clear">
         <div class="media index_padding">
             <div class="media-body index-text-style">
+                <h3 class="title-color">＋原型产品</h3>
+                <ul>
+                    <p class="title-color">
+                        您可能需要几次原型迭代才能完全实现您的想法。我们将优化您的模具和零件设计，并有效地转移您的想法以支持最终设计并投入生产。 原型制作可以让您在进入全面生产之前就触摸并感觉到您的组件。                    </p>
+                    <p class="title-color">我们可以提供印刷，模制和机加工的原型：</p>
+                    <li class="title-color text-bold">3D打印</li>
+                    <li class="title-color text-bold">使用低成本原型工具模制零件</li>
+                    <li class="title-color text-bold">使用铝模铸模的零件</li>
+                    <li class="title-color text-bold">机械零件</li>
+                </ul>
+                <p><a href="{{ url_for('main.prototype') }}" class="btn-style btn-margin">&gt; 了解更多</a></p>
+            </div>
+            <div class="media-right media-middle pr20">
+                <a href="{{ url_for('main.prototype') }}"><img src="{{ url_for('static',filename='img/Prototype.png') }}" alt="" class="img-rounded"></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bg-style clear index-third container-margin">
+    <div class="container index_padding clear">
+        <div class="media index_padding">
+            <div class="media-right media-middle pr20">
+                <a href="{{ url_for('main.injection_molding') }}"><img src="{{ url_for('static',filename='img/plastic01.png') }}" alt="" class="img-rounded"></a>
+            </div>
+            <div class="media-body index-text-style">
                 <h3 class="title-color">＋注塑生产</h3>
                 <ul>
                     <p class="title-color text-bold">我们有73台塑料注塑机，它们提供：</p>
@@ -167,13 +192,9 @@
                         <li class="title-color">高效的机器/人员利用率，保持价格竞争力</li>
                         <li class="title-color">优耐思在新工厂和设备上的持续投资使我们始终处于现代制造技术的最前沿，并确保我们可以加工最广泛的工程聚合物。</li>
                 </ul>
-                <p><a href="{{ url_for('.injection_molding') }}" class="btn-style btn-margin">&gt; 了解更多</a></p>
-            </div>
-            <div class="media-right media-middle pr20">
-                <a href="{{ url_for('.injection_molding') }}"><img src="static\img\plastic01.png" alt="" class="img-rounded"></a>
+                <p><a href="{{ url_for('main.injection_molding') }}" class="btn-style btn-margin">&gt; 了解更多</a></p>
             </div>
         </div>
     </div>
 </div>
-
 {% endblock %}

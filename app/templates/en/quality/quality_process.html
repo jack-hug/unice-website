@@ -1,20 +1,20 @@
 {% extends "en/base.html" %}
 
-{% block title %}unice-process flowchart{% endblock %}
+{% block title %}unice-Quality Process{% endblock %}
 {% block content %}
 <div class="container-fluid second-navbar-style" id="second-navbar">
     <div class="container">
         <div class="row center-block">
             <div class="col-md-4">
                 <div class="second-navbar-text-style">
-                    <p><i class="mega-menu-title_icon glyphicon glyphicon-menu-left"></i>process flowchart</p>
+                    <p><i class="mega-menu-title_icon glyphicon glyphicon-menu-left"></i>Quality Process</p>
                     <p>Serve Passionately, Pursue Excellence</p>
                 </div>
             </div>
             <div class="col-md-8">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="" style="width: 180px;"><a href="{{ url_for('en.quality_assurance') }}">quality assurance</a></li>
-                    <li class="active" style="width: 180px;"><a href="{{ url_for('en.process_flowchart') }}">process flowchart</a></li>
+                    <li class="" style="width: 180px;"><a href="{{ url_for('en.quality_control') }}">Quality Control</a></li>
+                    <li class="active" style="width: 180px;"><a href="{{ url_for('en.quality_process') }}">Quality Process</a></li>
                 </ul>
             </div>
         </div>
@@ -42,7 +42,7 @@
         </div>
         <div class="bg-style clear index-third container-margin">
             <div class="container index_padding clear">
-                    <div class="media-right media-middle pr40">
+                    <div class="media-middle pr40 text-center">
                         <a><img src="{{ url_for('static',filename = 'img/process_flowchart.png') }}"
                                 class="img-rounded"></a>
                     </div>
