@@ -5,7 +5,7 @@ from app.models import User,Product_category,Product_class
 from flask_script import Manager,Shell
 
 
-app = create_app(os.getenv('UNICE_CONFIG') or 'production')
+app = create_app(os.getenv('UNICE_CONFIG') or 'development')
 manager = Manager(app)
 
 def make_shell_context():

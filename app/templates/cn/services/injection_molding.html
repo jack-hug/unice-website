@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "cn/base.html" %}
 
 {% block title %}unice-注塑生产{% endblock %}
 {% block content %}
@@ -13,11 +13,11 @@
             </div>
             <div class="col-md-9">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class=""><a href="{{ url_for('.mold_making') }}">模具制造</a></li>
-                    <li class=""><a href="{{ url_for('.advantages') }}">我们的优势</a></li>
-                    <li class=""><a href="{{ url_for('.Project_management') }}">项目管理</a></li>
-                    <li class=""><a href="{{ url_for('.design_engineering') }}">工程设计</a></li>
-                    <li class="active"><a href="{{ url_for('.injection_molding') }}">注塑生产</a></li>
+                    <li class=""><a href="{{ url_for('cn.mold_making') }}">模具制造</a></li>
+                    <li class=""><a href="{{ url_for('cn.advantages') }}">我们的优势</a></li>
+                    <li class=""><a href="{{ url_for('cn.Project_management') }}">项目管理</a></li>
+                    <li class=""><a href="{{ url_for('cn.design_engineering') }}">工程设计</a></li>
+                    <li class="active"><a href="{{ url_for('cn.injection_molding') }}">注塑生产</a></li>
                 </ul>
             </div>
         </div>
