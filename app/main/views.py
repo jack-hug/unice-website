@@ -80,15 +80,7 @@ def components():
 
 @main.route('/prototype')
 def prototype():
-<<<<<<< HEAD
-    return render_template('products/Prototype.html')
-
-@main.route('/quality_assurance')
-def quality_assurance():
-    return render_template('quality/quality_assurance.html')
-=======
     return render_template('en/products/Prototype.html')
->>>>>>> 14292cc231af167baddffc927335d849818171e1
 
 @main.route('/quality_control')
 def quality_control():
