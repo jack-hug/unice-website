@@ -13,17 +13,10 @@
             </div>
             <div class="col-md-9">
                 <ul class="nav navbar-nav navbar-right">
-<<<<<<< HEAD:app/templates/products/Casting.html
-                    <li class="active"><a href="{{ url_for('main.Auto_Plastics_Part') }}">塑胶模具制造</a></li>
-                    <li class=""><a href="{{ url_for('main.Stamping_tool_3') }}">五金模具制造</a></li>
-                    <li class=""><a href="{{ url_for('main.components') }}">精密零件</a></li>
-                    <li class=""><a href="{{ url_for('main.prototype') }}">原型产品</a></li>
-=======
                     <li class="active"><a href="{{ url_for('cn.Auto_Plastics_Part') }}">塑胶模具制造</a></li>
                     <li class=""><a href="{{ url_for('cn.Stamping_tool_3') }}">五金模具制造</a></li>
                     <li class=""><a href="{{ url_for('cn.components') }}">精密零件</a></li>
                     <li class=""><a href="{{ url_for('cn.prototype') }}">原型产品</a></li>
->>>>>>> 14292cc231af167baddffc927335d849818171e1:app/templates/cn/products/Casting.html
             </div>
         </div>
     </div>
@@ -64,27 +57,27 @@
                         <div class="row">
                             <div class="col-xs-6 col-md-4 product-img">
                                 <a class="thumbnail">
-                                    <img src="static\uploads\Casting\1.png">
+                                    <img src="{{ url_for('static',filename='uploads/Casting/1.png') }}">
                                 </a>
                             </div>
                             <div class="col-xs-6 col-md-4 product-img">
                                 <a class="thumbnail">
-                                    <img src="static\uploads\Casting\2.png">
+                                    <img src="{{ url_for('static',filename='uploads/Casting/2.png') }}">
                                 </a>
                             </div>
                             <div class="col-xs-6 col-md-4 product-img">
                                 <a class="thumbnail">
-                                    <img src="static\uploads\Casting\3.png">
+                                    <img src="{{ url_for('static',filename='uploads/Casting/3.png') }}">
                                 </a>
                             </div>
                             <div class="col-xs-6 col-md-4 product-img">
                                 <a class="thumbnail">
-                                    <img src="static\uploads\Casting\4.png">
+                                    <img src="{{ url_for('static',filename='uploads/Casting/4.png') }}">
                                 </a>
                             </div>
                             <div class="col-xs-6 col-md-4 product-img">
                                 <a class="thumbnail">
-                                    <img src="static\uploads\Casting\5.png">
+                                    <img src="{{ url_for('static',filename='uploads/Casting/5.png') }}">
                                 </a>
                             </div>
                         </div>

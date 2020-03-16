@@ -16,13 +16,13 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
         <div class="item active">
-            <img src="/static/img/banner001.png" alt="">
+            <img src="{{ url_for('static',filename = 'img/banner001.png') }}" alt="">
         </div>
         <div class="item">
-            <img src="/static/img/banner002.png" alt="">
+            <img src="{{ url_for('static',filename = 'img/banner002.png') }}" alt="">
         </div>
         <div class="item">
-            <img src="/static/img/banner003.png" alt="">
+            <img src="{{ url_for('static',filename = 'img/banner003.png') }}" alt="">
         </div>
     </div>
 
@@ -46,7 +46,7 @@
             <p>我司重视人才培养，经多年技术沉淀，汇聚了一批高素质，高效率，重质量的管理团队和技术服务队伍。遵循公司做精、做强、做大的发展思路，以帮助客户优化产品结构、制定最优的成型方案和最经济的生产成本方式为宗旨,我们逐步打造成行业的领先者,得到了国内外知名品牌客户的认可并建立了良好的配套合作关系。</p>
                 
         </div>
-        <a href="{{ url_for('.mold_making') }}" class="btn-style">&gt; 了解更多</a>
+        <a href="{{ url_for('cn.mold_making') }}" class="btn-style">&gt; 了解更多</a>
     </div>
 </div>
 <div class="bg-style clear index-second container-margin">
@@ -57,42 +57,42 @@
                     <img class="img-responsive center-block" src="{{ url_for('static',filename='img/quality.png')}}" alt="">
                     <div class="overlay">
                         <h2>品质控制</h2>
-                        <a class="info" href="{{ url_for('.quality_assurance') }}">了解更多</a>
+                        <a class="info" href="{{ url_for('cn.quality_assurance') }}">了解更多</a>
                     </div>
                 </div>
                 <div class="inner-margin"></div>
                 <div class="text-center clear">
                     <h3 class="title-color">品质控制</h3>
                     <p>品质是Unice的首要追求</p>
-                    <p><a href="{{ url_for('.quality_assurance') }}" class="btn-style">&gt; 了解更多</a></p>
+                    <p><a href="{{ url_for('cn.quality_assurance') }}" class="btn-style">&gt; 了解更多</a></p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="hovereffect">
-                    <img class="img-responsive center-block" src="static\img\product.jpg" alt="">
+                    <img class="img-responsive center-block" src="{{ url_for('static',filename='img/product.jpg')}}" alt="">
                     <div class="overlay">
                         <h2>我们的产品</h2>
-                        <a class="info" href="{{ url_for('.Auto_Plastics_Part') }}">了解更多</a>
+                        <a class="info" href="{{ url_for('cn.Auto_Plastics_Part') }}">了解更多</a>
                     </div>
                 </div>
                 <div class="text-center clear">
                     <h3 class="title-color">我们的产品</h3>
                     <p>塑料,五金,注塑,多种产品类别供您选择</p>
-                    <p><a href="{{ url_for('.Auto_Plastics_Part') }}" class="btn-style">&gt; 了解更多</a></p>
+                    <p><a href="{{ url_for('cn.Auto_Plastics_Part') }}" class="btn-style">&gt; 了解更多</a></p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="hovereffect">
-                    <img class="img-responsive center-block" src="static\img\our-servers.png" alt="">
+                    <img class="img-responsive center-block" src="{{ url_for('static',filename='img/our-servers.png')}}" alt="">
                     <div class="overlay">
                         <h2>我们的服务</h2>
-                        <a class="info" href="{{ url_for('.mold_making') }}">了解更多</a>
+                        <a class="info" href="{{ url_for('cn.mold_making') }}">了解更多</a>
                     </div>
                 </div>
                 <div class="text-center clear">
                     <h3 class="title-color">我们的服务</h3>
                     <p>Unice从事注塑模具制造，注塑成型和冲压模具。</p>
-                    <p><a href="{{ url_for('.mold_making') }}" class="btn-style">&gt; 了解更多</a></p>
+                    <p><a href="{{ url_for('cn.mold_making') }}" class="btn-style">&gt; 了解更多</a></p>
                 </div>
             </div>
         </div>
@@ -102,7 +102,7 @@
     <div class="container index_padding clear">
         <div class="media">
             <div class="media-left media-middle pl20 pt20">
-                <a href="{{ url_for('.Auto_Plastics_Part') }}"><img src="static\img\index_01.png" alt=""
+                <a href="{{ url_for('cn.Auto_Plastics_Part') }}"><img src="{{ url_for('static',filename='img/index_01.png') }}" alt=""
                         class="img-rounded"></a>
             </div>
             <div class="media-body index-text-style">
@@ -115,7 +115,7 @@
                     <li class="title-color text-bold">双色塑胶制品</li>
                     <li class="title-color text-bold">压铸制品</li>
                 </ul>
-                <p><a href="{{ url_for('.Auto_Plastics_Part') }}" class="btn-style btn-margin">&gt; 了解更多</a></p>
+                <p><a href="{{ url_for('cn.Auto_Plastics_Part') }}" class="btn-style btn-margin">&gt; 了解更多</a></p>
             </div>
         </div>
     </div>
@@ -130,10 +130,10 @@
                     <li class="title-color text-bold">拉伸或厚料五金产品</li>
                     <li class="title-color text-bold">五金端子</li>
                 </ul>
-                <p><a href="{{ url_for('.Stamping_tool_3') }}" class="btn-style btn-margin">&gt; 了解更多</a></p>
+                <p><a href="{{ url_for('cn.Stamping_tool_3') }}" class="btn-style btn-margin">&gt; 了解更多</a></p>
             </div>
             <div class="media-right media-middle pr20">
-                <a href="{{ url_for('.Stamping_tool_3') }}"><img src="static\img\stamptool.png" alt="" class="img-rounded"></a>
+                <a href="{{ url_for('cn.Stamping_tool_3') }}"><img src="{{ url_for('static',filename='img/stamptool.png') }}" alt="" class="img-rounded"></a>
             </div>
         </div>
     </div>
@@ -142,13 +142,13 @@
     <div class="container index_padding clear">
         <div class="media index_padding">
             <div class="media-left media-middle pl20">
-                <a href="{{ url_for('.components') }}"><img src="static\img\components.png" alt=""
+                <a href="{{ url_for('cn.components') }}"><img src="{{ url_for('static',filename='img/components.png') }}" alt=""
                         class="img-rounded"></a>
             </div>
             <div class="media-body index-text-style">
                 <h3 class="title-color">＋精密零件</h3>
                 <br><br><br>
-                <p><a href="{{ url_for('.components') }}" class="btn-style btn-margin">&gt; 了解更多</a></p>
+                <p><a href="{{ url_for('cn.components') }}" class="btn-style btn-margin">&gt; 了解更多</a></p>
             </div>
         </div>
     </div>
@@ -167,17 +167,10 @@
                     <li class="title-color text-bold">使用铝模铸模的零件</li>
                     <li class="title-color text-bold">机械零件</li>
                 </ul>
-<<<<<<< HEAD:app/templates/index.html
-                <p><a href="{{ url_for('main.prototype') }}" class="btn-style btn-margin">&gt; 了解更多</a></p>
-            </div>
-            <div class="media-right media-middle pr20">
-                <a href="{{ url_for('main.prototype') }}"><img src="{{ url_for('static',filename='img/Prototype.png') }}" alt="" class="img-rounded"></a>
-=======
                 <p><a href="{{ url_for('cn.prototype') }}" class="btn-style btn-margin">&gt; 了解更多</a></p>
             </div>
             <div class="media-right media-middle pr20">
                 <a href="{{ url_for('cn.prototype') }}"><img src="{{ url_for('static',filename='img/Prototype.png') }}" alt="" class="img-rounded"></a>
->>>>>>> 14292cc231af167baddffc927335d849818171e1:app/templates/cn/index.html
             </div>
         </div>
     </div>
@@ -186,11 +179,7 @@
     <div class="container index_padding clear">
         <div class="media index_padding">
             <div class="media-right media-middle pr20">
-<<<<<<< HEAD:app/templates/index.html
-                <a href="{{ url_for('main.injection_molding') }}"><img src="{{ url_for('static',filename='img/plastic01.png') }}" alt="" class="img-rounded"></a>
-=======
                 <a href="{{ url_for('cn.injection_molding') }}"><img src="{{ url_for('static',filename='img/plastic01.png') }}" alt="" class="img-rounded"></a>
->>>>>>> 14292cc231af167baddffc927335d849818171e1:app/templates/cn/index.html
             </div>
             <div class="media-body index-text-style">
                 <h3 class="title-color">＋注塑生产</h3>
@@ -203,11 +192,7 @@
                         <li class="title-color">高效的机器/人员利用率，保持价格竞争力</li>
                         <li class="title-color">优耐思在新工厂和设备上的持续投资使我们始终处于现代制造技术的最前沿，并确保我们可以加工最广泛的工程聚合物。</li>
                 </ul>
-<<<<<<< HEAD:app/templates/index.html
-                <p><a href="{{ url_for('main.injection_molding') }}" class="btn-style btn-margin">&gt; 了解更多</a></p>
-=======
                 <p><a href="{{ url_for('cn.injection_molding') }}" class="btn-style btn-margin">&gt; 了解更多</a></p>
->>>>>>> 14292cc231af167baddffc927335d849818171e1:app/templates/cn/index.html
             </div>
         </div>
     </div>
