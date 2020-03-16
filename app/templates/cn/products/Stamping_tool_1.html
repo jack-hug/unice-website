@@ -1,29 +1,29 @@
-{% extends "en/base.html" %}
+{% extends "cn/base.html" %}
 
-{% block title %}unice-Metal Shrapnel Parts{% endblock %}
+{% block title %}unice-弹片或屏蔽罩{% endblock %}
 {% block content %}
 <div class="container-fluid second-navbar-style" id="second-navbar">
     <div class="container">
         <div class="row center-block">
-            <div class="en-left">
+            <div class="col-md-3">
                 <div class="second-navbar-text-style">
-                    <p><i class="mega-menu-title_icon glyphicon glyphicon-menu-left"></i>Stamping Tool>>Metal Shrapnel Parts</p>
-                    <p>Serve Passionately, Pursue Excellence</p>
+                    <p><i class="mega-menu-title_icon glyphicon glyphicon-menu-left"></i>五金模具制造>>弹片或屏蔽罩</p>
+                    <p>热情服务，追求卓越</p>
                 </div>
             </div>
-            <div class="">
+            <div class="col-md-9">
                 <ul class="nav navbar-nav navbar-right">
-<<<<<<< HEAD
-                    <li class="" style="width: 220px;"><a href="{{ url_for('en.Auto_Plastics_Part') }}">Injection manufacturing</a></li>
-                    <li class="active"><a href="{{ url_for('en.Stamping_tool_3') }}">Stamping Tools</a></li>
-                    <li class=""><a href="{{ url_for('en.components') }}">Precision Parts</a></li>
-                    <li class=""><a href="{{ url_for('en.prototype') }}">Prototype Parts</a></li>
+<<<<<<< HEAD:app/templates/products/Stamping_tool_1.html
+                    <li class=""><a href="{{ url_for('main.Auto_Plastics_Part') }}">塑胶模具制造</a></li>
+                    <li class="active"><a href="{{ url_for('main.Stamping_tool_3') }}">五金模具制造</a></li>
+                    <li class=""><a href="{{ url_for('main.components') }}">精密零件</a></li>
+                    <li class=""><a href="{{ url_for('main.prototype') }}">原型产品</a></li>
 =======
-                    <li class="" style="width: 220px;"><a href="{{ url_for('main.Auto_Plastics_Part') }}">Injection manufacturing</a></li>
-                    <li class="active"><a href="{{ url_for('main.Stamping_tool_3') }}">Stamping Tools</a></li>
-                    <li class=""><a href="{{ url_for('main.components') }}">Precision Parts</a></li>
-                    <li class=""><a href="{{ url_for('main.prototype') }}">Prototype Parts</a></li>
->>>>>>> 14292cc231af167baddffc927335d849818171e1
+                    <li class=""><a href="{{ url_for('cn.Auto_Plastics_Part') }}">塑胶模具制造</a></li>
+                    <li class="active"><a href="{{ url_for('cn.Stamping_tool_3') }}">五金模具制造</a></li>
+                    <li class=""><a href="{{ url_for('cn.components') }}">精密零件</a></li>
+                    <li class=""><a href="{{ url_for('cn.prototype') }}">原型产品</a></li>
+>>>>>>> 14292cc231af167baddffc927335d849818171e1:app/templates/cn/products/Stamping_tool_1.html
                 </ul>
             </div>
         </div>
@@ -39,16 +39,16 @@
                                     <h4 class="panel-title">
                                         <a class="" role="button" data-toggle="collapse" href=""
                                             aria-expanded="true" aria-controls="collapseListGroup1">
-                                            Stamping Tool
+                                            五金模具制造
                                         </a>
                                     </h4>
                                 </div>
                                 <div id="collapseListGroup2" class="panel-collapse collapse in" role="tabpanel"
                                     aria-labelledby="collapseListGroupHeading2" aria-expanded="true">
                                     <ul class="list-group">
-                                        <a href="{{ url_for('main.Stamping_tool_3') }}" class="list-group-item active">Metal Shrapnel Parts</a>
-                                        <a href="{{ url_for('main.Stamping_tool_1') }}" class="list-group-item">Stamping Tooling</a>
-                                        <a href="{{ url_for('main.Stamping_tool_2') }}" class="list-group-item">Terminal Parts</a>
+                                        <a href="{{ url_for('cn.Stamping_tool_3') }}" class="list-group-item">五金端子</a>
+                                        <a href="{{ url_for('cn.Stamping_tool_1') }}" class="list-group-item active">弹片或屏蔽罩</a>
+                                        <a href="{{ url_for('cn.Stamping_tool_2') }}" class="list-group-item">拉伸或厚料五金产品</a>
                                     </ul>
                                 </div>
                             </div>
@@ -58,117 +58,112 @@
                         <div class="row">
                             <div class="col-xs-6 col-md-4 product-img">
                                 <a class="thumbnail">
-                                    <img src="{{ url_for('static',filename='uploads/Stamping3/1.png') }}">
+                                    <img src="static\uploads\Stamping1\1.png">
                                 </a>
                             </div>
                             <div class="col-xs-6 col-md-4 product-img">
                                 <a class="thumbnail">
-                                    <img src="{{ url_for('static',filename='uploads/Stamping3/2.png') }}">
+                                    <img src="static\uploads\Stamping1\2.png">
                                 </a>
                             </div>
                             <div class="col-xs-6 col-md-4 product-img">
                                 <a class="thumbnail">
-                                    <img src="{{ url_for('static',filename='uploads/Stamping3/3.png') }}">
+                                    <img src="static\uploads\Stamping1\3.png">
                                 </a>
                             </div>
                             <div class="col-xs-6 col-md-4 product-img">
                                 <a class="thumbnail">
-                                    <img src="{{ url_for('static',filename='uploads/Stamping3/4.png') }}">
+                                    <img src="static\uploads\Stamping1\4.png">
                                 </a>
                             </div>
                             <div class="col-xs-6 col-md-4 product-img">
                                 <a class="thumbnail">
-                                    <img src="{{ url_for('static',filename='uploads/Stamping3/5.png') }}">
+                                    <img src="static\uploads\Stamping1\5.png">
                                 </a>
                             </div>
                             <div class="col-xs-6 col-md-4 product-img">
                                 <a class="thumbnail">
-                                    <img src="{{ url_for('static',filename='uploads/Stamping3/6.png') }}">
+                                    <img src="static\uploads\Stamping1\6.png">
                                 </a>
                             </div>
                             <div class="col-xs-6 col-md-4 product-img">
                                 <a class="thumbnail">
-                                    <img src="{{ url_for('static',filename='uploads/Stamping3/7.png') }}">
+                                    <img src="static\uploads\Stamping1\7.png">
                                 </a>
                             </div>
                             <div class="col-xs-6 col-md-4 product-img">
                                 <a class="thumbnail">
-                                    <img src="{{ url_for('static',filename='uploads/Stamping3/8.png') }}">
+                                    <img src="static\uploads\Stamping1\8.png">
                                 </a>
                             </div>
                             <div class="col-xs-6 col-md-4 product-img">
                                 <a class="thumbnail">
-                                    <img src="{{ url_for('static',filename='uploads/Stamping3/9.png') }}">
+                                    <img src="static\uploads\Stamping1\9.png">
                                 </a>
                             </div>
                             <div class="col-xs-6 col-md-4 product-img">
                                 <a class="thumbnail">
-                                    <img src="{{ url_for('static',filename='uploads/Stamping3/10.png') }}">
+                                    <img src="static\uploads\Stamping1\10.png">
                                 </a>
                             </div>
                             <div class="col-xs-6 col-md-4 product-img">
                                 <a class="thumbnail">
-                                    <img src="{{ url_for('static',filename='uploads/Stamping3/11.png') }}">
+                                    <img src="static\uploads\Stamping1\11.png">
                                 </a>
                             </div>
                             <div class="col-xs-6 col-md-4 product-img">
                                 <a class="thumbnail">
-                                    <img src="{{ url_for('static',filename='uploads/Stamping3/12.png') }}">
+                                    <img src="static\uploads\Stamping1\12.png">
                                 </a>
                             </div>
                             <div class="col-xs-6 col-md-4 product-img">
                                 <a class="thumbnail">
-                                    <img src="{{ url_for('static',filename='uploads/Stamping3/12.png') }}">
+                                    <img src="static\uploads\Stamping1\13.png">
                                 </a>
                             </div>
                             <div class="col-xs-6 col-md-4 product-img">
                                 <a class="thumbnail">
-                                    <img src="{{ url_for('static',filename='uploads/Stamping3/13.png') }}">
+                                    <img src="static\uploads\Stamping1\14.png">
                                 </a>
                             </div>
                             <div class="col-xs-6 col-md-4 product-img">
                                 <a class="thumbnail">
-                                    <img src="{{ url_for('static',filename='uploads/Stamping3/14.png') }}">
+                                    <img src="static\uploads\Stamping1\15.png">
                                 </a>
                             </div>
                             <div class="col-xs-6 col-md-4 product-img">
                                 <a class="thumbnail">
-                                    <img src="{{ url_for('static',filename='uploads/Stamping3/15.png') }}">
+                                    <img src="static\uploads\Stamping1\16.png">
                                 </a>
                             </div>
                             <div class="col-xs-6 col-md-4 product-img">
                                 <a class="thumbnail">
-                                    <img src="{{ url_for('static',filename='uploads/Stamping3/16.png') }}">
+                                    <img src="static\uploads\Stamping1\17.png">
                                 </a>
                             </div>
                             <div class="col-xs-6 col-md-4 product-img">
                                 <a class="thumbnail">
-                                    <img src="{{ url_for('static',filename='uploads/Stamping3/17.png') }}">
+                                    <img src="static\uploads\Stamping1\18.png">
                                 </a>
                             </div>
                             <div class="col-xs-6 col-md-4 product-img">
                                 <a class="thumbnail">
-                                    <img src="{{ url_for('static',filename='uploads/Stamping3/18.png') }}">
+                                    <img src="static\uploads\Stamping1\19.png">
                                 </a>
                             </div>
                             <div class="col-xs-6 col-md-4 product-img">
                                 <a class="thumbnail">
-                                    <img src="{{ url_for('static',filename='uploads/Stamping3/19.png') }}">
+                                    <img src="static\uploads\Stamping1\20.png">
                                 </a>
                             </div>
                             <div class="col-xs-6 col-md-4 product-img">
                                 <a class="thumbnail">
-                                    <img src="{{ url_for('static',filename='uploads/Stamping3/20.png') }}">
+                                    <img src="static\uploads\Stamping1\21.png">
                                 </a>
                             </div>
                             <div class="col-xs-6 col-md-4 product-img">
                                 <a class="thumbnail">
-                                    <img src="{{ url_for('static',filename='uploads/Stamping3/21.png') }}">
-                                </a>
-                            </div>
-                            <div class="col-xs-6 col-md-4 product-img">
-                                <a class="thumbnail">
-                                    <img src="{{ url_for('static',filename='uploads/Stamping3/22.png') }}">
+                                    <img src="static\uploads\Stamping1\22.png">
                                 </a>
                             </div>
                         </div>

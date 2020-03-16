@@ -21,6 +21,7 @@ class TestingConfig(Config):
 
 class ProductionConfig(Config):
     SQLALCHEMY_DATABASE_URI = 'mysql+mysqlconnector://root:HUANGzeng123@localhost/unice'
+    DEBUG = False
 
 config = {
     'development':Development,

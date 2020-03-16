@@ -1,29 +1,29 @@
-{% extends "en/base.html" %}
+{% extends "cn/base.html" %}
 
-{% block title %}unice-2K Molding{% endblock %}
+{% block title %}unice-双色塑胶制品{% endblock %}
 {% block content %}
 <div class="container-fluid second-navbar-style" id="second-navbar">
     <div class="container">
         <div class="row center-block">
-            <div class="en-left">
+            <div class="col-md-3">
                 <div class="second-navbar-text-style">
-                    <p><i class="mega-menu-title_icon glyphicon glyphicon-menu-left"></i>Injection mould manufacturing>>2K Molding</p>
-                    <p>Serve Passionately, Pursue Excellence</p>
+                    <p><i class="mega-menu-title_icon glyphicon glyphicon-menu-left"></i>塑胶模具制造>>双色塑胶制品</p>
+                    <p>热情服务，追求卓越</p>
                 </div>
             </div>
-            <div class="">
+            <div class="col-md-9">
                 <ul class="nav navbar-nav navbar-right">
-<<<<<<< HEAD
-                    <li class="active" style="width: 220px;"><a href="{{ url_for('en.Auto_Plastics_Part') }}">Injection manufacturing</a></li>
-                    <li class=""><a href="{{ url_for('en.Stamping_tool_3') }}">Stamping Tools</a></li>
-                    <li class=""><a href="{{ url_for('en.components') }}">Precision Parts</a></li>
-                    <li class=""><a href="{{ url_for('en.prototype') }}">Prototype Parts</a></li>
+<<<<<<< HEAD:app/templates/products/2k_Molding.html
+                    <li class="active"><a href="{{ url_for('main.Auto_Plastics_Part') }}">塑胶模具制造</a></li>
+                    <li class=""><a href="{{ url_for('main.Stamping_tool_3') }}">五金模具制造</a></li>
+                    <li class=""><a href="{{ url_for('main.components') }}">精密零件</a></li>
+                    <li class=""><a href="{{ url_for('main.prototype') }}">原型产品</a></li>
 =======
-                    <li class="active" style="width: 220px;"><a href="{{ url_for('main.Auto_Plastics_Part') }}">Injection manufacturing</a></li>
-                    <li class=""><a href="{{ url_for('main.Stamping_tool_3') }}">Stamping Tools</a></li>
-                    <li class=""><a href="{{ url_for('main.components') }}">Precision Parts</a></li>
-                    <li class=""><a href="{{ url_for('main.prototype') }}">Prototype Parts</a></li>
->>>>>>> 14292cc231af167baddffc927335d849818171e1
+                    <li class="active"><a href="{{ url_for('cn.Auto_Plastics_Part') }}">塑胶模具制造</a></li>
+                    <li class=""><a href="{{ url_for('cn.Stamping_tool_3') }}">五金模具制造</a></li>
+                    <li class=""><a href="{{ url_for('cn.components') }}">精密零件</a></li>
+                    <li class=""><a href="{{ url_for('cn.prototype') }}">原型产品</a></li>
+>>>>>>> 14292cc231af167baddffc927335d849818171e1:app/templates/cn/products/2k_Molding.html
                 </ul>
             </div>
         </div>
@@ -39,23 +39,23 @@
                                     <h4 class="panel-title">
                                         <a class="" role="button" data-toggle="collapse" href="" aria-expanded="true"
                                             aria-controls="collapseListGroup1">
-                                            Injection mould manufacturing 
+                                            塑胶模具制造
                                         </a>
                                     </h4>
                                 </div>
                                 <div id="collapseListGroup1" class="panel-collapse collapse in" role="tabpanel"
                                     aria-labelledby="collapseListGroupHeading1" aria-expanded="true">
                                     <ul class="list-group">
-                                        <a href="{{ url_for('main.Auto_Plastics_Part') }}"
-                                            class="list-group-item">Auto Plastic parts</a>
-                                        <a href="{{ url_for('main.twok_Molding') }}"
-                                            class="list-group-item active">2K Molding</a>
-                                        <a href="{{ url_for('main.Electrical_Plastics_Molding') }}"
-                                            class="list-group-item">Electrical Plastic parts</a>
-                                        <a href="{{ url_for('main.Insert_Molding') }}"
-                                            class="list-group-item">Insert Molding Parts</a>
-                                        <a href="{{ url_for('main.Rubber') }}" class="list-group-item">Rubber Parts</a>
-                                        <a href="{{ url_for('main.Casting') }}" class="list-group-item">Casting Product</a>
+                                        <a href="{{ url_for('cn.Auto_Plastics_Part') }}"
+                                            class="list-group-item">汽车塑胶制品</a>
+                                        <a href="{{ url_for('cn.twok_Molding') }}"
+                                            class="list-group-item active">双色塑胶制品</a>
+                                        <a href="{{ url_for('cn.Electrical_Plastics_Molding') }}"
+                                            class="list-group-item">电子塑胶制品</a>
+                                        <a href="{{ url_for('cn.Insert_Molding') }}"
+                                            class="list-group-item">插件塑胶制品</a>
+                                        <a href="{{ url_for('cn.Rubber') }}" class="list-group-item">硅胶制品</a>
+                                        <a href="{{ url_for('cn.Casting') }}" class="list-group-item">压铸制品</a>
                                     </ul>
                                 </div>
                             </div>
@@ -65,27 +65,27 @@
                         <div class="row">
                             <div class="col-xs-6 col-md-4 product-img">
                                 <a class="thumbnail">
-                                    <img src="{{ url_for('static',filename='uploads/2k/1.png') }}">
+                                    <img src="static\uploads\2k\1.png">
                                 </a>
                             </div>
                             <div class="col-xs-6 col-md-4 product-img">
                                 <a class="thumbnail">
-                                    <img src="{{ url_for('static',filename='uploads/2k/2.png') }}">
+                                    <img src="static\uploads\2k\2.png">
                                 </a>
                             </div>
                             <div class="col-xs-6 col-md-4 product-img">
                                 <a class="thumbnail">
-                                    <img src="{{ url_for('static',filename='uploads/2k/3.png') }}">
+                                    <img src="static\uploads\2k\3.png">
                                 </a>
                             </div>
                             <div class="col-xs-6 col-md-4 product-img">
                                 <a class="thumbnail">
-                                    <img src="{{ url_for('static',filename='uploads/2k/4.png') }}">
+                                    <img src="static\uploads\2k\4.png">
                                 </a>
                             </div>
                             <div class="col-xs-6 col-md-4 product-img">
                                 <a class="thumbnail">
-                                    <img src="{{ url_for('static',filename='uploads/2k/5.png') }}">
+                                    <img src="static\uploads\2k\5.png">
                                 </a>
                             </div>
                         </div>

@@ -1,0 +1,32 @@
+{% extends "cn/base.html" %}
+
+{% block title %}unice-精密零件{% endblock %}
+{% block content %}
+<div class="container-fluid second-navbar-style" id="second-navbar">
+    <div class="container">
+        <div class="row center-block">
+            <div class="col-md-3">
+                <div class="second-navbar-text-style">
+                    <p><i class="mega-menu-title_icon glyphicon glyphicon-menu-left"></i>精密零件</p>
+                    <p>热情服务，追求卓越</p>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class=""><a href="{{ url_for('cn.Auto_Plastics_Part') }}">塑胶模具制造</a></li>
+                    <li class=""><a href="{{ url_for('cn.Stamping_tool_3') }}">五金模具制造</a></li>
+                    <li class="active"><a href="{{ url_for('cn.components') }}">精密零件</a></li>
+                    <li class=""><a href="{{ url_for('cn.prototype') }}">原型产品</a></li>        
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-color-style">
+        <div class="bg-style clear index-third container-margin">
+            <div class="container index_padding clear">
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endblock %}

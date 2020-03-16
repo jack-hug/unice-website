@@ -31,7 +31,7 @@ def create_app(config_name):
     from .auth import auth as auth_blueprint
     app.register_blueprint(auth_blueprint,url_prefix = '/auth')
 
-    from .en import en as en_blueprint
-    app.register_blueprint(en_blueprint,url_prefix = '/en')
+    from .cn import cn as cn_blueprint
+    app.register_blueprint(cn_blueprint,url_prefix = '/cn')
 
     return app

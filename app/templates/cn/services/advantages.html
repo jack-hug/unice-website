@@ -1,0 +1,72 @@
+{% extends "cn/base.html" %}
+
+{% block title %}unice-我们的优势{% endblock %}
+{% block content %}
+<div class="container-fluid second-navbar-style" id="second-navbar">
+    <div class="container">
+        <div class="row center-block">
+            <div class="col-md-3">
+                <div class="second-navbar-text-style">
+                    <p><i class="mega-menu-title_icon glyphicon glyphicon-menu-left"></i>我们的优势</p>
+                    <p>热情服务，追求卓越</p>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class=""><a href="{{ url_for('cn.mold_making') }}">模具制造</a></li>
+                    <li class="active"><a href="{{ url_for('cn.advantages') }}">我们的优势</a></li>
+                    <li class=""><a href="{{ url_for('cn.Project_management') }}">项目管理</a></li>
+                    <li class=""><a href="{{ url_for('cn.design_engineering') }}">工程设计</a></li>
+                    <li class=""><a href="{{ url_for('cn.injection_molding') }}">注塑生产</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-color-style">
+        <div class="bg-style clear index-third container-margin">
+            <div class="container index_padding clear">
+                <div class="media">
+                    <div class="media-left media-middle pl20 pt20">
+                        <a href="{{ url_for('cn.Insert_Molding') }}"><img src="static\img\advant_01.jpg" alt="about us"
+                                class="img-rounded"></a>
+                    </div>
+                    <div class="media-body index-text-style">
+                        <h3 class="title-color">＋我们的优势</h3>
+                        <ul>
+                            <p>产品开发初始便会与客户紧密沟通，密切关注客户需要变化，直到生产出成品。</p>
+                            <li class="title-color text-bold">优良的质量，符合欧洲标准</li>
+                            <li class="title-color text-bold">持续改进与创新</li>
+                            <li class="title-color text-bold">强大的项目管理和工程</li>
+                            <li class="title-color text-bold">在客户所在地的直接技术支持</li>
+                            <li class="title-color text-bold">高精度机器</li>
+                            <li class="title-color text-bold">合理的定价和准时交货</li>
+                            <li class="title-color text-bold">从最初的产品开始与客户紧密合作开发到最终产品</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-style clear index-third container-margin">
+            <div class="container index_padding clear">
+                <div class="media index_padding">
+                    <div class="media-body index-text-style">
+                        <h3 class="title-color">＋优秀的项目管理和工程</h3>
+                        <ul>
+                            <li class="title-color text-bold">高精度机</li>
+                            <li class="title-color text-bold">创新理念</li>
+                            <li class="title-color text-bold">最新软件UG，3D CAD / CAM</li>
+                            <li class="title-color text-bold">技术支持+10经验</li>
+                            <li class="title-color text-bold">合理的价格和准时交货</li>
+                            <li class="title-color text-bold">从最初的产品开发到最终的产品，与客户紧密合作，以最好的服务和高质量提供服务。</li>
+                        </ul>
+                    </div>
+                    <div class="media-right media-middle pr20">
+                        <a href="{{ url_for('cn.Stamping_tool_1') }}"><img src="static\img\advant_02.png" alt="about us"
+                                class="img-rounded"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
