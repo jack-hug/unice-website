@@ -56,60 +56,37 @@
                     </div>
                     <div class="col-md-9">
                         <div class="row">
-                            {% for product in products %}
-                            <div class="col-xs-6 col-md-4">
-                                <a href="#" class="thumbnail">
-                                    <img src="{{ product.product_img }}">
-                                </a>
-                            </div>
-                            {% endfor %}
                             <div class="col-xs-6 col-md-4 product-img">
                                 <a class="thumbnail">
-                                    <img src="static\uploads\Insert\1.png">
+                                    <img src="{{ url_for('static',filename='uploads/Insert/1.png') }}">
                                 </a>
                             </div>
                             <div class="col-xs-6 col-md-4 product-img">
                                 <a class="thumbnail">
-                                    <img src="static\uploads\Insert\2.png">
+                                    <img src="{{ url_for('static',filename='uploads/Insert/2.png') }}">
                                 </a>
                             </div>
                             <div class="col-xs-6 col-md-4 product-img">
                                 <a class="thumbnail">
-                                    <img src="static\uploads\Insert\3.png">
+                                    <img src="{{ url_for('static',filename='uploads/Insert/3.png') }}">
                                 </a>
                             </div>
                             <div class="col-xs-6 col-md-4 product-img">
                                 <a class="thumbnail">
-                                    <img src="static\uploads\Insert\4.png">
+                                    <img src="{{ url_for('static',filename='uploads/Insert/4.png') }}">
                                 </a>
                             </div>
                             <div class="col-xs-6 col-md-4 product-img">
                                 <a class="thumbnail">
-                                    <img src="static\uploads\Insert\5.png">
+                                    <img src="{{ url_for('static',filename='uploads/Insert/5.png') }}">
                                 </a>
                             </div>
                             <div class="col-xs-6 col-md-4 product-img">
                                 <a class="thumbnail">
-                                    <img src="static\uploads\Insert\6.png">
+                                    <img src="{{ url_for('static',filename='uploads/Insert/6.png') }}">
                                 </a>
                             </div>
                         </div>
-                        
-                        <!-- <nav aria-label="Page navigation" class="text-center">
-                            <ul class="pagination" class="center-block">
-                              <li>
-                                <a href="#" aria-label="Previous">
-                                  <span aria-hidden="true">&laquo;</span>
-                                </a>
-                              </li>
-                              <li><a href="#">1</a></li>
-                              <li>
-                                <a href="#" aria-label="Next">
-                                  <span aria-hidden="true">&raquo;</span>
-                                </a>
-                              </li>
-                            </ul>
-                          </nav> -->
                     </div>
                 </div>
             </div>
