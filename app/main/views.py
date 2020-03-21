@@ -74,9 +74,9 @@ def Stamping_tool_2():
 def Stamping_tool_3():
     return render_template('en/products/Stamping_tool_3.html')
 
-@main.route('/Components')
-def components():
-    return render_template('en/products/Components.html')
+@main.route('/Precision')
+def precision():
+    return render_template('en/products/Precision.html')
 
 @main.route('/prototype')
 def prototype():
