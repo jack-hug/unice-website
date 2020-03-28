@@ -61,7 +61,6 @@ body {  font-family: Arial, Verdana, "Helvetica Neue", Helvetica, sans-serif;
   max-width: 100%;
   line-height: 1;
   width: 100%;
-  min-height: 400px;
 }
 /* 页脚样式 */
 /*==================== 
@@ -327,7 +326,7 @@ ul.social-footer2 li a {
   font-family: Arial, Verdana, "Helvetica Neue", Helvetica, sans-serif;
   margin-top: 30px;
   text-align: center;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 24px;
   color: #333;
 }
@@ -461,7 +460,7 @@ ul.social-footer2 li a {
 
 /* 主页正文内容样式 */
 .media .index-text-style {
-    font-size: 14px;
+    font-size: 16px;
     text-align: left;
     line-height: 250%;
     padding: 0 50px;
