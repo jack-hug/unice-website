@@ -47,7 +47,7 @@
 {% block content %}
 {% endblock %}
 
-<!-- footer设置：需要在flask-bootstrap/base.html 基础文件里面添加  block footer  -->
+<!-- footer need add block footer into  flask-bootstrap/base.html-->
 {% block footer %}
 <footer id="footer" class="footer-1">
     <div class="main-footer widgets-dark typo-light">
@@ -184,7 +184,6 @@
                         </p>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
@@ -200,6 +199,13 @@
     </div>
 </footer>
 <!-- Footer -->
+
+<!-- BackTop div -->
+<div class="back-to" id="toolBackTop">
+    <a title="BackTop" onclick="window.scrollTo(0,0);return false;" href="#top" class="back-top"></a>
+</div>
+<!-- BackTop div -->
+
 {% block scripts %}
 {{ super() }}
 <script>
@@ -216,6 +222,27 @@
             $('#flash-miss').hide();
         }, 3000);
       });
+</script>
+<script>
+      $(function () {
+        var bt = $('#toolBackTop');
+        var sw = $(document.body)[0].clientWidth;
+ 
+        var limitsw = (sw - 840) / 2 - 80;  //距离右侧距离
+        if (limitsw > 0){
+            limitsw = parseInt(limitsw);
+            bt.css("right",limitsw/8);
+        }
+ 
+        $(window).scroll(function() {
+            var st = $(window).scrollTop();
+            if(st > 30){
+                    bt.show();
+            }else{
+                    bt.hide();
+            }
+        });
+});
 </script>
 {% endblock scripts %}
 {% endblock %}
