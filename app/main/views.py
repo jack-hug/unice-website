@@ -39,8 +39,7 @@ def contact_us():
 
 @main.route('/Insert_Molding')
 def Insert_Molding():
-    products =Product.query.all()
-    return render_template('en/products/Insert_Molding.html',products = products)
+    return render_template('en/products/Insert_Molding.html')
 
 @main.route('/Electrical_Plastics_Molding')
 def Electrical_Plastics_Molding():

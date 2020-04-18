@@ -34,4 +34,7 @@ def create_app(config_name):
     from .cn import cn as cn_blueprint
     app.register_blueprint(cn_blueprint,url_prefix = '/cn')
 
+    from .fr import fr as fr_blueprint
+    app.register_blueprint(fr_blueprint,url_prefix = '/fr')
+
     return app

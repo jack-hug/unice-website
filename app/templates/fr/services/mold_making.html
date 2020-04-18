@@ -1,0 +1,310 @@
+{% extends "fr/base.html" %}
+
+{% block title %}unice-模具制造{% endblock %}
+{% block content %}
+<div class="container-fluid second-navbar-style" id="second-navbar">
+    <div class="container">
+        <div class="row center-block">
+            <div class="col-md-3">
+                <div class="second-navbar-text-style">
+                    <p><i class="mega-menu-title_icon glyphicon glyphicon-menu-left"></i>模具制造</p>
+                    <p>热情服务，追求卓越</p>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="{{ url_for('fr.mold_making') }}">模具制造</a></li>
+                    <li class=""><a href="{{ url_for('fr.advantages') }}">我们的优势</a></li>
+                    <li class=""><a href="{{ url_for('fr.Project_management') }}">项目管理</a></li>
+                    <li class=""><a href="{{ url_for('fr.design_engineering') }}">工程设计</a></li>
+                    <li class=""><a href="{{ url_for('fr.injection_molding') }}">注塑生产</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-color-style">
+        <div class="bg-style clear index-third container-margin">
+            <div class="container index_padding clear">
+                <div class="media">
+                    <div class="media-left media-middle pl20 pt20">
+                        <a><img src="{{ url_for('static',filename = 'img/molding_001.png') }}" alt=""
+                                class="img-rounded"></a>
+                    </div>
+                    <div class="media-body index-text-style">
+                        <h3 class="title-color">＋Atelier de CNC</h3>
+                        <ul>
+                            <li class="title-color text-bold left-padding">
+                                <p>Pour la production de moules d'injection, nous sommes équipés dans notre propre atelier d'outillage de centres d'usinage CNC (MIKRON HS500L, Sodick S50L, DAHLIH MCV860 etc.), la précision minimale peut être atteinte à 0,001 mm.</p>
+                                <p>Nous proposons à nos partenaires une équipe de R&D spécialisée, et trouvons les meilleures solutions à toutes les étapes de la production.</p>
+                                <p>Nous proposons à nos partenaires une équipe de R&D spécialisée, et trouvons les meilleures solutions à toutes les étapes de la production.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- table -->
+        <div class="bg-style clear index-third container-margin">
+            <div class="container index_padding clear">
+                <table class="table table-hover table-bordered text-center">
+                    <thead>
+                        <tr class="danger">
+                            <th class="th-center">Description</th>
+                            <th class="th-center">Maker</th>
+                            <th class="th-center">Orginal</th>
+                            <th class="th-center">Model</th>
+                            <th class="th-center">Size</th>
+                            <th class="th-center">Unit</th>
+                            <th class="th-center">Q'ty</th>
+                            <th class="th-center">Remark</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <td rowspan="8" class="th-center">CNC Milling Machine</td>
+                        <tr class="info">
+                            <td>MIKRON</td>
+                            <td>Swiss</td>
+                            <td>HS500L</td>
+                            <td>500*500*450</td>
+                            <td>Sets</td>
+                            <td>2</td>
+                            <td>Accuracy +/- 0.005</td>
+                        </tr>
+                        <tr>
+                            <td>Sodick</td>
+                            <td>Japan</td>
+                            <td>S50L</td>
+                            <td>500*300*300</td>
+                            <td>Sets</td>
+                            <td>2</td>
+                            <td>Accuracy +/- 0.005</td>
+                        </tr>
+                        <tr class="info">
+                            <td>DAHLIH</td>
+                            <td>Taiwan,China</td>
+                            <td>MCV860</td>
+                            <td>800*550*550</td>
+                            <td>Sets</td>
+                            <td>2</td>
+                            <td>Accuracy +/- 0.005</td>
+                        </tr>
+                        <tr>
+                            <td>Röders</td>
+                            <td>Taiwan,China</td>
+                            <td>700L</td>
+                            <td>700*550*550</td>
+                            <td>Sets</td>
+                            <td>1</td>
+                            <td>Accuracy +/- 0.002-0.005</td>
+                        </tr>
+                        <tr class="info">
+                            <td>Yiqun</td>
+                            <td>Taiwan,China</td>
+                            <td>700L</td>
+                            <td>1000*550*600</td>
+                            <td>Sets</td>
+                            <td>2</td>
+                            <td>Accuracy +/- 0.01</td>
+                        </tr>
+                        <tr>
+                            <td>Sheng feng</td>
+                            <td>Taiwan,China</td>
+                            <td>SF500</td>
+                            <td>500*350*200</td>
+                            <td>Sets</td>
+                            <td>1</td>
+                            <td>Accuracy +/- 0.01</td>
+                        </tr>
+                        <tr>
+                            <td>Sheng feng</td>
+                            <td>Taiwan,China</td>
+                            <td>SF500</td>
+                            <td>500*350*200</td>
+                            <td>Sets</td>
+                            <td>1</td>
+                            <td>Accuracy +/- 0.01</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="bg-style clear index-third container-margin">
+            <div class="container index_padding clear">
+                <div class="media index_padding">
+                    <div class="media-body index-text-style">
+                        <h3 class="title-color">＋Atelier de EDM</h3>
+                        <ul>
+                            <li class="title-color text-bold">
+                                Les ateliers d'outillage sont également équipés de machines d'électro-érosion (Agie Charmilles, Sodick AD30LS, Mitsubishi EA8, Makino S500 etc.), avec la machinerie moderne pour la fabrication de moules d'injection, cela nous aide à améliorer la productivité et à raccourcir les délais de livraison.</li>
+                        </ul>
+                    </div>
+                    <div class="media-right media-middle pr20">
+                        <a><img src="{{ url_for('static',filename = 'img/molding_002.png') }}" alt=""
+                                class="img-rounded"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- table -->
+        <div class="bg-style clear index-third container-margin">
+            <div class="container index_padding clear">
+                <table class="table table-hover table-bordered text-center">
+                    <thead>
+                        <tr class="danger">
+                            <th class="th-center">Description</th>
+                            <th class="th-center">Maker</th>
+                            <th class="th-center">Orginal</th>
+                            <th class="th-center">Model</th>
+                            <th class="th-center">Size</th>
+                            <th class="th-center">Unit</th>
+                            <th class="th-center">Q'ty</th>
+                            <th class="th-center">Remark</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <td rowspan="6" class="th-center">EDM Machine</td>
+                        <tr class="info">
+                            <td>MIKRON</td>
+                            <td>Swiss</td>
+                            <td></td>
+                            <td>300*250*250</td>
+                            <td>Sets</td>
+                            <td>2</td>
+                            <td>Accuracy +/- 0.005</td>
+                        </tr>
+                        <tr>
+                            <td>Sodick</td>
+                            <td>Japan</td>
+                            <td>AD30LS</td>
+                            <td>300*250*250</td>
+                            <td>Sets</td>
+                            <td>4</td>
+                            <td>Accuracy +/- 0.005</td>
+                        </tr>
+                        <tr class="info">
+                            <td>Mitsubishi</td>
+                            <td>Japan</td>
+                            <td>EA8</td>
+                            <td>250*200*250</td>
+                            <td>Sets</td>
+                            <td>2</td>
+                            <td>Accuracy +/- 0.005</td>
+                        </tr>
+                        <tr>
+                            <td>Taiichi</td>
+                            <td>Taiwan,China</td>
+                            <td>EP-50</td>
+                            <td>450*350*250</td>
+                            <td>Sets</td>
+                            <td>4</td>
+                            <td>Accuracy +/- 0.001</td>
+                        </tr>
+                        <tr class="info">
+                            <td>Makino</td>
+                            <td>Japan</td>
+                            <td>S500</td>
+                            <td>400*500*300</td>
+                            <td>Sets</td>
+                            <td>2</td>
+                            <td>Accuracy +/- 0.005</td>
+                        </tr>
+                        <td rowspan="5" class="th-center"> Wire EDM </td>
+                        <tr>
+                            <td>Sodick</td>
+                            <td>Japan</td>
+                            <td>AG400L</td>
+                            <td>400*300*250</td>
+                            <td>Sets</td>
+                            <td>3</td>
+                            <td>Accuracy +/- 0.005</td>
+                        </tr>
+                        <tr class="info">
+                            <td>Sodick</td>
+                            <td>Japan</td>
+                            <td>600*400</td>
+                            <td>500*350*250</td>
+                            <td>Sets</td>
+                            <td>2</td>
+                            <td>Accuracy +/- 0.005</td>
+                        </tr>
+                        <tr>
+                            <td>Qinghong</td>
+                            <td>Taiwan,China</td>
+                            <td>G640F</td>
+                            <td>600*400*300</td>
+                            <td>Sets</td>
+                            <td>2</td>
+                            <td>Accuracy +/- 0.01</td>
+                        </tr>
+                        <tr class="info">
+                            <td>Qinghong</td>
+                            <td>Taiwan,China</td>
+                            <td>G530F</td>
+                            <td>500*350*250</td>
+                            <td>Sets</td>
+                            <td>4</td>
+                            <td>Accuracy +/- 0.01</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="bg-style clear index-third container-margin">
+            <div class="container index_padding clear">
+                <div class="media index_padding">
+                    <div class="media-left media-middle pl20">
+                        <a><img src="{{ url_for('static',filename = 'img/molding_003.png') }}" alt=""
+                                class="img-rounded"></a>
+                    </div>
+                    <div class="media-body index-text-style padding-special">
+                        <h3 class="title-color">＋Atelier de coupe et de meulage de fils lents</h3>
+                        <ul>
+                            <p class="title-color text-bold">Nous avons 1 jeu de broyage JINWEI-3060 et 6 ensembles de broyage HF-618S, ils nous aident à améliorer la productivité et à raccourcir les délais de livraison.</p>
+                            <p class="title-color text-bold">Toutes les pièces doivent être traitées par nos outilleurs professionnels et hautement qualifiés. Il garantit que tous les travaux sont terminés à temps, sans défaut.</p>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-style clear index-third container-margin">
+            <div class="container index_padding clear">
+                <table class="table table-hover table-bordered text-center">
+                    <thead>
+                        <tr class="danger">
+                            <th class="th-center">Description</th>
+                            <th class="th-center">Maker</th>
+                            <th class="th-center">Orginal</th>
+                            <th class="th-center">Model</th>
+                            <th class="th-center">Size</th>
+                            <th class="th-center">Unit</th>
+                            <th class="th-center">Q'ty</th>
+                            <th class="th-center">Remark</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <td class="th-center" rowspan="3"> Grinding </td>
+                        <tr class="info">
+                            <td>Jinwei</td>
+                            <td>China</td>
+                            <td>JINWEI-3060</td>
+                            <td>600*300*350</td>
+                            <td>Sets</td>
+                            <td>1</td>
+                            <td>Accuracy +/- 0.002-0.005</td>
+                        </tr>
+                        <tr>
+                            <td>Yuchun</td>
+                            <td>China</td>
+                            <td>HF-618S</td>
+                            <td>280*180*250</td>
+                            <td>Sets</td>
+                            <td>6</td>
+                            <td>Accuracy +/- 0.002-0.005</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

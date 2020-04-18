@@ -1,0 +1,72 @@
+{% extends "fr/base.html" %}
+
+{% block title %}unice-Avantages{% endblock %}
+{% block content %}
+<div class="container-fluid second-navbar-style" id="second-navbar">
+    <div class="container">
+        <div class="row center-block">
+            <div class="col-md-3">
+                <div class="second-navbar-text-style">
+                    <p><i class="mega-menu-title_icon glyphicon glyphicon-menu-left"></i>Avantages</p>
+                    <p>热情服务，追求卓越</p>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class=""><a href="{{ url_for('fr.mold_making') }}">模具制造</a></li>
+                    <li class="active"><a href="{{ url_for('fr.advantages') }}">Avantages</a></li>
+                    <li class=""><a href="{{ url_for('fr.Project_management') }}">项目管理</a></li>
+                    <li class=""><a href="{{ url_for('fr.design_engineering') }}">工程设计</a></li>
+                    <li class=""><a href="{{ url_for('fr.injection_molding') }}">注塑生产</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-color-style">
+        <div class="bg-style clear index-third container-margin">
+            <div class="container index_padding clear">
+                <div class="media">
+                    <div class="media-left media-middle pl20 pt20">
+                        <a><img src="{{ url_for('static',filename='img/advant_01.jpg') }}" alt=""
+                            class="img-rounded"></a>
+                    </div>
+                    <div class="media-body index-text-style">
+                        <h3 class="title-color">＋Avantages</h3>
+                        <ul>
+                            <li class="title-color text-bold">Personnel hautement qualifié</li>
+                            <li class="title-color text-bold">Excellente qualité comme norme européenne</li>
+                            <li class="title-color text-bold">Gestion de programme et ingénierie expérimentées</li>
+                            <li class="title-color text-bold">Machines de haute précision</li>
+                            <li class="title-color text-bold">Prix raisonnable et délais de livraison courts</li>
+                            <li class="title-color text-bold">Service après-vente complet</li>
+                            <li class="title-color text-bold">Personnel hautement qualifié</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-style clear index-third container-margin">
+            <div class="container index_padding clear">
+                <div class="media index_padding">
+                    <div class="media-body index-text-style">
+                        <h3 class="title-color">＋Avantages de conception</h3>
+                        <ul>
+                            <li class="title-color text-bold">Idées innovantes</li>
+                            <li class="title-color text-bold">Le dernier logiciel UG, 3D CAD / CAM</li>
+                            <li class="title-color text-bold">Capacités de MoldFlow</li>
+                            <li class="title-color text-bold">Rapport DFM</li>
+                            <li class="title-color text-bold">Analyse CAE</li>
+                            <li class="title-color text-bold">Optimisation de produit</li>
+                            <li class="title-color text-bold">Support technique + plus de 10 ans d'expérience</li>
+                        </ul>
+                    </div>
+                    <div class="media-right media-middle pr20">
+                        <a><img src="{{ url_for('static',filename='img/advant_02.png') }}" alt=""
+                            class="img-rounded"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

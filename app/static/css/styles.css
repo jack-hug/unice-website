@@ -466,6 +466,9 @@ ul.social-footer2 li a {
     padding: 0 50px;
     font-family: Arial, Verdana, "Helvetica Neue", Helvetica, sans-serif;
 }
+.media .padding-special {
+  padding: 0 45px;
+}
 /* 鼠标移到图片放大 */
 .media a img {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);

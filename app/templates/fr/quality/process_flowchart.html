@@ -1,20 +1,20 @@
-{% extends "en/base.html" %}
+{% extends "fr/base.html" %}
 
-{% block title %}unice-Quality Process{% endblock %}
+{% block title %}unice-工艺流程{% endblock %}
 {% block content %}
 <div class="container-fluid second-navbar-style" id="second-navbar">
     <div class="container">
         <div class="row center-block">
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <div class="second-navbar-text-style">
-                    <p><i class="mega-menu-title_icon glyphicon glyphicon-menu-left"></i>Quality Process</p>
-                    <p>Serve Passionately, Pursue Excellence</p>
+                    <p><i class="mega-menu-title_icon glyphicon glyphicon-menu-left"></i>工艺流程</p>
+                    <p>热情服务，追求卓越</p>
                 </div>
             </div>
-            <div class="col-md-8">
+            <div class="col-md-9">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="" style="width: 180px;"><a href="{{ url_for('main.quality_control') }}">Quality Control</a></li>
-                    <li class="active" style="width: 180px;"><a href="{{ url_for('main.quality_process') }}">Quality Process</a></li>
+                    <li class=""><a href="{{ url_for('fr.quality_assurance') }}">质量保证</a></li>
+                    <li class="active"><a href="{{ url_for('fr.process_flowchart') }}">工艺流程</a></li>
                 </ul>
             </div>
         </div>
@@ -28,13 +28,13 @@
                                 class="img-rounded"></a>
                     </div>
                     <div class="media-body index-text-style">
-                        <h3 class="title-color">＋Process flowchart</h3>
+                        <h3 class="title-color">＋Organigramme du processus</h3>
                         <ul>
-                            <li class="title-color text-bold">Critical Dimensions and Characteristics</li>
-                            <li class="title-color text-bold">Key Control Plan APQP&PPAP</li>
-                            <li class="title-color text-bold">In-process Control and inspection</li>
-                            <li class="title-color text-bold">Trial Reports&EMPB</li>
-                            <li class="title-color text-bold">QA Inspection before shipment</li>
+                            <li class="title-color text-bold">Dimensions et caractéristiques critiques</li>
+                            <li class="title-color text-bold">Plan de contrôle des clés APQP et PPAP</li>
+                            <li class="title-color text-bold">Contrôle et inspection en cours</li>
+                            <li class="title-color text-bold">Rapports d'essai et EMPB</li>
+                            <li class="title-color text-bold">Inspection QA avant expédition</li>
                         </ul>
                     </div>
                 </div>

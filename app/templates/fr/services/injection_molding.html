@@ -1,0 +1,80 @@
+{% extends "fr/base.html" %}
+
+{% block title %}unice-注塑生产{% endblock %}
+{% block content %}
+<div class="container-fluid second-navbar-style" id="second-navbar">
+    <div class="container">
+        <div class="row center-block">
+            <div class="col-md-3">
+                <div class="second-navbar-text-style">
+                    <p><i class="mega-menu-title_icon glyphicon glyphicon-menu-left"></i>注塑生产</p>
+                    <p>热情服务，追求卓越</p>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class=""><a href="{{ url_for('fr.mold_making') }}">模具制造</a></li>
+                    <li class=""><a href="{{ url_for('fr.advantages') }}">我们的优势</a></li>
+                    <li class=""><a href="{{ url_for('fr.Project_management') }}">项目管理</a></li>
+                    <li class=""><a href="{{ url_for('fr.design_engineering') }}">工程设计</a></li>
+                    <li class="active"><a href="{{ url_for('fr.injection_molding') }}">注塑生产</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-color-style">
+        <div class="bg-style clear index-third container-margin">
+            <div class="container index_padding clear">
+                <div class="media">
+                    <div class="media-left media-middle pl20 pt20">
+                        <a><img src="{{ url_for('static',filename = 'img/plastic01.png') }}"
+                                class="img-rounded"></a>
+                    </div>
+                    <div class="media-body index-text-style">
+                        <h3 class="title-color">＋ Moulage par injection</h3>
+                        <ul>
+                            <li class="title-color text-bold">Avec des machines de 80t à 400t, Unice Mold propose une large gamme d'équipements spécialisés dans l'injection de moules de taille moyenne à grande et de pièces plastiques techniquement exigeantes.</li>
+                            <li class="title-color text-bold">Unice Mold s'appuie sur sa propre équipe R&D pour étudier et développer de nouvelles solutions avec notre clients.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-style clear index-third container-margin">
+            <div class="container index_padding clear">
+                <div class="media index_padding">
+                    <div class="media-body index-text-style">
+                        <h3 class="title-color">＋ Moulage par injection
+                        </h3>
+                        <ul>
+                            <li class="title-color text-bold">Unice peut fonctionner 24 heures sur 24 et 7 jours sur 7. Capacité de fabriquer des pièces de précision pour des composants d'ingénierie plus grands</li>
+                            <li class="title-color text-bold">Les temps d'installation rapides permettent de réduire les coûts</li>
+                            <li class="title-color text-bold">Utilisation efficace des machines / personnes qui maintient les prix compétitifs</li>
+                        </ul>
+                    </div>
+                    <div class="media-right media-middle pr40">
+                        <a><img src="{{ url_for('static',filename = 'img/plastic02.png') }}"
+                                class="img-rounded"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-style clear index-third container-margin">
+            <div class="container index_padding clear">
+                <div class="media">
+                    <div class="media-left media-middle pl20 pt20">
+                        <a><img src="{{ url_for('static',filename = 'img/plastic03.png') }}"
+                                class="img-rounded"></a>
+                    </div>
+                    <div class="media-body index-text-style">
+                        <h3 class="title-color">＋ Moulage par injection</h3>
+                        <ul>
+                            <li class="title-color text-bold">L’investissement continu dans de nouvelles usines et de nouveaux équipements nous maintient à la pointe des technologies de fabrication modernes et nous permet de traiter la plus large gamme de polymères techniques.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

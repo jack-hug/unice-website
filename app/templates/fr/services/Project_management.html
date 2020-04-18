@@ -1,0 +1,69 @@
+{% extends "fr/base.html" %}
+
+{% block title %}unice-项目管理{% endblock %}
+{% block content %}
+<div class="container-fluid second-navbar-style" id="second-navbar">
+    <div class="container">
+        <div class="row center-block">
+            <div class="col-md-3">
+                <div class="second-navbar-text-style">
+                    <p><i class="mega-menu-title_icon glyphicon glyphicon-menu-left"></i>项目管理</p>
+                    <p>热情服务，追求卓越</p>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class=""><a href="{{ url_for('fr.mold_making') }}">模具制造</a></li>
+                    <li class=""><a href="{{ url_for('fr.advantages') }}">我们的优势</a></li>
+                    <li class="active"><a href="{{ url_for('fr.Project_management') }}">项目管理</a></li>
+                    <li class=""><a href="{{ url_for('fr.design_engineering') }}">工程设计</a></li>
+                    <li class=""><a href="{{ url_for('fr.injection_molding') }}">注塑生产</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-color-style">
+        <div class="bg-style clear index-third container-margin">
+            <div class="container index_padding clear">
+                <div class="media">
+                    <div class="media-left media-middle pl20 pt20">
+                        <a><img src="{{ url_for('static',filename = 'img/management_2.png') }}" alt=""
+                                class="img-rounded"></a>
+                    </div>
+                    <div class="media-body index-text-style">
+                        <h3 class="title-color">＋Gestion de projet puissante</h3>
+                        <ul>
+                            <p>Notre chef de projet suivrons votre projet du concept à la réalisation.Utilisons un système de gestion informatisé entièrement intégré pour suivre votre projet.La qualité est assurée du concept de la pièce à la finition du moule avec une attention à chaque détail.</p>
+                            <li class="title-color text-bold">3 chefs de projet anglophones avec plus de 10 ans d'expérience</li>
+                            <li class="title-color text-bold">Fournir un support technique à tout moment et donner les meilleures solutions en fonction de la situation réelle.</li>
+                            <li class="title-color text-bold">Utilisation de notre technologie professionnelle dans la conception d'outils et d'outils complets au meilleur délai.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-style clear index-third container-margin">
+            <div class="container index_padding clear">
+                <div class="media index_padding">
+                    <div class="media-body index-text-style">
+                        <h3 class="title-color">＋Gestion de projet puissante</h3>
+                        <ul>
+                            <p>Notre chef de projet suivrons votre projet du concept à la réalisation.Utilisons un système de gestion informatisé entièrement intégré pour suivre votre projet.La qualité est assurée du concept de la pièce à la finition du moule avec une attention à chaque détail.</p>
+                            <li class="title-color text-bold">Réunion de lancement pour examiner les exigences</li>
+                            <li class="title-color text-bold">Communication croisée et collecte de spécifications</li>
+                            <li class="title-color text-bold">Calendrier du projet - FOT et partage de rapports hebdomadaires</li>
+                            <li class="title-color text-bold">Plan de contrôle clé comme APQP et PPAP</li>
+                            <li class="title-color text-bold">Améliorations et partage des connaissances</li>
+                            <li class="title-color text-bold">Support technique et solutions</li>
+                        </ul>
+                    </div>
+                    <div class="media-right media-middle pr40">
+                        <a><img src="{{ url_for('static',filename = 'img/management_1.png') }}" alt=""
+                                class="img-rounded"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+</div>
+{% endblock %}

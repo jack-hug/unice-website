@@ -1,0 +1,101 @@
+{% extends "cn/base.html" %}
+
+{% block title %}unice-精密零件{% endblock %}
+{% block content %}
+<div class="container-fluid second-navbar-style" id="second-navbar">
+    <div class="container">
+        <div class="row center-block">
+            <div class="col-md-3">
+                <div class="second-navbar-text-style">
+                    <p><i class="mega-menu-title_icon glyphicon glyphicon-menu-left"></i>精密零件</p>
+                    <p>热情服务，追求卓越</p>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class=""><a href="{{ url_for('cn.Auto_Plastics_Part') }}">塑胶模具制造</a></li>
+                    <li class=""><a href="{{ url_for('cn.Stamping_tool_3') }}">五金模具制造</a></li>
+                    <li class="active"><a href="{{ url_for('cn.components') }}">精密零件</a></li>
+                    <li class=""><a href="{{ url_for('cn.prototype') }}">原型产品</a></li>        
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-color-style">
+        <div class="bg-style clear index-third container-margin">
+            <div class="container index_padding clear">
+                <div class="row">
+                    <div class="col-md-10 col-xs-offset-1">
+                        <div class="row">
+                            <div class="col-xs-6 col-md-4 plastic-img">
+                                <a class="thumbnail">
+                                    <img src="{{url_for('static',filename = 'uploads/Precision/Precision_01.png')}}">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-md-4 plastic-img">
+                                <a class="thumbnail">
+                                    <img src="{{url_for('static',filename = 'uploads/Precision/Precision_02.png')}}">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-md-4 plastic-img">
+                                <a class="thumbnail">
+                                    <img src="{{url_for('static',filename = 'uploads/Precision/Precision_03.png')}}">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-md-4 plastic-img">
+                                <a class="thumbnail">
+                                    <img src="{{url_for('static',filename = 'uploads/Precision/Precision_04.png')}}">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-md-4 plastic-img">
+                                <a class="thumbnail">
+                                    <img src="{{url_for('static',filename = 'uploads/Precision/Precision_05.png')}}">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-md-4 plastic-img">
+                                <a class="thumbnail">
+                                    <img src="{{url_for('static',filename = 'uploads/Precision/Precision_06.png')}}">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-md-4 plastic-img">
+                                <a class="thumbnail">
+                                    <img src="{{url_for('static',filename = 'uploads/Precision/Precision_07.png')}}">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-md-4 plastic-img">
+                                <a class="thumbnail">
+                                    <img src="{{url_for('static',filename = 'uploads/Precision/Precision_08.png')}}">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-md-4 plastic-img">
+                                <a class="thumbnail">
+                                    <img src="{{url_for('static',filename = 'uploads/Precision/Precision_09.png')}}">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-md-4 plastic-img">
+                                <a class="thumbnail">
+                                    <img src="{{url_for('static',filename = 'uploads/Precision/Precision_10.png')}}">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-md-4 plastic-img">
+                                <a class="thumbnail">
+                                    <img src="{{url_for('static',filename = 'uploads/Precision/Precision_11.png')}}">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-md-4 plastic-img">
+                                <a class="thumbnail">
+                                    <img src="{{url_for('static',filename = 'uploads/Precision/Precision_12.png')}}">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-md-4 plastic-img">
+                                <a class="thumbnail">
+                                    <img src="{{url_for('static',filename = 'uploads/Precision/Precision_13.png')}}">
+                                </a>
+                            </div>
+                        </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endblock %}

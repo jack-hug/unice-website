@@ -1,4 +1,4 @@
-{% extends "cn/base.html" %}
+{% extends "fr/base.html" %}
 
 {% block title %}unice-质量保证{% endblock %}
 {% block content %}
@@ -13,8 +13,8 @@
             </div>
             <div class="col-md-9">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="{{ url_for('cn.quality_assurance') }}">质量保证</a></li>
-                    <li class=""><a href="{{ url_for('cn.process_flowchart') }}">工艺流程</a></li>
+                    <li class="active"><a href="{{ url_for('fr.quality_assurance') }}">质量保证</a></li>
+                    <li class=""><a href="{{ url_for('fr.process_flowchart') }}">工艺流程</a></li>
                 </ul>
             </div>
         </div>
@@ -28,9 +28,10 @@
                                 class="img-rounded"></a>
                     </div>
                     <div class="media-body index-text-style">
-                        <h3 class="title-color">＋品质保证</h3>
-                        <p>产品质量是我们最高宗旨，绝不会因为任何妥协。Unice每个部门拥有质量理念。 我们的管理系统一直在更新，对质量问题从始至终都有纠正和预防措施。</p>
-                        <img src="{{ url_for('static',filename='img/process_flowchart_01.png') }}" alt="">
+                        <h3 class="title-color">＋Contrôle qualité</h3>
+                        <p>La qualité est le fondement de l'entreprise. Nous utilisons des outils de mesure de haute précision et des appareils avancés pour vérifier strictement et soigneusement toutes les pièces et tous les processus.
+                            Toutes les dimensions et caractéristiques critiques seront contrôlées tout au long du processus.</p>
+                        <img src="{{ url_for('static',filename='img/quality_assurance_02.png') }}" alt="">
                     </div>
                 </div>
             </div>
@@ -39,18 +40,14 @@
             <div class="container index_padding clear">
                 <div class="media index_padding">
                     <div class="media-body index-text-style">
-                        <h3 class="title-color">＋过程控制</h3>
+                        <h3 class="title-color">＋Contrôle Qualité</h3>
                         <ul>
-                            <li class="title-color text-bold">* ISO 9001认证</li>
-                            <li class="title-color text-bold">* CMM + OGP验证组件</li>
-                            <li class="title-color text-bold">*过程控制和检查</li>
-                            <li class="title-color text-bold">*原材料/钢/硬度证明</li>
-                            <li class="title-color text-bold">* 2〜3小时试运行以验证模具稳定性</li>
-                            <li class="title-color text-bold">*发货前进行质量检查</li>
+                            <li class="title-color text-bold">Pour l'inspection des pièces fabriquées pour les moules d'injection, les outillages, mais aussi pour la mesure des premiers échantillons de pièces en plastique ou en métal sont régulièrement inspectées et mesurées par les machines Hexagon Metrology CMM et Seven Ocean Camera.</li>
+                            <li class="title-color text-bold">À la demande du client, le contrôle du processus SPC des caractéristiques importantes est effectué par Hexagon Metrology CMM et Seven Ocean Camera.</li>
                         </ul>
                     </div>
                     <div class="media-right media-middle pr20">
-                        <a href="#"><img src="{{ url_for('static',filename = 'img/process_flowchart.png') }}" alt=" "
+                        <a href="#"><img src="{{ url_for('static',filename='img/quality_assurance_03.png') }}" alt="about us"
                                 class="img-rounded"></a>
                     </div>
                 </div>

@@ -1,0 +1,100 @@
+{% extends "fr/base.html" %}
+
+{% block title %}unice-工程设计{% endblock %}
+{% block content %}
+<div class="container-fluid second-navbar-style" id="second-navbar">
+
+    <div class="container">
+        <div class="row center-block">
+            <div class="col-md-3">
+                <div class="second-navbar-text-style">
+                    <p><i class="mega-menu-title_icon glyphicon glyphicon-menu-left"></i>工程设计</p>
+                    <p>热情服务，追求卓越</p>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class=""><a href="{{ url_for('fr.mold_making') }}">模具制造</a></li>
+                    <li class=""><a href="{{ url_for('fr.advantages') }}">我们的优势</a></li>
+                    <li class=""><a href="{{ url_for('fr.Project_management') }}">项目管理</a></li>
+                    <li class="active"><a href="{{ url_for('fr.design_engineering') }}">工程设计</a></li>
+                    <li class=""><a href="{{ url_for('fr.injection_molding') }}">注塑生产</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-color-style">
+        <div class="bg-style clear index-third container-margin">
+            <div class="container index_padding clear">
+                <div class="media index_padding">
+                    <div class="media-body index-text-style">
+                        <h3 class="title-color">＋DFM et Mold Flow</h3>
+                        <ul>
+                            <p>Des ingénieurs expérimentés et professionnels travaillent sur DFM et Mold Flow à l'aide d'Autodesk Mold Flow Simulation.</p>
+                            <li class="title-color text-bold">Moldflow pour le remplissage / refroidissement / déflexion / ventilation</li>
+                            <li class="title-color text-bold">Discussions techniques croisées pour les meilleures solutions.</li>
+                        </ul>
+                    </div>
+                    <div class="media-right media-middle pr40">
+                        <a><img src="{{ url_for('static',filename = 'img/design_03.png') }}" alt="about us"
+                                class="img-rounded"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-style clear index-third container-margin">
+            <div class="container index_padding clear">
+                <div class="media">
+                    <div class="media-left media-middle pl20 pt20">
+                        <a><img src="{{ url_for('static',filename = 'img/design_01.png') }}" alt=""
+                                class="img-rounded"></a>
+                    </div>
+                    <div class="media-body index-text-style">
+                        <h3 class="title-color">＋BUREAU D'ETUDE </h3>
+                        <ul>
+                            <li class="title-color text-bold">Développement et conception, Nos concepteurs d'outils ont une longue expérience dans le développement et la conception de moules mono et multicavité avec systèmes chauds et entrées froides, moules pour la pose d'inserts métalliques (surmoulage), moules avec systèmes hydrauliques et pneumatiques, moules empilés et moules pour les pièces à parois minces. En plus des moules pour pièces en plastique, nous concevons et produisons également des outils d'emboutissage pour le formage des métaux.</li>
+                            <li class="title-color text-bold">Nous utilisons le système CAD / CAM Unigraphics NX8.5. Ce logiciel nous permet de créer des modèles 3D et ensuite des détails 2D de composants individuels.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-style clear index-third container-margin">
+            <div class="container index_padding clear">
+                <div class="media index_padding">
+                    <div class="media-body index-text-style">
+                        <h3 class="title-color">＋为客户理念而生</h3>
+                        <ul>
+                            <li class="title-color text-bold">Après avoir reçu le concept ou la demande du client, Unice Mold utilisera de nombreuses années d'expertise en fabrication et les derniers logiciels pour fournir à nos clients des solutions rentables de haute qualité.</li>
+                            <li class="title-color text-bold">Comme nous nous engageons à travailler en étroite collaboration avec nos clients pour leur fournir exactement ce qu'ils veulent, quand ils en ont besoin!</li>
+                        </ul>
+                    </div>
+                    <div class="media-right media-middle pr40">
+                        <a><img src="{{ url_for('static',filename = 'img/design_02.png') }}" alt="about us"
+                                class="img-rounded"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-style clear index-third container-margin">
+            <div class="container index_padding clear">
+                <div class="media">
+                    <div class="media-left media-middle pl20 pt20">
+                        <a><img src="{{ url_for('static',filename = 'img/design_04.png') }}" alt=""
+                                class="img-rounded"></a>
+                    </div>
+                    <div class="media-body index-text-style">
+                        <h3 class="title-color">＋Ingénieurs professionnels</h3>
+                        <ul>
+                            <p>Unice Mold connaît l'importance de l'ingénierie et de l'innovation car une bonne conception est l'élément clé des produits excellent.</p>
+                            <li class="title-color text-bold">L'Unice Mold élabore des propositions pour les clients afin de réduire et de simplifier les coûts</li>
+                            <li class="title-color text-bold">Notre ingénieurs ont plus de 10 ans d'expérience dans moules</li>
+                            <li class="title-color text-bold">L'Unice Mold offre des garanties et des services de haute qualité pour la production.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
