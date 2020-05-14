@@ -619,3 +619,7 @@ ul.social-footer2 li a {
 .back-to .back-top:hover {
   background-position: -50px 0
 }
+
+#container-fr {
+  width: 1300px;
+}
