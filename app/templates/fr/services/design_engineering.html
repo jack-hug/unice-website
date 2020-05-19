@@ -1,24 +1,23 @@
 {% extends "fr/base.html" %}
 
-{% block title %}unice-工程设计{% endblock %}
+{% block title %}unice-Conception de processus{% endblock %}
 {% block content %}
 <div class="container-fluid second-navbar-style" id="second-navbar">
-
-    <div class="container">
+    <div class="container" id="container-fr">
         <div class="row center-block">
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <div class="second-navbar-text-style">
-                    <p><i class="mega-menu-title_icon glyphicon glyphicon-menu-left"></i>工程设计</p>
-                    <p>热情服务，追求卓越</p>
+                    <p><i class="mega-menu-title_icon glyphicon glyphicon-menu-left"></i>Conception de processus</p>
+                    <p>Service chaleureux et recherche de l'excellence</p>
                 </div>
             </div>
-            <div class="col-md-9">
+            <div class="col-md-8">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class=""><a href="{{ url_for('fr.mold_making') }}">模具制造</a></li>
-                    <li class=""><a href="{{ url_for('fr.advantages') }}">我们的优势</a></li>
-                    <li class=""><a href="{{ url_for('fr.Project_management') }}">项目管理</a></li>
-                    <li class="active"><a href="{{ url_for('fr.design_engineering') }}">工程设计</a></li>
-                    <li class=""><a href="{{ url_for('fr.injection_molding') }}">注塑生产</a></li>
+                    <li class="" style="width: 170px;"><a href="{{ url_for('fr.mold_making') }}">Fabrication de moules</a></li>
+                    <li class="" style="width: 135px;"><a href="{{ url_for('fr.advantages') }}">Notre Avantages</a></li>
+                    <li class="" style="width: 137px;"><a href="{{ url_for('fr.Project_management') }}">Gestion de projet</a></li>
+                    <li class="active" style="width: 190px;"><a href="{{ url_for('fr.design_engineering') }}">Conception de processus</a></li>
+                    <li class="" style="width: 165px;"><a href="{{ url_for('fr.injection_molding') }}">Moulage par injection</a></li>
                 </ul>
             </div>
         </div>

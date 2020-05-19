@@ -1,19 +1,19 @@
 {% extends "fr/base.html" %}
 
-{% block title %}unice-Contact us{% endblock %}
+{% block title %}unice-Nous Contacter{% endblock %}
 {% block content %}
 <div class="container-fluid second-navbar-style" id="second-navbar">
     <div class="container">
         <div class="row center-block">
             <div class="col-md-4">
                 <div class="second-navbar-text-style">
-                    <p><i class="mega-menu-title_icon glyphicon glyphicon-menu-left"></i>Contact us</p>
-                    <p>Serve Passionately, Pursue Excellence</p>
+                    <p><i class="mega-menu-title_icon glyphicon glyphicon-menu-left"></i>Nous Contacter</p>
+                    <p>Service chaleureux et recherche de l'excellence</p>
                 </div>
             </div>
             <div class="col-md-8">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="{{ url_for('main.contact_us') }}">Contact us</a></li>
+                    <li class="active" style="width: 160px;"><a href="{{ url_for('main.contact_us') }}">Nous Contacter</a></li>
                 </ul>
             </div>
         </div>
@@ -33,11 +33,11 @@
                         <form>
                             <div class="form-group contact-text-style">
                                 <div class="form-group">
-                                    <label for="yourname">Nom et Prénom：</label>
+                                    <label for="yourname">Nom/Prénom：</label>
                                     <input type="text" class="form-control" id="yourname" placeholder="Nom et Prénom">
                                 </div>
                                 <div>
-                                    <label for="youremail">email：</label>
+                                    <label for="youremail">Email：</label>
                                     <input type="email" class="form-control" id="youremail" placeholder="Email">
                                 </div>
                                 <div class="form-group">
@@ -50,10 +50,10 @@
                                         placeholder="Votre numéro de téléphone">
                                 </div>
                                 <div class="form-group">
-                                    <label for="query-text">VOTRE MESSAGE：</label>
+                                    <label for="query-text">Messages：</label>
                                     <textarea class="form-control" id="query-text" rows="8"></textarea>
                                 </div>
-                                <button type="submit" class="btn btn-default">envoyer</button>
+                                <button type="submit" class="btn btn-default">Envoyer</button>
                             </div>
                         </form>
                     </div>

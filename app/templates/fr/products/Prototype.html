@@ -1,22 +1,22 @@
 {% extends "fr/base.html" %}
 
-{% block title %}unice-原型产品{% endblock %}
+{% block title %}unice-Pièces Prototypes{% endblock %}
 {% block content %}
 <div class="container-fluid second-navbar-style" id="second-navbar">
-    <div class="container">
+    <div class="container" id="container-fr">
         <div class="row center-block">
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <div class="second-navbar-text-style">
-                    <p><i class="mega-menu-title_icon glyphicon glyphicon-menu-left"></i>原型产品</p>
-                    <p>热情服务，追求卓越</p>
+                    <p><i class="mega-menu-title_icon glyphicon glyphicon-menu-left"></i>Pièces Prototypes</p>
+                    <p>Service chaleureux et recherche de l'excellence</p>
                 </div>
             </div>
-            <div class="col-md-9">
+            <div class="col-md-8">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class=""><a href="{{ url_for('cn.Auto_Plastics_Part') }}">塑胶模具制造</a></li>
-                    <li class=""><a href="{{ url_for('cn.Stamping_tool_3') }}">五金模具制造</a></li>
-                    <li class=""><a href="{{ url_for('cn.Precision') }}">精密零件</a></li>
-                    <li class="active"><a href="{{ url_for('cn.Prototype') }}">原型产品</a></li>
+                    <li class="" style="width: 165px;"><a href="{{ url_for('fr.Auto_Plastics_Part') }}">Pièces en plastique</a></li>
+                    <li class=""><a href="{{ url_for('fr.Stamping_tool_3') }}">Outillages</a></li>
+                    <li class="" style="width: 165px;"><a href="{{ url_for('fr.Precision') }}">Pièces de précision</a></li>
+                    <li class="active" style="width: 165px;"><a href="{{ url_for('fr.Prototype') }}">Pièces Prototypes</a></li>
                 </ul>
             </div>
         </div>
