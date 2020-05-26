@@ -9,43 +9,39 @@
 <script src="{{ url_for('static',filename = 'js/unice.js')}}"></script>
 {% endblock %}
 
+{% block body %}
 
 {% block navbar %}
-
-<div class="container-fluid navbar-fixed-top">
-    <div class="container-fluid top-style">
-        &nbsp
-    </div>
-    <div class="row row-height">
-        <div class="col-md-3 col-md-offset-2 header-logo">
-            <img src="{{ url_for('static',filename = 'img/unice-logo-2.png') }}" alt="">
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="top-style"></div>
+    <div class="container-fluid">
+        <div class="navbar-header row-height">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="{{ url_for('main.index') }}"><img
+                    src="{{ url_for('static',filename = 'img/unice-logo-2.png') }}" alt=""></a>
         </div>
-        <div class="col-md-7 navbar-right">
-            <ul class="nav navbar-nav navbar-style">
-                <li class="active"><a href="{{ url_for('main.index') }}">HOME</a></li>
-                <li class=""><a href="{{ url_for('main.mold_making') }}">SERVICES</a></li>
-                <li class=""><a href="{{ url_for('main.quality_control') }}">QUALITY</a></li>
-                <li class=""><a href="{{ url_for('main.Auto_Plastics_Part') }}">PRODUCTS</a></li>
-                <li class=""><a href="{{ url_for('main.contact_us') }}">CONTACT</a></li>
-                <li><a href="{{ url_for('cn.index') }}" class="language-switch">CN</a></li>
-                <li class="navbar-line-style">|</li>
-                <li><a href="{{ url_for('main.index') }}" class="language-switch">EN</a></li>
-                <li class="navbar-line-style">|</li>
-                <li><a href="{{ url_for('fr.index') }}" class="language-switch">FR</a></li>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="{{ url_for('main.index') }}">HOME <span class="sr-only">(current)</span></a>
+                </li>
+                <li><a href="{{ url_for('main.mold_making') }}">SERVICES</a></li>
+                <li><a href="{{ url_for('main.quality_control') }}">QUALITY</a></li>
+                <li><a href="{{ url_for('main.Auto_Plastics_Part') }}">PRODUCTS</a></li>
+                <li><a href="{{ url_for('main.contact_us') }}">CONTACT</a></li>
             </ul>
         </div>
     </div>
     <div class="navbar-bottom-color"></div>
-    <div class="col-md-4 col-md-offset-4" id="flash-miss">
-        {% for message in get_flashed_messages() %}
-        <div class="alert alert-warning" style="z-index: 99;">
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
-            {{ message }}
-        </div>
-        {% endfor %}
-    </div>
 </div>
 {% endblock %}
+
 {% block content %}
 {% endblock %}
 
@@ -59,15 +55,16 @@
                     <div class="widget subscribe no-box">
                         <h5 class="widget-title"> Unice Mold Industrial(ShenZhen) Co., Ltd <span></span></h5>
                         <p>
-                            Unice is  a manufacturer of injection mold manufacturing, custom plastic injection molding, stamping molds,  precision machined parts and prototype parts etc.
-                        </p>
-                        <p>
-                            We provide manufacturing solutions from simple to impossible, and covers a wide range of industries including automotive, construction, electronics,medical,industry etc.
+                            Unice is a manufacturer of injection mold manufacturing, custom plastic injection molding,
+                            stamping molds, precision machined parts and prototype parts etc.
+                            <br>
+                            We provide manufacturing solutions from simple to impossible, and covers a wide range of
+                            industries including automotive, construction, electronics,medical,industry etc.
                         </p>
                     </div>
                 </div>
 
-                <div class="col-xs-12 col-sm-6 col-md-3" style="padding-left:40px">
+                <div class="col-xs-12 col-sm-6 col-md-3"">
                     <div class="widget no-box">
                         <h5 class="widget-title">COMPANY<span></span></h5>
                         <ul class="thumbnail-widget">
@@ -83,7 +80,8 @@
                                         href="{{ url_for('main.quality_control') }}">QUALITY</a></div>
                             </li>
                             <li>
-                                <div class="thumb-content mb15"><a href="{{ url_for('main.Auto_Plastics_Part') }}">PRODUCTS</a>
+                                <div class="thumb-content mb15"><a
+                                        href="{{ url_for('main.Auto_Plastics_Part') }}">PRODUCTS</a>
                                 </div>
                             </li>
                             <li>
@@ -99,41 +97,52 @@
                         <h5 class="widget-title">PRODUCTS<span></span></h5>
                         <ul class="thumbnail-widget">
                             <li>
+                                <div class="thumb-content mb10"><a href="{{ url_for('main.Auto_Plastics_Part') }}">Auto
+                                        Plastic Parts</a></div>
+                            </li>
+                            <li>
+                                <div class="thumb-content mb10"><a href="{{ url_for('main.twok_Molding') }}">2K Molding
+                                        Parts</a>
+                                </div>
+                            </li>
+                            <li>
                                 <div class="thumb-content mb10"><a
-                                        href="{{ url_for('main.Auto_Plastics_Part') }}">Auto Plastic Parts</a></div>
+                                        href="{{ url_for('main.Electrical_Plastics_Molding') }}">Electrical Plastic
+                                        Parts</a></div>
                             </li>
                             <li>
-                                <div class="thumb-content mb10"><a href="{{ url_for('main.twok_Molding') }}">2K Molding Parts</a>
+                                <div class="thumb-content mb10"><a href="{{ url_for('main.Insert_Molding') }}">Insert
+                                        Molding Parts</a></div>
+                            </li>
+                            <li>
+                                <div class="thumb-content mb10"><a href="{{ url_for('main.Rubber') }}">Rubber Parts</a>
                                 </div>
                             </li>
                             <li>
-                                <div class="thumb-content mb10"><a href="{{ url_for('main.Electrical_Plastics_Molding') }}">Electrical Plastic Parts</a></div>
+                                <div class="thumb-content mb10"><a href="{{ url_for('main.Casting') }}">Die Casting
+                                        Parts</a></div>
                             </li>
                             <li>
-                                <div class="thumb-content mb10"><a href="{{ url_for('main.Insert_Molding') }}">Insert Molding Parts</a></div>
-                            </li>
-                            <li>
-                                <div class="thumb-content mb10"><a href="{{ url_for('main.Rubber') }}">Rubber Parts</a></div>
-                            </li>
-                            <li>
-                                <div class="thumb-content mb10"><a href="{{ url_for('main.Casting') }}">Die Casting Parts</a></div>
-                            </li>
-                            <li>
-                                <div class="thumb-content mb10"><a href="{{ url_for('main.Stamping_tool_1') }}">Stamping Tooling</a>
+                                <div class="thumb-content mb10"><a href="{{ url_for('main.Stamping_tool_1') }}">Stamping
+                                        Tooling</a>
                                 </div>
                             </li>
                             <li>
-                                <div class="thumb-content mb10"><a href="{{ url_for('main.Stamping_tool_2') }}">Terminal Parts</a></div>
+                                <div class="thumb-content mb10"><a href="{{ url_for('main.Stamping_tool_2') }}">Terminal
+                                        Parts</a></div>
                             </li>
                             <li>
-                                <div class="thumb-content mb10"><a href="{{ url_for('main.Stamping_tool_3') }}">Metal Shrapnel Parts</a></div>
+                                <div class="thumb-content mb10"><a href="{{ url_for('main.Stamping_tool_3') }}">Metal
+                                        Shrapnel Parts</a></div>
                             </li>
                             <li>
-                                <div class="thumb-content mb10"><a href="{{ url_for('main.precision') }}">Precision machined Parts</a>
+                                <div class="thumb-content mb10"><a href="{{ url_for('main.precision') }}">Precision
+                                        machined Parts</a>
                                 </div>
                             </li>
                             <li>
-                                <div class="thumb-content mb10"><a href="{{ url_for('main.prototype') }}">Prototype Parts</a>
+                                <div class="thumb-content mb10"><a href="{{ url_for('main.prototype') }}">Prototype
+                                        Parts</a>
                                 </div>
                             </li>
                         </ul>
@@ -144,7 +153,8 @@
 
                     <div class="widget no-box">
                         <h5 class="widget-title">CONTACT US<span></span></h5>
-                        <p class="footer-text-color"><span>406-04C, Building B,Cybino CMP Plant,Science and Technology Zhongyi Road No.19,Maling Community,Nanshan District,Guangdong Province,China</span></p>
+                        <p class="footer-text-color"><span>406-04C, Building B,Cybino CMP Plant,Science and Technology
+                                Zhongyi Road No.19,Maling Community,Nanshan District,Guangdong Province,China</span></p>
                         <p class="footer-text-color"><span>Email:</span><a href="mailto:kayla@unicemold.com"
                                 title="glorythemes">kayla@unicemold.com</a></p>
                         <ul class="social-footer2">
@@ -181,7 +191,8 @@
                         </ul>
                         <p class="mt15 pd-left">
                             <a title="wechat" target="_blank">
-                                <img alt="instagram" width="85" height="85" src="{{ url_for('static',filename = 'img/icon/wechat.gif') }}">
+                                <img alt="instagram" width="85" height="85"
+                                    src="{{ url_for('static',filename = 'img/icon/wechat.gif') }}">
                             </a>
                         </p>
                     </div>
@@ -200,6 +211,7 @@
         </div>
     </div>
 </footer>
+{% endblock %}
 <!-- Footer -->
 
 <!-- BackTop div -->
@@ -210,41 +222,5 @@
 
 {% block scripts %}
 {{ super() }}
-<script>
-    $(document).ready(function () {
-        $(".nav a").on("click", function () {
-            $(".nav").find(".active").removeClass("active");
-            $(this).parent().addClass("active");
-        });
-    });    
-</script>
-<script>
-    $(document).ready(function () {
-        setTimeout(function () {
-            $('#flash-miss').hide();
-        }, 3000);
-      });
-</script>
-<script>
-      $(function () {
-        var bt = $('#toolBackTop');
-        var sw = $(document.body)[0].clientWidth;
- 
-        var limitsw = (sw - 840) / 2 - 80;  //距离右侧距离
-        if (limitsw > 0){
-            limitsw = parseInt(limitsw);
-            bt.css("right",limitsw/8);
-        }
- 
-        $(window).scroll(function() {
-            var st = $(window).scrollTop();
-            if(st > 30){
-                    bt.show();
-            }else{
-                    bt.hide();
-            }
-        });
-});
-</script>
 {% endblock scripts %}
 {% endblock %}
