@@ -1,8 +1,12 @@
-/* body字体 */
+/* ======= default font =======  */
 body {  font-family: Arial, Verdana, "Helvetica Neue", Helvetica, sans-serif;
 }
 
-/* 导航条背景色 */
+/* ======= navbar ======= */
+.row-height .navbar-toggle {
+  margin-top: 32px;
+}
+
 .top-style {
   background-color: #3c6382;
   width: 100%;
@@ -10,16 +14,19 @@ body {  font-family: Arial, Verdana, "Helvetica Neue", Helvetica, sans-serif;
   padding-left: 0;
   padding-right: 0;
 }
-
-.row-height .navbar-toggle {
-  margin-top: 32px;
-}
-/* 导航栏中部 */
 .row-height {
   height: 100px;
   line-height: 100px;
   background-color: white;
 }
+
+.divider {
+  height: 1px;
+  margin: 9px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+
 /* 导航栏文字垂直居中 */
 .row-height .navbar-nav > li > a {
   line-height: 100px;
@@ -29,17 +36,18 @@ body {  font-family: Arial, Verdana, "Helvetica Neue", Helvetica, sans-serif;
   height: 14px;
   font-weight: bold;
 }
+
 /* 鼠标划过导航字体颜色 */
 .row-height .navbar-nav > li > a:hover {
   color: #6a89cc;
   background-color: white;
 }
 /* 语言切换样式 */
-.row-height .navbar-nav > li > .language-switch {
+.language-switch {
   color: #3c6382;
   font-weight: normal;
 }
-.row-height .navbar-nav > li > .language-switch:hover {
+.language-switch:hover {
   color: #6a89cc;
 }
 
@@ -50,6 +58,14 @@ body {  font-family: Arial, Verdana, "Helvetica Neue", Helvetica, sans-serif;
   background-color: #82ccdd;
   padding: 0;
 }
+
+/* device > 768px */
+@media (min-width: 768px) {
+  .navbar .container-fluid {
+    background-color: white;
+  }
+}
+/*  */
 
 /* banner 图片大小 */
 .myCarousel {
