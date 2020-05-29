@@ -3,6 +3,7 @@
 {% block title %}HOME | Unice Mold Industrial(ShenZhen) Co., Ltd {% endblock %}
 
 
+{% block nav_home %}active{% endblock %}
 {% block content %}
 <!-- 导航banner -->
 <div id="carousel-generic" class="carousel slide myCarousel" data-ride="carousel">
@@ -42,12 +43,21 @@
         <div class="title">Unice Mold-Your Best Choice</div>
         <div class="text-style">
             <p>
-                Unice is a manufacturer of injection mold, custom plastic injection molding, stamping tools and precision machined parts and prototype parts etc. We provide manufacturing solutions from simple to impossible, and covers a wide range of industries, including automotive, construction, electronics,medical etc.
+                Unice is a manufacturer of injection mold, custom plastic injection molding, stamping tools and
+                precision machined parts and prototype parts etc. We provide manufacturing solutions from simple to
+                impossible, and covers a wide range of industries, including automotive, construction,
+                electronics,medical etc.
             </p>
-            <br/>
-            <p>Our company attaches great importance to personnel training. After many years of technological precipitation, we have gathered a group of high-quality, efficient and quality-oriented management teams and technical service teams. Following the company's development ideas of being refined, stronger and bigger, with the purpose of helping customers optimize product structure, formulate the optimal molding scheme and the most economical production cost method, we have gradually become the industry leader and won domestic and foreign Well-known brand customers recognized and established a good supporting cooperative relationship.
+            <br />
+            <p>Our company attaches great importance to personnel training. After many years of technological
+                precipitation, we have gathered a group of high-quality, efficient and quality-oriented management teams
+                and technical service teams. Following the company's development ideas of being refined, stronger and
+                bigger, with the purpose of helping customers optimize product structure, formulate the optimal molding
+                scheme and the most economical production cost method, we have gradually become the industry leader and
+                won domestic and foreign Well-known brand customers recognized and established a good supporting
+                cooperative relationship.
             </p>
-                
+
         </div>
         <a href="{{ url_for('main.mold_making') }}" class="btn-style">&gt; READ MORE</a>
     </div>
@@ -57,7 +67,8 @@
         <div class="row index-text-style">
             <div class="col-md-4">
                 <div class="hovereffect">
-                    <img class="img-responsive center-block" src="{{ url_for('static',filename='img/quality.png')}}" alt="">
+                    <img class="img-responsive center-block" src="{{ url_for('static',filename='img/quality.png')}}"
+                        alt="">
                     <div class="overlay">
                         <h2>Quality</h2>
                         <a class="info" href="{{ url_for('main.quality_control') }}">READ MORE</a>
@@ -67,14 +78,16 @@
                 <div class="text-center clear">
                     <h3 class="title-color">Quality</h3>
                     <p class="p-height">
-                        Quality is the primary pursuit of Unice. With a modern and advanced inspection department， UNICE is able to offer the customer a full inspection and quality reporting package. 
+                        Quality is the primary pursuit of Unice. With a modern and advanced inspection department， UNICE
+                        is able to offer the customer a full inspection and quality reporting package.
                     </p>
                     <p><a href="{{ url_for('main.quality_control') }}" class="btn-style">&gt; READ MORE</a></p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="hovereffect">
-                    <img class="img-responsive center-block" src="{{ url_for('static',filename='img/product.jpg')}}" alt="">
+                    <img class="img-responsive center-block" src="{{ url_for('static',filename='img/product.jpg')}}"
+                        alt="">
                     <div class="overlay">
                         <h2>Products</h2>
                         <a class="info" href="{{ url_for('main.Auto_Plastics_Part') }}">READ MORE</a>
@@ -83,14 +96,16 @@
                 <div class="text-center clear">
                     <h3 class="title-color">Products</h3>
                     <p class="p-height">
-                        Unice is specialized in injection mold manufacturing, custom plastic injection molding, stamping molds, precision machined parts and prototype parts etc.
+                        Unice is specialized in injection mold manufacturing, custom plastic injection molding, stamping
+                        molds, precision machined parts and prototype parts etc.
                     </p>
                     <p><a href="{{ url_for('main.Auto_Plastics_Part') }}" class="btn-style">&gt; READ MORE</a></p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="hovereffect">
-                    <img class="img-responsive center-block" src="{{ url_for('static',filename='img/our-servers.png')}}" alt="">
+                    <img class="img-responsive center-block" src="{{ url_for('static',filename='img/our-servers.png')}}"
+                        alt="">
                     <div class="overlay">
                         <h2>Services</h2>
                         <a class="info" href="{{ url_for('main.mold_making') }}">READ MORE</a>
@@ -98,7 +113,9 @@
                 </div>
                 <div class="text-center clear">
                     <h3 class="title-color">Services</h3>
-                    <p class="p-height">We work closely with customers from initial design to delivery parts, your project will be managed by our project manager to ensure high quality and first-class service.</p>
+                    <p class="p-height">We work closely with customers from initial design to delivery parts, your
+                        project will be managed by our project manager to ensure high quality and first-class service.
+                    </p>
                     <p><a href="{{ url_for('main.mold_making') }}" class="btn-style">&gt; READ MORE</a></p>
                 </div>
             </div>
@@ -107,12 +124,13 @@
 </div>
 <div class="bg-style clear index-third container-margin">
     <div class="container index_padding clear">
-        <div class="media">
-            <div class="media-left media-middle pl20 pt20">
-                <a href="{{ url_for('main.Auto_Plastics_Part') }}"><img src="{{ url_for('static',filename='img/index_01.png') }}" alt=""
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6">
+                <a href="{{ url_for('main.Auto_Plastics_Part') }}"><img
+                        src="{{ url_for('static',filename='img/index_01.png') }}" alt="Injection Manufacturing"
                         class="img-rounded"></a>
             </div>
-            <div class="media-body index-text-style">
+            <div class="col-xs-12 col-sm-12 col-md-6">
                 <h3 class="title-color">＋Injection Manufacturing</h3>
                 <ul>
                     <li class="title-color text-bold">Auto Plastic Parts</li>
@@ -122,7 +140,8 @@
                     <li class="title-color text-bold">Rubber Parts</li>
                     <li class="title-color text-bold">Die Casting Parts</li>
                 </ul>
-                <p><a href="{{ url_for('main.Auto_Plastics_Part') }}" class="btn-style btn-margin">&gt; READ MORE</a></p>
+                <p><a href="{{ url_for('main.Auto_Plastics_Part') }}" class="btn-style btn-margin">&gt; READ MORE</a>
+                </p>
             </div>
         </div>
     </div>
@@ -140,7 +159,8 @@
                 <p><a href="{{ url_for('main.Stamping_tool_3') }}" class="btn-style btn-margin">&gt; READ MORE</a></p>
             </div>
             <div class="media-right media-middle pr20">
-                <a href="{{ url_for('main.Stamping_tool_3') }}"><img src="{{ url_for('static',filename='img/stamptool.png') }}" alt="" class="img-rounded"></a>
+                <a href="{{ url_for('main.Stamping_tool_3') }}"><img
+                        src="{{ url_for('static',filename='img/stamptool.png') }}" alt="" class="img-rounded"></a>
             </div>
         </div>
     </div>
@@ -149,13 +169,16 @@
     <div class="container index_padding clear">
         <div class="media index_padding">
             <div class="media-left media-middle pl20">
-                <a href="{{ url_for('main.precision') }}"><img src="{{ url_for('static',filename='img/Precision.png')}}" alt=""
-                        class="img-rounded"></a>
+                <a href="{{ url_for('main.precision') }}"><img src="{{ url_for('static',filename='img/Precision.png')}}"
+                        alt="" class="img-rounded"></a>
             </div>
             <div class="media-body index-text-style">
                 <h3 class="title-color">＋Precision Parts</h3>
                 <p class="title-color">
-                    We manufacture competitive and innovative precision machined parts. Unicemold is ​​committed to meeting the strict requirements of our customers and is committed to providing a "center of excellence". From initial design to delivery parts, your project will be managed by our project manager to ensure high quality and first-class service.
+                    We manufacture competitive and innovative precision machined parts. Unicemold is ​​committed to
+                    meeting the strict requirements of our customers and is committed to providing a "center of
+                    excellence". From initial design to delivery parts, your project will be managed by our project
+                    manager to ensure high quality and first-class service.
                 </p>
                 <br><br><br>
                 <p><a href="{{ url_for('main.precision') }}" class="btn-style btn-margin">&gt; READ MORE</a></p>
@@ -170,7 +193,10 @@
                 <h3 class="title-color">＋ Prototype Parts</h3>
                 <ul>
                     <p class="title-color">
-                        You may need several prototype iterations to fully realise your ideas,We’ll optimise both your tooling and your moulded part design, and move your ideas effectively to support your final design and on to production. Prototyping can let you touch and feel your component before moving on to full production.
+                        You may need several prototype iterations to fully realise your ideas,We’ll optimise both your
+                        tooling and your moulded part design, and move your ideas effectively to support your final
+                        design and on to production. Prototyping can let you touch and feel your component before moving
+                        on to full production.
                     </p>
                     <p class="title-color">The printed, moulded and machined prototypes which we can offer:</p>
                     <li class="title-color text-bold">3D printing</li>
@@ -181,7 +207,8 @@
                 <p><a href="{{ url_for('main.prototype') }}" class="btn-style btn-margin">&gt; READ MORE</a></p>
             </div>
             <div class="media-right media-middle pr20">
-                <a href="{{ url_for('main.prototype') }}"><img src="{{ url_for('static',filename='img/Prototype.png') }}" alt="" class="img-rounded"></a>
+                <a href="{{ url_for('main.prototype') }}"><img
+                        src="{{ url_for('static',filename='img/Prototype.png') }}" alt="" class="img-rounded"></a>
             </div>
         </div>
     </div>
@@ -190,20 +217,27 @@
     <div class="container index_padding clear">
         <div class="media index_padding">
             <div class="media-right media-middle pr20">
-                <a href="{{ url_for('main.injection_molding') }}"><img src="{{ url_for('static',filename='img/plastic01.png') }}" alt="" class="img-rounded"></a>
+                <a href="{{ url_for('main.injection_molding') }}"><img
+                        src="{{ url_for('static',filename='img/plastic01.png') }}" alt="" class="img-rounded"></a>
             </div>
             <div class="media-body index-text-style">
                 <h3 class="title-color">＋Injection Molding</h3>
                 <ul>
                     <p class="title-color">We have 12 plastic injection molding machines and they offer:</p>
-                        <li class="title-color text-bold">Choice of 90 ton up to 400 ton machines</li>
-                        <li class="title-color text-bold">Ability to match your project requirements to a range of machines ensuring maximum efficiency and cost reduction</li>
-                        <li class="title-color text-bold">Unice can operate 24 hours a day and 7 days a week. Capability to  manufacture precision parts to larger engineered components</li>
-                        <li class="title-color text-bold">Quick set up times allow for reduced costs</li>
-                        <li class="title-color text-bold">Production schedules which create maximum efficiency</li>
-                        <li class="title-color text-bold">Efficient machine / people utilization which keeps prices competitive</li>
-                        <li class="title-color text-bold">Unice’s continuous investment in new plant and equipment keeps us at the forefront of modern manufacturing technologies, and ensures we can process the widest range of engineering polymers.</li>
-                        <li class="title-color text-bold">All plastic injection molding services are delivered in line with ISO 9001 quality standards.</li>
+                    <li class="title-color text-bold">Choice of 90 ton up to 400 ton machines</li>
+                    <li class="title-color text-bold">Ability to match your project requirements to a range of machines
+                        ensuring maximum efficiency and cost reduction</li>
+                    <li class="title-color text-bold">Unice can operate 24 hours a day and 7 days a week. Capability to
+                        manufacture precision parts to larger engineered components</li>
+                    <li class="title-color text-bold">Quick set up times allow for reduced costs</li>
+                    <li class="title-color text-bold">Production schedules which create maximum efficiency</li>
+                    <li class="title-color text-bold">Efficient machine / people utilization which keeps prices
+                        competitive</li>
+                    <li class="title-color text-bold">Unice’s continuous investment in new plant and equipment keeps us
+                        at the forefront of modern manufacturing technologies, and ensures we can process the widest
+                        range of engineering polymers.</li>
+                    <li class="title-color text-bold">All plastic injection molding services are delivered in line with
+                        ISO 9001 quality standards.</li>
                 </ul>
                 <p><a href="{{ url_for('main.injection_molding') }}" class="btn-style btn-margin">&gt; READ MORE</a></p>
             </div>

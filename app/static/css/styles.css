@@ -20,6 +20,10 @@ body {  font-family: Arial, Verdana, "Helvetica Neue", Helvetica, sans-serif;
   background-color: white;
 }
 
+.row-height a img {
+  padding-left: 20%;
+}
+
 .divider {
   height: 1px;
   margin: 9px 0;
@@ -64,8 +68,51 @@ body {  font-family: Arial, Verdana, "Helvetica Neue", Helvetica, sans-serif;
   .navbar .container-fluid {
     background-color: white;
   }
+  .navbar-style>li {
+    line-height: 100px;
+  }
+  .navbar-style>li>a {
+    line-height: 100px;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: #0a3d62;
+    height: 14px;
+    font-weight: bold;
+  }
+  .navbar-style>li>a:hover {
+    color: #6a89cc;
+    background-color: white;
+  }
+  .navbar-default .navbar-nav>li>a {
+    color: #0a3d62;
+  }
+  .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>.active>a:hover {
+    color: #6a89cc;
+    background-color: white;
+  }
+  .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus {
+    color: #6a89cc;
+    background-color: white;
+  }
 }
-/*  */
+/* device > 992px */
+@media (min-width:992px) {
+  .row-height a img {
+    padding-left: 50%;
+  }
+  .navbar-style {
+    padding-right: 5%;
+  }
+}
+/* device >1200px */
+@media (min-width:1200px) {
+  .row-height a img {
+    padding-left: 70%;
+  }
+  .navbar-style {
+    padding-right: 10%;
+  }
+}
 
 /* banner 图片大小 */
 .myCarousel {
@@ -79,11 +126,8 @@ body {  font-family: Arial, Verdana, "Helvetica Neue", Helvetica, sans-serif;
   line-height: 1;
   width: 100%;
 }
-/* 页脚样式 */
-/*==================== 
-	Footer 
-====================== */
 
+/*==================== 	Footer ====================== */
 /* Main Footer */
 footer .main-footer {
   padding: 20px 0;
@@ -339,7 +383,7 @@ ul.social-footer2 li a {
 /* 首页文本样式 */
 .text-style {
   margin: 0;
-  padding: 0 140px;
+  padding: 0 10%;
   font-family: Arial, Verdana, "Helvetica Neue", Helvetica, sans-serif;
   margin-top: 30px;
   text-align: center;

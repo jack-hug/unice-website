@@ -28,13 +28,18 @@
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="{{ url_for('main.index') }}">HOME <span class="sr-only">(current)</span></a>
+            <ul class="nav navbar-nav navbar-right navbar-style">
+
+                <li class="{% block nav_home %}{% endblock %}"><a href="{{ url_for('main.index') }}">HOME <span
+                            class="sr-only"></span></a></li>
+                <li class="{% block nav_services %}{% endblock %}"><a
+                        href="{{ url_for('main.mold_making') }}">SERVICES</a></li>
+                <li class="{% block nav_quality %}{% endblock %}"><a
+                        href="{{ url_for('main.quality_control') }}">QUALITY</a></li>
+                <li class="{% block nav_products %}{% endblock %}"><a
+                        href="{{ url_for('main.Auto_Plastics_Part') }}">PRODUCTS</a></li>
+                <li class="{% block nav_contact %}{% endblock %}"><a href="{{ url_for('main.contact_us') }}">CONTACT</a>
                 </li>
-                <li><a href="{{ url_for('main.mold_making') }}">SERVICES</a></li>
-                <li><a href="{{ url_for('main.quality_control') }}">QUALITY</a></li>
-                <li><a href="{{ url_for('main.Auto_Plastics_Part') }}">PRODUCTS</a></li>
-                <li><a href="{{ url_for('main.contact_us') }}">CONTACT</a></li>
                 <li role="separator" class="nav-divider visible-xs"></li>
                 <li><a href="{{ url_for('main.index') }}" class="language-switch">EN</a></li>
                 <li class="hidden-xs">|</li>
@@ -71,140 +76,140 @@
                 </div>
 
                 <div class="col-xs-12 col-sm-6 col-md-3"">
-                    <div class="widget no-box">
-                        <h5 class="widget-title">COMPANY<span></span></h5>
-                        <ul class="thumbnail-widget">
-                            <li>
-                                <div class="thumb-content mb15"><a href="{{ url_for('main.index') }}">HOME</a></div>
-                            </li>
-                            <li>
-                                <div class="thumb-content mb15"><a href="{{ url_for('main.mold_making') }}">SERVICES</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="thumb-content mb15"><a
-                                        href="{{ url_for('main.quality_control') }}">QUALITY</a></div>
-                            </li>
-                            <li>
-                                <div class="thumb-content mb15"><a
-                                        href="{{ url_for('main.Auto_Plastics_Part') }}">PRODUCTS</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="thumb-content mb15"><a href="{{ url_for('main.contact_us') }}">CONTACT</a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+                    <div class=" widget no-box">
+                    <h5 class="widget-title">COMPANY<span></span></h5>
+                    <ul class="thumbnail-widget">
+                        <li>
+                            <div class="thumb-content mb15"><a href="{{ url_for('main.index') }}">HOME</a></div>
+                        </li>
+                        <li>
+                            <div class="thumb-content mb15"><a href="{{ url_for('main.mold_making') }}">SERVICES</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="thumb-content mb15"><a href="{{ url_for('main.quality_control') }}">QUALITY</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="thumb-content mb15"><a
+                                    href="{{ url_for('main.Auto_Plastics_Part') }}">PRODUCTS</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="thumb-content mb15"><a href="{{ url_for('main.contact_us') }}">CONTACT</a>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
+            </div>
 
-                <div class="col-xs-12 col-sm-6 col-md-3">
-                    <div class="widget no-box">
-                        <h5 class="widget-title">PRODUCTS<span></span></h5>
-                        <ul class="thumbnail-widget">
-                            <li>
-                                <div class="thumb-content mb10"><a href="{{ url_for('main.Auto_Plastics_Part') }}">Auto
-                                        Plastic Parts</a></div>
-                            </li>
-                            <li>
-                                <div class="thumb-content mb10"><a href="{{ url_for('main.twok_Molding') }}">2K Molding
-                                        Parts</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="thumb-content mb10"><a
-                                        href="{{ url_for('main.Electrical_Plastics_Molding') }}">Electrical Plastic
-                                        Parts</a></div>
-                            </li>
-                            <li>
-                                <div class="thumb-content mb10"><a href="{{ url_for('main.Insert_Molding') }}">Insert
-                                        Molding Parts</a></div>
-                            </li>
-                            <li>
-                                <div class="thumb-content mb10"><a href="{{ url_for('main.Rubber') }}">Rubber Parts</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="thumb-content mb10"><a href="{{ url_for('main.Casting') }}">Die Casting
-                                        Parts</a></div>
-                            </li>
-                            <li>
-                                <div class="thumb-content mb10"><a href="{{ url_for('main.Stamping_tool_1') }}">Stamping
-                                        Tooling</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="thumb-content mb10"><a href="{{ url_for('main.Stamping_tool_2') }}">Terminal
-                                        Parts</a></div>
-                            </li>
-                            <li>
-                                <div class="thumb-content mb10"><a href="{{ url_for('main.Stamping_tool_3') }}">Metal
-                                        Shrapnel Parts</a></div>
-                            </li>
-                            <li>
-                                <div class="thumb-content mb10"><a href="{{ url_for('main.precision') }}">Precision
-                                        machined Parts</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="thumb-content mb10"><a href="{{ url_for('main.prototype') }}">Prototype
-                                        Parts</a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="widget no-box">
+                    <h5 class="widget-title">PRODUCTS<span></span></h5>
+                    <ul class="thumbnail-widget">
+                        <li>
+                            <div class="thumb-content mb10"><a href="{{ url_for('main.Auto_Plastics_Part') }}">Auto
+                                    Plastic Parts</a></div>
+                        </li>
+                        <li>
+                            <div class="thumb-content mb10"><a href="{{ url_for('main.twok_Molding') }}">2K Molding
+                                    Parts</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="thumb-content mb10"><a
+                                    href="{{ url_for('main.Electrical_Plastics_Molding') }}">Electrical Plastic
+                                    Parts</a></div>
+                        </li>
+                        <li>
+                            <div class="thumb-content mb10"><a href="{{ url_for('main.Insert_Molding') }}">Insert
+                                    Molding Parts</a></div>
+                        </li>
+                        <li>
+                            <div class="thumb-content mb10"><a href="{{ url_for('main.Rubber') }}">Rubber Parts</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="thumb-content mb10"><a href="{{ url_for('main.Casting') }}">Die Casting
+                                    Parts</a></div>
+                        </li>
+                        <li>
+                            <div class="thumb-content mb10"><a href="{{ url_for('main.Stamping_tool_1') }}">Stamping
+                                    Tooling</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="thumb-content mb10"><a href="{{ url_for('main.Stamping_tool_2') }}">Terminal
+                                    Parts</a></div>
+                        </li>
+                        <li>
+                            <div class="thumb-content mb10"><a href="{{ url_for('main.Stamping_tool_3') }}">Metal
+                                    Shrapnel Parts</a></div>
+                        </li>
+                        <li>
+                            <div class="thumb-content mb10"><a href="{{ url_for('main.precision') }}">Precision
+                                    machined Parts</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="thumb-content mb10"><a href="{{ url_for('main.prototype') }}">Prototype
+                                    Parts</a>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
+            </div>
 
-                <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="col-xs-12 col-sm-6 col-md-3">
 
-                    <div class="widget no-box">
-                        <h5 class="widget-title">CONTACT US<span></span></h5>
-                        <p class="footer-text-color"><span>406-04C, Building B,Cybino CMP Plant,Science and Technology
-                                Zhongyi Road No.19,Maling Community,Nanshan District,Guangdong Province,China</span></p>
-                        <p class="footer-text-color"><span>Email:</span><a href="mailto:kayla@unicemold.com"
-                                title="glorythemes">kayla@unicemold.com</a></p>
-                        <ul class="social-footer2">
-                            <li class="">
-                                <a title="youtube" target="_blank" href="https://www.youtube.com">
-                                    <img alt="youtube" width="30" height="30"
-                                        src="{{ url_for('static',filename = 'img/icon/youtube.png') }}">
-                                </a>
-                            </li>
-                            <li class="">
-                                <a href="https://www.facebook.com" target="_blank" title="Facebook">
-                                    <img alt="Facebook" width="30" height="30"
-                                        src="{{ url_for('static',filename = 'img/icon/facebook.png') }}">
-                                </a>
-                            </li>
-                            <li class="">
-                                <a href="https://www.twitter.com" target="_blank" title="Twitter">
-                                    <img alt="Twitter" width="30" height="30"
-                                        src="{{ url_for('static',filename = 'img/icon/twitter.png') }}">
-                                </a>
-                            </li>
-                            <li class="">
-                                <a href="skype:kayla@unicemold.com?chat" target="_blank" title="skype">
-                                    <img alt="skype" width="20" height="20"
-                                        src="{{ url_for('static',filename = 'img/icon/skype3.png') }}">
-                                </a>
-                            </li>
-                            <li class="">
-                                <a href="https://www.linkedin.com/company/unice-mold" target="_blank" title="linkedin">
-                                    <img alt="linkedin" width="20" height="20"
-                                        src="{{ url_for('static',filename = 'img/icon/linkedin.png') }}">
-                                </a>
-                            </li>
-                        </ul>
-                        <p class="mt15 pd-left">
-                            <a title="wechat" target="_blank">
-                                <img alt="instagram" width="85" height="85"
-                                    src="{{ url_for('static',filename = 'img/icon/wechat.gif') }}">
+                <div class="widget no-box">
+                    <h5 class="widget-title">CONTACT US<span></span></h5>
+                    <p class="footer-text-color"><span>406-04C, Building B,Cybino CMP Plant,Science and Technology
+                            Zhongyi Road No.19,Maling Community,Nanshan District,Guangdong Province,China</span></p>
+                    <p class="footer-text-color"><span>Email:</span><a href="mailto:kayla@unicemold.com"
+                            title="glorythemes">kayla@unicemold.com</a></p>
+                    <ul class="social-footer2">
+                        <li class="">
+                            <a title="youtube" target="_blank" href="https://www.youtube.com">
+                                <img alt="youtube" width="30" height="30"
+                                    src="{{ url_for('static',filename = 'img/icon/youtube.png') }}">
                             </a>
-                        </p>
-                    </div>
+                        </li>
+                        <li class="">
+                            <a href="https://www.facebook.com" target="_blank" title="Facebook">
+                                <img alt="Facebook" width="30" height="30"
+                                    src="{{ url_for('static',filename = 'img/icon/facebook.png') }}">
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="https://www.twitter.com" target="_blank" title="Twitter">
+                                <img alt="Twitter" width="30" height="30"
+                                    src="{{ url_for('static',filename = 'img/icon/twitter.png') }}">
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="skype:kayla@unicemold.com?chat" target="_blank" title="skype">
+                                <img alt="skype" width="20" height="20"
+                                    src="{{ url_for('static',filename = 'img/icon/skype3.png') }}">
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="https://www.linkedin.com/company/unice-mold" target="_blank" title="linkedin">
+                                <img alt="linkedin" width="20" height="20"
+                                    src="{{ url_for('static',filename = 'img/icon/linkedin.png') }}">
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="mt15 pd-left">
+                        <a title="wechat" target="_blank">
+                            <img alt="instagram" width="85" height="85"
+                                src="{{ url_for('static',filename = 'img/icon/wechat.gif') }}">
+                        </a>
+                    </p>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
     <div class="footer-copyright">
@@ -228,5 +233,13 @@
 
 {% block scripts %}
 {{ super() }}
+<!-- <script type="text/javascript">
+    $(function(){
+        $('.navbar-style li').click(function() {
+            $(this).siblings('li').removeClass('active');
+            $(this).addClass('active');
+        });
+    });
+</script> -->
 {% endblock scripts %}
 {% endblock %}
