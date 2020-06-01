@@ -5,6 +5,7 @@
 {% block head %}
 {{ super() }}
 <meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="{{ url_for('static',filename = 'img/icon/favicon.ico') }}" />
 <link rel="stylesheet" href="{{ url_for('static',filename = 'css/styles.css') }}" type="text/css">
 <script src="{{ url_for('static',filename = 'js/unice.js')}}"></script>
 {% endblock %}
