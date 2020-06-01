@@ -111,11 +111,11 @@ body {  font-family: Arial, Verdana, "Helvetica Neue", Helvetica, sans-serif;
 }
 /* device >1200px */
 @media (min-width:1200px) {
-  .row-height a img {
-    padding-left: 70%;
+  .row-height{
+    padding-left: 10%;
   }
   .navbar-style {
-    padding-right: 10%;
+    padding-right: 15%;
   }
   .navbar-style>li>.language-switch {
     color: #3c6382;
