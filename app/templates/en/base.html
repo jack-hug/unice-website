@@ -1,61 +1,42 @@
 {% extends "bootstrap/base.html" %}
 
-
-{% block title %}unice-base Index{% endblock %}
 {% block head %}
 {{ super() }}
-<meta charset="UTF-8">
-<link rel="icon" type="image/x-icon" href="{{ url_for('static',filename = 'img/icon/favicon.ico') }}" />
-<link rel="stylesheet" href="{{ url_for('static',filename = 'css/styles.css') }}" type="text/css">
-<script src="{{ url_for('static',filename = 'js/unice.js')}}"></script>
-{% endblock %}
-
-{% block body %}
+{% endblock head %}
 
 {% block navbar %}
-<div class="navbar navbar-default navbar-fixed-top">
-    <div class="top-style"></div>
-    <div class="container-fluid">
-        <div class="navbar-header row-height">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="{{ url_for('main.index') }}"><img
-                    src="{{ url_for('static',filename = 'img/unice-logo.png') }}" alt=""></a>
-        </div>
+<nav class="navbar navbar-expand-lg fixed-top row-height">
+    <a class="navbar-brand" href="{{ url_for('main.index') }}"><img src="{{ url_for('static',filename = 'img/unice-logo.png') }}" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
 
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right navbar-style">
-
-                <li class="{% block nav_home %}{% endblock %}"><a href="{{ url_for('main.index') }}">HOME <span
-                            class="sr-only"></span></a></li>
-                <li class="{% block nav_services %}{% endblock %}"><a
-                        href="{{ url_for('main.mold_making') }}">SERVICES</a></li>
-                <li class="{% block nav_quality %}{% endblock %}"><a
-                        href="{{ url_for('main.quality_control') }}">QUALITY</a></li>
-                <li class="{% block nav_products %}{% endblock %}"><a
-                        href="{{ url_for('main.Auto_Plastics_Part') }}">PRODUCTS</a></li>
-                <li class="{% block nav_contact %}{% endblock %}"><a href="{{ url_for('main.contact_us') }}">CONTACT</a>
-                </li>
-                <li role="separator" class="nav-divider visible-xs"></li>
-                <li><a href="{{ url_for('main.index') }}" class="language-switch">EN</a></li>
-                <li class="hidden-xs">|</li>
-                <li><a href="{{ url_for('fr.index') }}" class="language-switch">FR</a></li>
-                <li class="hidden-xs">|</li>
-                <li><a href="{{ url_for('cn.index') }}" class="language-switch">CN</a></li>
-            </ul>
-        </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto navbar-style">
+            <li class="nav-item {% block nav_home %}{% endblock %}"><a href="{{ url_for('main.index') }}">HOME <span
+                        class="sr-only"></span></a></li>
+            <li class="nav-item {% block nav_services %}{% endblock %}"><a
+                    href="{{ url_for('main.mold_making') }}">SERVICES</a></li>
+            <li class="nav-item {% block nav_quality %}{% endblock %}"><a
+                    href="{{ url_for('main.quality_control') }}">QUALITY</a></li>
+            <li class="nav-item {% block nav_products %}{% endblock %}"><a
+                    href="{{ url_for('main.Auto_Plastics_Part') }}">PRODUCTS</a></li>
+            <li class="nav-item {% block nav_contact %}{% endblock %}"><a href="{{ url_for('main.contact_us') }}">CONTACT</a>
+            </li>
+            <li role="separator" class="nav-divider visible-xs"></li>
+            <li><a href="{{ url_for('main.index') }}" class="language-switch">EN</a></li>
+            <li class="hidden-xs">|</li>
+            <li><a href="{{ url_for('fr.index') }}" class="language-switch">FR</a></li>
+            <li class="hidden-xs">|</li>
+            <li><a href="{{ url_for('cn.index') }}" class="language-switch">CN</a></li>
+        </ul>
     </div>
-    <div class="navbar-bottom-color"></div>
-</div>
-{% endblock %}
+  </nav>
+{% endblock navbar %}
 
 {% block content %}
-{% endblock %}
+{% endblock content %}
 
 <!-- footer need add block footer into  flask-bootstrap/base.html-->
 {% block footer %}
@@ -223,13 +204,12 @@
         </div>
     </div>
 </footer>
-{% endblock %}
-<!-- Footer -->
+{% endblock footer%}
 
 <!-- BackTop div -->
-<div class="back-to" id="toolBackTop">
+<!-- <div class="back-to" id="toolBackTop">
     <a title="BackTop" onclick="window.scrollTo(0,0);return false;" href="#top" class="back-top"></a>
-</div>
+</div> -->
 <!-- BackTop div -->
 
 {% block scripts %}
@@ -243,4 +223,3 @@
     });
 </script> -->
 {% endblock scripts %}
-{% endblock %}
