@@ -3,58 +3,27 @@ body {  font-family: Arial, Verdana, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 /* ======= navbar ======= */
-.row-height .navbar-toggle {
-  margin-top: 32px;
+
+.fixed-top {
+  border-top: 5px solid #3c6382;
+  border-bottom: 3px solid #82ccdd;
 }
 
-.top-style {
-  background-color: #3c6382;
-  width: 100%;
-  height: 5px;
-  padding-left: 0;
-  padding-right: 0;
-}
-.row-height {
-  height: 100px;
-  line-height: 100px;
-  background-color: white;
-}
+.navbar-style > ul > li > .nav-link {
 
-.row-height a img {
-  padding-left: 20%;
-}
-
-.divider {
-  height: 1px;
-  margin: 9px 0;
-  overflow: hidden;
-  background-color: #e5e5e5;
-}
-
-.row-height .navbar-nav > li > a {
-  line-height: 100px;
-  padding-top: 0;
-  padding-bottom: 0;
   color: #0a3d62;
   height: 14px;
   font-weight: bold;
 }
 
-.row-height .navbar-nav > li > a:hover {
+.navbar-style > ul > li > .nav-link:hover {
   color: #6a89cc;
   background-color: white;
-}
- 
-.navbar-bottom-color {
-  width: 100%;
-  height: 3px;
-  background-color: #82ccdd;
-  padding: 0;
 }
 
 /* device > 768px */
 @media (min-width: 768px) {
-  .navbar .container-fluid {
+  /* .navbar .container-fluid {
     background-color: white;
   }
   .navbar-style>li {
@@ -89,11 +58,11 @@ body {  font-family: Arial, Verdana, "Helvetica Neue", Helvetica, sans-serif;
   }
   .navbar-style>li>.language-switch:hover {
     color: #6a89cc;
-  }
+  } */
   
 }
 /* device > 992px */
-@media (min-width:992px) {
+/* @media (min-width:992px) {
   .row-height a img {
     padding-left: 50%;
   }
@@ -110,7 +79,7 @@ body {  font-family: Arial, Verdana, "Helvetica Neue", Helvetica, sans-serif;
   
 }
 /* device >1200px */
-@media (min-width:1200px) {
+/* @media (min-width:1200px) {
   .row-height{
     padding-left: 10%;
   }
@@ -125,7 +94,7 @@ body {  font-family: Arial, Verdana, "Helvetica Neue", Helvetica, sans-serif;
     color: #6a89cc;
   }
   
-}
+}  */
 
 /* ============= Carousel =============  */
 .myCarousel {

@@ -4,35 +4,43 @@
 {{ super() }}
 {% endblock head %}
 
+
 {% block navbar %}
-<nav class="navbar navbar-expand-lg fixed-top row-height">
-    <a class="navbar-brand" href="{{ url_for('main.index') }}"><img src="{{ url_for('static',filename = 'img/unice-logo.png') }}" alt=""></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light navbar-style">
+    <a class="navbar-brand offset-md-3" href="{{ url_for('main.index') }}"><img
+            src="{{ url_for('static',filename = 'img/unice-logo.png') }}" alt="unice-logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
     </button>
-  
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto navbar-style">
-            <li class="nav-item {% block nav_home %}{% endblock %}"><a href="{{ url_for('main.index') }}">HOME <span
-                        class="sr-only"></span></a></li>
-            <li class="nav-item {% block nav_services %}{% endblock %}"><a
-                    href="{{ url_for('main.mold_making') }}">SERVICES</a></li>
-            <li class="nav-item {% block nav_quality %}{% endblock %}"><a
-                    href="{{ url_for('main.quality_control') }}">QUALITY</a></li>
-            <li class="nav-item {% block nav_products %}{% endblock %}"><a
-                    href="{{ url_for('main.Auto_Plastics_Part') }}">PRODUCTS</a></li>
-            <li class="nav-item {% block nav_contact %}{% endblock %}"><a href="{{ url_for('main.contact_us') }}">CONTACT</a>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item {% block nav_home %}{% endblock %}">
+                <a class="nav-link" href="{{ url_for('main.index') }}">HOME <span class="sr-only"></span></a>
             </li>
-            <li role="separator" class="nav-divider visible-xs"></li>
-            <li><a href="{{ url_for('main.index') }}" class="language-switch">EN</a></li>
-            <li class="hidden-xs">|</li>
-            <li><a href="{{ url_for('fr.index') }}" class="language-switch">FR</a></li>
-            <li class="hidden-xs">|</li>
-            <li><a href="{{ url_for('cn.index') }}" class="language-switch">CN</a></li>
+            <li class="nav-item {% block nav_services %}{% endblock %}">
+                <a class="nav-link" href="{{ url_for('main.mold_making') }}">SERVICES</a>
+            </li>
+            <li class="nav-item {% block nav_quality %}{% endblock %}">
+                <a class="nav-link" href="{{ url_for('main.quality_control') }}">QUALITY</a>
+            </li>
+            <li class="nav-item {% block nav_products %}{% endblock %}">
+                <a class="nav-link" href="{{ url_for('main.Auto_Plastics_Part') }}">PRODUCTS</a>
+            </li>
+            <li class="nav-item {% block nav_contact %}{% endblock %}">
+                <a class="nav-link" href="{{ url_for('main.contact_us') }}">CONTACT</a>
+            </li>
+            <li role="separator" class="dropdown-divider d-lg-none"></li>
+            <li class="nav-item"><a href="{{ url_for('main.index') }}" class="nav-link">EN</a></li>
+            <li class="nav-item d-none d-lg-block nav-link">|</li>
+            <li class="nav-item"><a href="{{ url_for('fr.index') }}" class="nav-link">FR</a></li>
+            <li class="nav-item d-none d-lg-block nav-link">|</li>
+            <li class="nav-item"><a href="{{ url_for('cn.index') }}" class="nav-link">CN</a></li>
         </ul>
     </div>
-  </nav>
+</nav>
+
 {% endblock navbar %}
 
 {% block content %}
@@ -206,20 +214,6 @@
 </footer>
 {% endblock footer%}
 
-<!-- BackTop div -->
-<!-- <div class="back-to" id="toolBackTop">
-    <a title="BackTop" onclick="window.scrollTo(0,0);return false;" href="#top" class="back-top"></a>
-</div> -->
-<!-- BackTop div -->
-
 {% block scripts %}
 {{ super() }}
-<!-- <script type="text/javascript">
-    $(function(){
-        $('.navbar-style li').click(function() {
-            $(this).siblings('li').removeClass('active');
-            $(this).addClass('active');
-        });
-    });
-</script> -->
 {% endblock scripts %}
