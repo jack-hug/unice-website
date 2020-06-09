@@ -1,5 +1,7 @@
 /* ======= default font =======  */
-body {  font-family: Arial, Verdana, "Helvetica Neue", Helvetica, sans-serif;
+body {  
+  font-family: Arial, Verdana, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 16px;
 }
 
 /* ======= navbar ======= */
@@ -21,80 +23,6 @@ body {  font-family: Arial, Verdana, "Helvetica Neue", Helvetica, sans-serif;
   background-color: white;
 }
 
-/* device > 768px */
-@media (min-width: 768px) {
-  /* .navbar .container-fluid {
-    background-color: white;
-  }
-  .navbar-style>li {
-    line-height: 100px;
-  }
-  .navbar-style>li>a {
-    line-height: 100px;
-    padding-top: 0;
-    padding-bottom: 0;
-    color: #0a3d62;
-    height: 14px;
-    font-weight: bold;
-  }
-  .navbar-style>li>a:hover {
-    color: #6a89cc;
-    background-color: white;
-  }
-  .navbar-default .navbar-nav>li>a {
-    color: #0a3d62;
-  }
-  .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>.active>a:hover {
-    color: #6a89cc;
-    background-color: white;
-  }
-  .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus {
-    color: #6a89cc;
-    background-color: white;
-  }
-  .navbar-style>li>.language-switch {
-    color: #3c6382;
-    font-weight: normal;
-  }
-  .navbar-style>li>.language-switch:hover {
-    color: #6a89cc;
-  } */
-  
-}
-/* device > 992px */
-/* @media (min-width:992px) {
-  .row-height a img {
-    padding-left: 50%;
-  }
-  .navbar-style {
-    padding-right: 5%;
-  }
-  .navbar-style>li>.language-switch {
-    color: #3c6382;
-    font-weight: normal;
-  }
-  .navbar-style>li>.language-switch:hover {
-    color: #6a89cc;
-  }
-  
-}
-/* device >1200px */
-/* @media (min-width:1200px) {
-  .row-height{
-    padding-left: 10%;
-  }
-  .navbar-style {
-    padding-right: 15%;
-  }
-  .navbar-style>li>.language-switch {
-    color: #3c6382;
-    font-weight: normal;
-  }
-  .navbar-style>li>.language-switch:hover {
-    color: #6a89cc;
-  }
-  
-}  */
 
 /* ============= Carousel =============  */
 .myCarousel {
@@ -325,14 +253,11 @@ ul.social-footer2 li a {
   transition: all 250ms ease-in-out 0s;
 }
 
-/* 页面背景色 */
+/* body color */
 .bg-style {
   background-color: #82ccdd15;
 }
 
-.clear {
-  clear: both;
-}
 /* 上下container之间的填充 */
 .index_padding {
   padding-top: 30px;
@@ -355,14 +280,13 @@ ul.social-footer2 li a {
   color: #3c6382;
 }
 
-/* h3title颜色 */
+/* title color */
 .title-color {
     color: #3c6382;
 }
 
 /* 首页文本样式 */
 .text-style {
-  margin: 0;
   padding: 0 10%;
   font-family: Arial, Verdana, "Helvetica Neue", Helvetica, sans-serif;
   margin-top: 30px;
@@ -499,21 +423,38 @@ ul.social-footer2 li a {
   transform: scale(1);
 }
 
-/* 主页正文内容样式 */
-.index-text-style {
-    font-size: 16px;
-    text-align: left;
-    line-height: 250%;
-    padding: 0 50px;
-    font-family: Arial, Verdana, "Helvetica Neue", Helvetica, sans-serif;
+/* card-body */
+.card-body {
+  padding-bottom: 0.5rem;
+}
+/* card-text */
+.card-text {
+  font-size: 0.8rem;
+  height: 6rem;
 }
 
-/* vertical align */
-.vcenter {
-  display: inline-block;
-  vertical-align: middle;
-  float: none;
+/* 主页正文内容样式 */
+.index-text-style {
+    line-height: 1.5rem;
+    padding: 0 40px;
 }
+
+/* device >=768px */
+@media (min-width:768px) {
+  .index-text-style {
+    line-height: 1.5rem;
+    padding: 0 5px;
+  }
+}
+
+/* device >=1200px */
+@media (min-width:1200px) {
+  .index-text-style {
+    line-height: 1.8rem;
+    padding: 0 40px;
+  }
+}
+
 
 .media .padding-special {
   padding: 0 45px;

@@ -7,32 +7,33 @@
 <!-- 导航banner -->
 <div id="unice-carousel" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
-      <li data-target="#unice-carousel" data-slide-to="0" class="active"></li>
-      <li data-target="#unice-carousel" data-slide-to="1"></li>
-      <li data-target="#unice-carousel" data-slide-to="2"></li>
+        <li data-target="#unice-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#unice-carousel" data-slide-to="1"></li>
+        <li data-target="#unice-carousel" data-slide-to="2"></li>
     </ol>
     <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="/static/img/banner001-en.png" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="/static/img/banner002-en.png" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="/static/img/banner003-en.png" class="d-block w-100" alt="...">
-      </div>
+        <div class="carousel-item active">
+            <img src="/static/img/banner001-en.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="/static/img/banner002-en.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="/static/img/banner003-en.png" class="d-block w-100" alt="...">
+        </div>
     </div>
     <a class="carousel-control-prev" href="#unice-carousel" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
     </a>
     <a class="carousel-control-next" href="#unice-carousel" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
     </a>
-  </div>
+</div>
 
-<div class="bg-style clear container-margin">
+
+<div class="bg-style container-margin">
     <div class="container index_padding first-padding">
         <div class="title">Unice Mold-Your Best Choice</div>
         <div class="text-style">
@@ -56,76 +57,86 @@
         <a href="{{ url_for('main.mold_making') }}" class="btn-style">&gt; READ MORE</a>
     </div>
 </div>
-<div class="bg-style clear index-second container-margin">
+<div class="bg-style index-second container-margin">
     <div class="container index_padding">
         <div class="row">
             <div class="col-md-4">
-                <div class="hovereffect">
-                    <img class="img-responsive center-block" src="{{ url_for('static',filename='img/quality.png')}}"
-                        alt="">
-                    <div class="overlay">
-                        <h2>Quality</h2>
-                        <a class="info" href="{{ url_for('main.quality_control') }}">READ MORE</a>
+                <div class="card">
+                    <div class="hovereffect">
+                        <img class="img-fluid mx-auto d-block" src="{{ url_for('static',filename='img/quality.png')}}"
+                            alt="">
+                        <div class="overlay">
+                            <h2>Quality</h2>
+                            <a class="info" href="{{ url_for('main.quality_control') }}">READ MORE</a>
+                        </div>
                     </div>
-                </div>
-                <div class="inner-margin"></div>
-                <div class="text-center clear">
-                    <h3 class="title-color">Quality</h3>
-                    <p class="p-height">
-                        Quality is the primary pursuit of Unice. With a modern and advanced inspection department， UNICE
-                        is able to offer the customer a full inspection and quality reporting package.
-                    </p>
-                    <p><a href="{{ url_for('main.quality_control') }}" class="btn-style">&gt; READ MORE</a></p>
+                    <div class="text-center card-body">
+                        <h5 class="title-color">Quality</h5>
+                        <p class="card-text">
+                            Quality is the primary pursuit of Unice. With a modern and advanced inspection department，
+                            UNICE
+                            is able to offer the customer a full inspection and quality reporting package.
+                        </p>
+                        <p><a href="{{ url_for('main.quality_control') }}" class="btn-style">&gt; READ MORE</a></p>
+                    </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="hovereffect">
-                    <img class="img-responsive center-block" src="{{ url_for('static',filename='img/product.jpg')}}"
-                        alt="">
-                    <div class="overlay">
-                        <h2>Products</h2>
-                        <a class="info" href="{{ url_for('main.Auto_Plastics_Part') }}">READ MORE</a>
+                <div class="card">
+                    <div class="hovereffect">
+                        <img class="img-fluid mx-auto d-block" src="{{ url_for('static',filename='img/product.jpg')}}"
+                            alt="">
+                        <div class="overlay">
+                            <h2>Products</h2>
+                            <a class="info" href="{{ url_for('main.Auto_Plastics_Part') }}">READ MORE</a>
+                        </div>
                     </div>
-                </div>
-                <div class="text-center clear">
-                    <h3 class="title-color">Products</h3>
-                    <p class="p-height">
-                        Unice is specialized in injection mold manufacturing, custom plastic injection molding, stamping
-                        molds, precision machined parts and prototype parts etc.
-                    </p>
-                    <p><a href="{{ url_for('main.Auto_Plastics_Part') }}" class="btn-style">&gt; READ MORE</a></p>
+                    <div class="text-center card-body">
+                        <h5 class="title-color">Products</h5>
+                        <p class="card-text">
+                            Unice is specialized in injection mold manufacturing, custom plastic injection molding,
+                            stamping
+                            molds, precision machined parts and prototype parts etc.
+                        </p>
+                        <p><a href="{{ url_for('main.Auto_Plastics_Part') }}" class="btn-style">&gt; READ MORE</a></p>
+                    </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="hovereffect">
-                    <img class="img-responsive center-block" src="{{ url_for('static',filename='img/our-servers.png')}}"
-                        alt="">
-                    <div class="overlay">
-                        <h2>Services</h2>
-                        <a class="info" href="{{ url_for('main.mold_making') }}">READ MORE</a>
+                <div class="card">
+                    <div class="hovereffect">
+                        <img class="img-fluid mx-auto d-block" src="{{ url_for('static',filename='img/our-servers.png')}}"
+                            alt="">
+                        <div class="overlay">
+                            <h2>Services</h2>
+                            <a class="info" href="{{ url_for('main.mold_making') }}">READ MORE</a>
+                        </div>
                     </div>
-                </div>
-                <div class="text-center clear">
-                    <h3 class="title-color">Services</h3>
-                    <p class="p-height">We work closely with customers from initial design to delivery parts, your
-                        project will be managed by our project manager to ensure high quality and first-class service.
-                    </p>
-                    <p><a href="{{ url_for('main.mold_making') }}" class="btn-style">&gt; READ MORE</a></p>
+                    <div class="text-center card-body">
+                        <h5 class="title-color">Services</h5>
+                        <p class="card-text">
+                            We work closely with customers from initial design to delivery parts, your
+                            project will be managed by our project manager to ensure high quality and first-class
+                            service.
+                        </p>
+                        <p><a href="{{ url_for('main.mold_making') }}" class="btn-style">&gt; READ MORE</a></p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div class="bg-style clear index-third container-margin">
-    <div class="container index_padding clear">
-        <div class="row">
+
+<div class="bg-style container-margin">
+    <div class="container index_padding">
+        <div class="row align-items-center">
             <div class="col-xs-12 col-sm-12 col-md-6">
                 <a href="{{ url_for('main.Auto_Plastics_Part') }}"><img
                         src="{{ url_for('static',filename='img/index_01.png') }}" alt="Injection Manufacturing"
-                        class="img-rounded img-responsive center-block img-style vcenter"></a>
+                        class="rounded img-fluid img-style"></a>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-6 index-text-style">
-                <h3 class="title-color">＋Injection Manufacturing</h3>
+                <h4 class="title-color">＋Injection Manufacturing</h4>
                 <ul>
                     <li class="title-color text-bold">Auto Plastic Parts</li>
                     <li class="title-color text-bold">2K Molding Parts</li>
@@ -140,27 +151,31 @@
         </div>
     </div>
 </div>
-<div class="bg-style clear index-third container-margin">
-    <div class="container index_padding clear">
-        <div class="media index_padding">
-            <div class="media-body index-text-style">
-                <h3 class="title-color">＋Stamping Tool</h3>
+
+<div class="bg-style container-margin">
+    <div class="container index_padding">
+        <div class="row align-items-center">
+            <div class="col-xs-12 col-sm-12 col-md-6">
+                <a href="{{ url_for('main.Stamping_tool_3') }}"><img
+                        src="{{ url_for('static',filename='img/stamptool.png') }}" alt="stamping tools"
+                        class="rounded img-fluid img-style"></a>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 index-text-style order-md-first">
+                <h4 class="title-color">＋Stamping Tool</h4>
                 <ul>
                     <li class="title-color text-bold">Progressive die</li>
                     <li class="title-color text-bold">Stretch form die</li>
                     <li class="title-color text-bold">Metal Shrapnel Parts</li>
                 </ul>
-                <p><a href="{{ url_for('main.Stamping_tool_3') }}" class="btn-style btn-margin">&gt; READ MORE</a></p>
-            </div>
-            <div class="media-right media-middle pr20">
-                <a href="{{ url_for('main.Stamping_tool_3') }}"><img
-                        src="{{ url_for('static',filename='img/stamptool.png') }}" alt="" class="img-rounded"></a>
+                <p><a href="{{ url_for('main.Stamping_tool_3') }}" class="btn-style btn-margin">&gt; READ MORE</a>
+                </p>
             </div>
         </div>
     </div>
 </div>
-<div class="bg-style clear index-third container-margin">
-    <div class="container index_padding clear">
+
+<div class="bg-style index-third container-margin">
+    <div class="container index_padding">
         <div class="media index_padding">
             <div class="media-left media-middle pl20">
                 <a href="{{ url_for('main.precision') }}"><img src="{{ url_for('static',filename='img/Precision.png')}}"
@@ -180,8 +195,8 @@
         </div>
     </div>
 </div>
-<div class="bg-style clear index-third container-margin">
-    <div class="container index_padding clear">
+<div class="bg-style index-third container-margin">
+    <div class="container index_padding">
         <div class="media index_padding">
             <div class="media-body index-text-style">
                 <h3 class="title-color">＋ Prototype Parts</h3>
@@ -207,8 +222,8 @@
         </div>
     </div>
 </div>
-<div class="bg-style clear index-third container-margin">
-    <div class="container index_padding clear">
+<div class="bg-style index-third container-margin">
+    <div class="container index_padding">
         <div class="media index_padding">
             <div class="media-right media-middle pr20">
                 <a href="{{ url_for('main.injection_molding') }}"><img
