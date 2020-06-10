@@ -11,18 +11,31 @@ body {
   border-bottom: 3px solid #82ccdd;
 }
 
-.navbar-style > ul > li > .nav-link {
+.navbar-style {
+  background-color: white!important;
+}
 
-  color: #0a3d62;
-  height: 14px;
+.nav-item {
+  font-size: 14px;
+  font-weight: bold;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+  color: #6a89cc;
   font-weight: bold;
 }
 
-.navbar-style > ul > li > .nav-link:hover {
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
   color: #6a89cc;
-  background-color: white;
 }
 
+.navbar-light .navbar-nav .nav-link {
+  color: #0a3d62;
+}
+
+.divider-style {
+  padding-left: 0;
+  padding-right: 0;
+}
 
 /* ============= Carousel =============  */
 .myCarousel {

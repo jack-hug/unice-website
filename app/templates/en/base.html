@@ -8,7 +8,7 @@
 {% block navbar %}
 <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light navbar-style">
     <a class="navbar-brand ml-3" href="{{ url_for('main.index') }}"><img
-            src="{{ url_for('static',filename = 'img/unice-logo.png') }}" alt="unice-logo"> Unice Mold Industrial(ShenZhen) Co., Ltd</a>
+            src="{{ url_for('static',filename = 'img/unice-logo.png') }}" alt="unice-logo"><span class="d-none d-md-inline"> Unice Mold Industrial(ShenZhen) Co., Ltd</span></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -33,9 +33,9 @@
             </li>
             <li role="separator" class="dropdown-divider d-lg-none"></li>
             <li class="nav-item"><a href="{{ url_for('main.index') }}" class="nav-link">EN</a></li>
-            <li class="nav-item d-none d-lg-block nav-link">|</li>
+            <li class="nav-item d-none d-lg-block nav-link  divider-style">|</li>
             <li class="nav-item"><a href="{{ url_for('fr.index') }}" class="nav-link">FR</a></li>
-            <li class="nav-item d-none d-lg-block nav-link">|</li>
+            <li class="nav-item d-none d-lg-block nav-link  divider-style">|</li>
             <li class="nav-item"><a href="{{ url_for('cn.index') }}" class="nav-link">CN</a></li>
         </ul>
     </div>
@@ -54,7 +54,7 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-3">
                     <div class="widget subscribe no-box">
-                        <h5 class="widget-title"> Unice Mold Industrial(ShenZhen) Co., Ltd <span></span></h5>
+                        <h5 class="widget-title"> Unice Mold <span></span></h5>
                         <p>
                             Unice is a manufacturer of injection mold manufacturing, custom plastic injection molding,
                             stamping molds, precision machined parts and prototype parts etc.

@@ -4,7 +4,7 @@
 
 {% block nav_home %}active{% endblock %}
 {% block content %}
-<!-- 导航banner -->
+<!-- banner -->
 <div id="unice-carousel" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
         <li data-target="#unice-carousel" data-slide-to="0" class="active"></li>
@@ -174,63 +174,69 @@
     </div>
 </div>
 
-<div class="bg-style index-third container-margin">
+<div class="bg-style container-margin">
     <div class="container index_padding">
-        <div class="media index_padding">
-            <div class="media-left media-middle pl20">
-                <a href="{{ url_for('main.precision') }}"><img src="{{ url_for('static',filename='img/Precision.png')}}"
-                        alt="" class="img-rounded"></a>
+        <div class="row align-items-center">
+            <div class="col-xs-12 col-sm-12 col-md-6">
+                <a href="{{ url_for('main.precision') }}"><img
+                        src="{{ url_for('static',filename='img/Precision.png') }}" alt="Precision Parts"
+                        class="rounded img-fluid img-style"></a>
             </div>
-            <div class="media-body index-text-style">
-                <h3 class="title-color">＋Precision Parts</h3>
+            <div class="col-xs-12 col-sm-12 col-md-6 index-text-style">
+                <h4 class="title-color">＋Precision Parts</h4>
                 <p class="title-color">
                     We manufacture competitive and innovative precision machined parts. Unicemold is ​​committed to
                     meeting the strict requirements of our customers and is committed to providing a "center of
                     excellence". From initial design to delivery parts, your project will be managed by our project
                     manager to ensure high quality and first-class service.
                 </p>
-                <br><br><br>
-                <p><a href="{{ url_for('main.precision') }}" class="btn-style btn-margin">&gt; READ MORE</a></p>
+                <p><a href="{{ url_for('main.precision') }}" class="btn-style btn-margin">&gt; READ MORE</a>
+                </p>
             </div>
         </div>
     </div>
 </div>
-<div class="bg-style index-third container-margin">
+
+<div class="bg-style container-margin">
     <div class="container index_padding">
-        <div class="media index_padding">
-            <div class="media-body index-text-style">
-                <h3 class="title-color">＋ Prototype Parts</h3>
+        <div class="row align-items-center">
+            <div class="col-xs-12 col-sm-12 col-md-6">
+                <a href="{{ url_for('main.prototype') }}"><img
+                        src="{{ url_for('static',filename='img/Prototype.png') }}" alt="Prototype Parts"
+                        class="rounded img-fluid img-style"></a>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 index-text-style order-md-first">
+                <h4 class="title-color">＋Prototype Parts</h4>
                 <ul>
                     <p class="title-color">
                         You may need several prototype iterations to fully realise your ideas,We’ll optimise both your
                         tooling and your moulded part design, and move your ideas effectively to support your final
                         design and on to production. Prototyping can let you touch and feel your component before moving
-                        on to full production.
-                    </p>
-                    <p class="title-color">The printed, moulded and machined prototypes which we can offer:</p>
+                        on to full production.<br>
+                        The printed, moulded and machined prototypes which we can offer:
+                    <p class="title-color"></p>
                     <li class="title-color text-bold">3D printing</li>
                     <li class="title-color text-bold">Machined Prototype Parts</li>
                     <li class="title-color text-bold">Moulded Prototype Parts</li>
                     <li class="title-color text-bold">Aliminium Prototype Parts</li>
                 </ul>
-                <p><a href="{{ url_for('main.prototype') }}" class="btn-style btn-margin">&gt; READ MORE</a></p>
-            </div>
-            <div class="media-right media-middle pr20">
-                <a href="{{ url_for('main.prototype') }}"><img
-                        src="{{ url_for('static',filename='img/Prototype.png') }}" alt="" class="img-rounded"></a>
+                <p><a href="{{ url_for('main.prototype') }}" class="btn-style btn-margin">&gt; READ MORE</a>
+                </p>
             </div>
         </div>
     </div>
 </div>
-<div class="bg-style index-third container-margin">
+
+<div class="bg-style container-margin">
     <div class="container index_padding">
-        <div class="media index_padding">
-            <div class="media-right media-middle pr20">
+        <div class="row align-items-center">
+            <div class="col-xs-12 col-sm-12 col-md-6">
                 <a href="{{ url_for('main.injection_molding') }}"><img
-                        src="{{ url_for('static',filename='img/plastic01.png') }}" alt="" class="img-rounded"></a>
+                        src="{{ url_for('static',filename='img/plastic01.png') }}" alt="Injection Molding"
+                        class="rounded img-fluid img-style"></a>
             </div>
-            <div class="media-body index-text-style">
-                <h3 class="title-color">＋Injection Molding</h3>
+            <div class="col-xs-12 col-sm-12 col-md-6 index-text-style">
+                <h4 class="title-color">＋Injection Molding</h4>
                 <ul>
                     <p class="title-color">We have 12 plastic injection molding machines and they offer:</p>
                     <li class="title-color text-bold">Choice of 90 ton up to 400 ton machines</li>
@@ -248,9 +254,11 @@
                     <li class="title-color text-bold">All plastic injection molding services are delivered in line with
                         ISO 9001 quality standards.</li>
                 </ul>
-                <p><a href="{{ url_for('main.injection_molding') }}" class="btn-style btn-margin">&gt; READ MORE</a></p>
+                <p><a href="{{ url_for('main.injection_molding') }}" class="btn-style btn-margin">&gt; READ MORE</a>
+                </p>
             </div>
         </div>
     </div>
 </div>
+
 {% endblock %}
